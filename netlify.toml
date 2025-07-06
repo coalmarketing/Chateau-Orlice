@@ -1,0 +1,43 @@
+[build]
+  publish = "public/"
+  command = "npm run build"
+
+[[plugins]]
+  # Installs the Lighthouse Build Plugin for all deploy contexts
+  package = "@netlify/plugin-lighthouse"
+
+
+[[plugins]]
+  package = "netlify-plugin-cache"
+
+  [plugins.inputs]
+  paths = [
+    "public/assets/images",
+    ".cache"
+  ]
+
+
+# Redirect for end-user’s browser preference override
+[[redirects]]
+  from = "/*"
+  to = "/en/:splat"
+  status = 302
+  conditions = {Language = ["en"]}
+
+[[redirects]]
+  from = "/*"
+  to = "/de/:splat"
+  status = 302
+  conditions = {Language = ["de"]}
+
+[[redirects]]
+  from = "/*"
+  to = "/pl/:splat"
+  status = 302
+  conditions = {Language = ["pl"]}
+
+# Default
+[[redirects]]
+  from = "/*"
+  to = "/cs/:splat"
+  status = 302

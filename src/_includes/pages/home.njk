@@ -1,0 +1,275 @@
+{% extends "layouts/base.njk" %}
+
+{% block head %}
+    <!-- Script for Netlify Identity -->
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <!-- Netlify Identity configuration -->
+    <script defer src="/assets/js/identity.js"></script>
+
+    <!-- To ensure proper validation, prevent errors, and encourage developers to check, schema's are an opt-in feature. They're very bespoke and requires some customising  -->
+    <!-- Uncomment the code below to enable Structured Data, and test it when you deploy to Netlify - https://developers.google.com/search/docs/appearance/structured-data -->
+    {% include "components/home-schema.njk" %}
+{% endblock %}
+
+{% block body %}
+    <!-- HERO -->
+    <section class="relative py-24 ~px-4/8 flex justify-start items-end min-h-screen z-10
+        before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-black/50 before:-z-10">
+        <div class="container mx-auto flex flex-col justify-end ~gap-8/10">
+            <!-- HEADING + TEXT -->
+            <div class="flex flex-col ~gap-2/4">
+                <h1 class="~max-w-3xl/5xl ~text-3xl/7xl text-white font-black uppercase">{{ hero.heading | safe }}</h1>
+                <p class="~max-w-lg/[49rem] font-jakarta-sans ~text-base/2xl text-cream">{{ hero.text | safe }}</p>
+            </div>
+
+            <!-- CTA BUTTONS -->
+            <div class="flex gap-2">
+                <a href="#akcni-nabidky" class="btn btn-lg">{{ hero.ctaPrimary }}</a>
+                <a href="{{ '/rezervace' | locale_url }}" class="max-sm:hidden btn btn-lg bg-transparent text-white">{{ hero.ctaSecondary }}</a>
+            </div>
+        </div>
+
+        <picture>
+            <!-- MOBILE IMAGE -->
+            <source media="(max-width: 600px)" srcset="{% getUrl hero.imageUrl | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl hero.imageUrl | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl hero.imageUrl | jpeg %}" type="image/jpeg">
+            <!-- TABLET IMAGE -->
+            <source media="(max-width: 1024px)" srcset="{% getUrl hero.imageUrl | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl hero.imageUrl | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl hero.imageUrl | jpeg %}" type="image/jpeg">
+            <!-- DESKTOP IMAGE -->
+            <source media="(min-width: 1024px)" srcset="{% getUrl hero.imageUrl | resize({ width: 3840, height: 2160 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl hero.imageUrl | resize({ width: 3840, height: 2160 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl hero.imageUrl | resize({ width: 3840, height: 2160 }) | jpeg %}" type="image/jpeg">
+            <img
+                class="object-cover absolute top-0 left-0 h-full w-full -z-20"
+                src="{% getUrl hero.imageUrl | resize({ width: 3840, height: 2160 }) | jpeg %}"
+                alt="{{ hero.imageAlt }}"
+                width="1920"
+                height="1080"
+                loading="eager"
+                decoding="async"
+                aria-hidden="true"
+                draggable="false">
+        </picture>
+    </section>
+
+    <!-- SPECIAL OFFERS -->
+    <section id="akcni-nabidky" class="py-24 ~px-4/8 bg-white">
+        <div class="container m-auto flex flex-col gap-8">
+            <!-- TOPPER + HEADING -->
+            <div class="flex flex-col items-center gap-4">
+                <!-- TOPPER -->
+                <span class="topper-container">
+                    {% include "components/topper-decoration.njk" %}
+                    <span class="topper">{{ specialOffers.topper }}</span>
+                    {% include "components/topper-decoration.njk" %}
+                </span>
+
+                <h2 class="text-center ~text-3xl/5xl font-black uppercase">{{ specialOffers.heading }}</h2>
+            </div>
+
+            <!-- ITEMS -->
+            <ul class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {% for item in collections.specialOffer | pageLang(page.lang) | limit(2) | reverse %}
+                    <li class="flex flex-col ~gap-4/8">
+                        <a href="{{ item.url }}">
+                            <picture>
+                                <!-- MOBILE IMAGE -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl item.data.image | resize({ width: 736, height: 640, position: 'attention' }) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl item.data.image | resize({ width: 736, height: 640, position: 'attention' }) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl item.data.image | resize({ width: 736, height: 640, position: 'attention' }) | jpeg %}" type="image/jpeg">
+                                <!-- TABLET IMAGE -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl item.data.image | resize({ width: 1524, height: 768, position: 'attention' }) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl item.data.image | resize({ width: 1524, height: 768, position: 'attention' }) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl item.data.image | resize({ width: 1524, height: 768, position: 'attention' }) | jpeg %}" type="image/jpeg">
+                                <!-- DESKTOP IMAGE -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl item.data.image | resize({ width: 1408, height: 1024, position: 'attention' }) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl item.data.image | resize({ width: 1408, height: 1024, position: 'attention' }) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl item.data.image | resize({ width: 1408, height: 1024, position: 'attention' }) | jpeg %}" type="image/jpeg">
+                                <img
+                                    class="object-cover h-[20rem] md:h-[24rem] lg:h-[32rem] w-full"
+                                    src="{% getUrl item.data.image | resize({ width: 1408, height: 1024, position: 'attention' }) | jpeg %}"
+                                    alt="{{ item.data.imageAlt }}"
+                                    width="704"
+                                    height="503"
+                                    loading="lazy"
+                                    decoding="async"
+                                    aria-hidden="true"
+                                    draggable="false">
+                            </picture>
+                        </a>
+
+                        <!-- TITLE + CTA -->
+                        <div class="flex flex-col items-center ~gap-4/6">
+                            <h3 class="~max-w-lg/xl text-center ~text-2xl/3xl font-black">{{ item.data.title }}</h3>
+
+                            <a href="{{ item.url }}" class="btn-secondary">
+                                {{ specialOffers.cta }}
+                            </a>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="py-24 ~px-4/8 relative bg-cream z-10">
+        <div class="container m-auto flex flex-col gap-16">
+            <!-- HEADING + TEXT -->
+            <div class="flex flex-col items-center gap-4">
+                <!-- TOPPER + HEADING -->
+                <div class="flex flex-col items-center gap-4">
+                    <!-- TOPPER -->
+                    <span class="topper-container">
+                        {% include "components/topper-decoration.njk" %}
+                        <span class="topper">{{ services.topper }}</span>
+                        {% include "components/topper-decoration.njk" %}
+                    </span>
+
+                    <h2 class="~max-w-md/2xl text-center ~text-3xl/5xl font-black uppercase">{{ services.heading }}</h2>
+                </div>
+
+                <p class="~max-w-xl/2xl font-jakarta-sans ~text-sm/base text-center text-ochre">{{ services.text }}</p>
+            </div>
+
+            <!-- SERVICES -->
+            <ul class="grid grid-cols-1 xl:grid-cols-3 ~gap-4/8">
+                {% for item in services.items %}
+                    <li class="relative z-10">
+                        <a href="{{ item.url | locale_url }}" class="group relative flex h-[24rem] xl:h-[36rem] ~p-4/6 z-10 before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-black/50 before:-z-10">
+                            <!-- INNER CONTAINER -->
+                            <div class="flex flex-col justify-center items-center w-full ~p-4/8 border-2 border-white">
+                                <!-- TITLE + TEXT -->
+                                <div class="flex flex-col">
+                                    <h3 class="text-center ~text-2xl/4xl text-white font-black">{{ item.title }}</h3>
+                                    <p class="font-jakarta-sans ~text-sm/base text-center text-cream h-0 mt-0 opacity-0 transition-[height,_margin-top,_opacity] duration-300 group-hover:h-[3lh] sm:group-hover:h-[2lh] lg:group-hover:h-[1lh] xl:group-hover:h-[3lh] group-hover:mt-4 group-hover:opacity-100">
+                                        {{ item.text }}
+                                    </p>
+                                </div>
+
+                                <!-- CTA -->
+                                <span class="btn-secondary text-cream after:border-cream h-0 mt-0 opacity-0 transition-[height,_margin-top,_opacity] duration-300 group-hover:h-6 group-hover:mt-8 group-hover:opacity-100">
+                                    {{ services.cta }}
+                                </span>
+                            </div>
+                        </a>
+
+                        <!-- BACKGROUND IMAGE -->
+                        <picture>
+                            <!-- MOBILE IMAGE -->
+                            <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | resize({ width: 736, height: 768 }) | avif %}" type="image/avif">
+                            <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | resize({ width: 736, height: 768 }) | webp %}" type="image/webp">
+                            <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | resize({ width: 736, height: 768 }) | jpeg %}" type="image/jpeg">
+                            <!-- TABLET IMAGE -->
+                            <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1524, height: 768 }) | avif %}" type="image/avif">
+                            <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1524, height: 768 }) | webp %}" type="image/webp">
+                            <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1524, height: 768 }) | jpeg %}" type="image/jpeg">
+                            <!-- DESKTOP IMAGE -->
+                            <source media="(min-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 918, height: 1152 }) | avif %}" type="image/avif">
+                            <source media="(min-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 918, height: 1152 }) | webp %}" type="image/webp">
+                            <source media="(min-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 918, height: 1152 }) | jpeg %}" type="image/jpeg">
+                            <img
+                                class="object-cover absolute top-0 left-0 h-full w-full -z-10"
+                                src="{% getUrl item.imageUrl | resize({ width: 918, height: 1152 }) | jpeg %}"
+                                alt="{{ item.imageAlt }}"
+                                width="459"
+                                height="576"
+                                loading="lazy"
+                                decoding="async"
+                                aria-hidden="true"
+                                draggable="false">
+                        </picture>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <img
+            class="object-cover absolute top-0 left-0 h-full w-full -z-10"
+            src="/assets/svgs/tilling-background_black-gold.svg"
+            alt="{{ services.backgroundAlt }}"
+            width="1920"
+            height="1044"
+            loading="lazy"
+            decoding="async"
+            aria-hidden="true"
+            draggable="false">
+    </section>
+
+    <!-- ABOUT US -->
+    <section class="py-24 ~px-4/8 bg-white">
+        <div class="container m-auto flex flex-col gap-16">
+            <!-- HEADING + TEXT -->
+            <div class="flex justify-between items-start">
+                <h2 class="max-w-xl text-5xl font-black uppercase">{{ about.heading }}</h2>
+
+                <!-- TEXT + CTA -->
+                <div class="flex flex-col items-start gap-6">
+                    <p class="max-w-2xl font-jakarta-sans ~text-sm/base text-ochre">{{ about.text }}</p>
+                    <a href="{{ '/o-nas' | locale_url }}" class="btn-secondary">{{ about.ctaSecondary }}</a>
+                </div>
+            </div>
+
+            <!-- IMAGE + CTA -->
+            <div class="flex flex-col items-center gap-8">
+                <picture class="w-full">
+                    <!-- MOBILE IMAGE -->
+                    <source media="(max-width: 600px)" srcset="{% getUrl about.imageUrl | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl about.imageUrl | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl about.imageUrl | jpeg %}" type="image/jpeg">
+                    <!-- TABLET IMAGE -->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl about.imageUrl | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl about.imageUrl | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl about.imageUrl | jpeg %}" type="image/jpeg">
+                    <!-- DESKTOP IMAGE -->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl about.imageUrl | resize({ width: 2880, height: 910 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl about.imageUrl | resize({ width: 2880, height: 910 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl about.imageUrl | resize({ width: 2880, height: 910 }) | jpeg %}" type="image/jpeg">
+                    <img
+                    class="object-cover h-[25rem] w-full"
+                    src="{% getUrl about.imageUrl | resize({ width: 2880, height: 910 }) | jpeg %}"
+                    alt="{{ about.imageAlt }}"
+                    width="1440"
+                    height="405"
+                    loading="lazy"
+                    decoding="async"
+                    aria-hidden="true"
+                    draggable="false">
+                </picture>
+
+                <!-- CTA -->
+                <a href="#pokoje" class="btn btn-lg">{{ about.ctaPrimary }}</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="flex justify-center bg-white before:h-[12rem] before:w-0.5 before:bg-gold"></div>
+
+    <!-- ROOMS -->
+    <section class="py-24 ~px-4/8">
+        <div class="container m-auto flex flex-col gap-16">
+            <!-- HEADING + CTA -->
+            <div class="flex flex-col items-center gap-8">
+                <!-- TOPPER + HEADING -->
+                <div class="flex flex-col items-center gap-4">
+                    <!-- TOPPER -->
+                    <span class="topper-container">
+                        {% include "components/topper-decoration.njk" %}
+                        <span class="topper">{{ rooms.topper }}</span>
+                        {% include "components/topper-decoration.njk" %}
+                    </span>
+
+                    <h2 class="max-w-lg text-center ~text-3xl/5xl font-black uppercase">{{ rooms.heading }}</h2>
+                </div>
+
+                <a href="{{ '/ubytovani' | locale_url }}" class="btn btn-lg">{{ rooms.ctaPrimary }}</a>
+            </div>
+        </div>
+    </section>
+
+    {% include "sections/cta.njk" %}
+{% endblock body %}

@@ -1,0 +1,51 @@
+{
+    "cs": {
+        "openNavigation": "Otevřít navigaci",
+        "mainNavigation": [
+            {
+                "name": "Ubytování",
+                "url": "/ubytovani",
+                "subitems": [
+                    {
+                        "name": "Pokoje",
+                        "url": "/ubytovani/pokoje"
+                    },
+                    {
+                        "name": "Pobytové balíčky",
+                        "url": "/ubytovani/pobytove-balicky"
+                    }
+                ]
+            },
+            {
+                "name": "Restaurace",
+                "url": "/restaurace"
+            },
+            {
+                "name": "Služby a zážitky",
+                "url": "/sluzby-zazitky",
+                "subitems": [
+                    {
+                        "name": "Wellness & Spa",
+                        "url": "/wellness-spa"
+                    },
+                    {
+                        "name": "Výlety a aktivity",
+                        "url": "/vylety-aktivity"
+                    },
+                    {
+                        "name": "Okolí Chateau Orlice",
+                        "url": "/okoli-chateau-orlice"
+                    },
+                    {
+                        "name": "Prohlídky",
+                        "url": "/prohlidky"
+                    }
+                ]
+            }
+        ],
+        "backToHomepage": "Přejít na domovskou stránku",
+        "languageSelector": "Tlačítko pro výběr jazyka",
+        "languageSelectorIconAlt": "Ikona zeměkoule",
+        "cta": "Rezervace"
+    }
+}

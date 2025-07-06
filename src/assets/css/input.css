@@ -1,0 +1,290 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @media (min-width: 96rem /* 1536px */) {
+    .container {
+        max-width: 80rem /* 1440px */;
+    }
+  }
+}
+
+@layer components {
+  .btn {
+    @apply bg-gold font-jakarta-sans text-ochre font-semibold leading-none transition-colors duration-300 hover:bg-ochre hover:text-white;
+  }
+
+  .btn {
+    @apply py-2.5 px-6 ~text-sm/base;
+  }
+
+  .btn-lg {
+    @apply ~py-2.5/3 ~px-6/8 ~text-sm/lg;
+  }
+
+  .btn-secondary {
+    @apply relative flex flex-col gap-1 font-jakarta-sans ~text-sm/base text-ochre font-semibold transition-colors duration-300 hover:text-gold after:w-full after:border-b-2 after:border-ochre;
+  }
+
+  .topper-container {
+    @apply flex items-center gap-2 before:h-px before:w-6 before:bg-gold after:h-px after:w-6 after:bg-gold
+  }
+
+  .topper {
+    @apply font-trirong text-sm text-ochre font-medium tracking-widest uppercase
+  }
+}
+
+/* plus-jakarta-sans-regular - latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/plus-jakarta-sans-v11-latin-ext-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* plus-jakarta-sans-500 - latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/plus-jakarta-sans-v11-latin-ext-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* plus-jakarta-sans-500italic - latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Plus Jakarta Sans';
+  font-style: italic;
+  font-weight: 500;
+  src: url('../fonts/plus-jakarta-sans-v11-latin-ext-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* plus-jakarta-sans-600 - latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/plus-jakarta-sans-v11-latin-ext-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* plus-jakarta-sans-700 - latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/plus-jakarta-sans-v11-latin-ext-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* plus-jakarta-sans-700italic - latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Plus Jakarta Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/plus-jakarta-sans-v11-latin-ext-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* trirong-500 - latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Trirong';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/trirong-v16-latin-ext-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* trirong-800 - latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Trirong';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/trirong-v16-latin-ext-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* sigurd-900 - latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Sigurd';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/sigurd-latin-ext-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* ====================================== */
+/* === DARKMODE SWITCH AND TRANSITION === */
+/* ====================================== */
+
+:root {
+  --bg-planet-bright: #ecd590;
+  --bg-polygon-bright: #f2a54c;
+  --bg-planet-shadow: #828894;
+  --bg-planet-lightshadow: #3a3a3a;
+  --dot-size: 0.25rem;
+}
+
+html {  
+  body {
+    label.darkmode-container {
+      height: 100%;
+      cursor: pointer;
+      position: relative;
+      /* To make outline on mobile invisible */
+      -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+    
+      input[type="checkbox"] {
+          height: 0;
+          width: 0;
+          visibility: hidden;
+          position: absolute;
+      }
+    
+      .planet {
+        display: block;
+        width: 1.25rem;
+        height: 1.25rem;
+        border-radius: 50%;
+        overflow: hidden;
+        background:
+          radial-gradient(3.75em, 99%, transparent 100%);
+        background-color: var(--bg-planet-bright);
+        background-repeat: no-repeat;
+        position: relative;
+        will-change: background;
+        transition: all 400ms ease;
+        z-index: 11;
+      
+        /* Safari transition issue */
+        backface-visibility: hidden;
+        transform: translate3d(0, 0, 0);
+        
+        &::after {
+          content: "";
+          background-color: var(--bg-planet-shadow);
+          width: 1.25rem;
+          height: 1.25rem;
+          position: absolute;
+          border-radius: 50%;
+          will-change: opacity, transform, background-color;
+          opacity: 0;
+          transform: translate(2em, -2em);
+          transition: opacity 400ms ease, transform 400ms ease, background-color 400ms ease;
+        }
+      }
+    
+      .elements {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: transform 400ms ease;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+        svg {
+          position: absolute;
+          width: 12px;
+          height: 12px;
+          opacity: 1;
+          transition: transform 400ms ease, opacity 200ms ease, width 200ms ease, height 200ms ease;
+          polygon {
+            fill: var(--bg-polygon-bright);
+            transition: fill 400ms ease;
+          }
+          &:first-child {
+            transform: translate(0, -0.8rem);
+          }
+          &:nth-child(2) {
+            transform: translate(0.55em, -0.55em) rotate(45deg);
+          }
+          &:nth-child(3) {
+            transform: translate(0.8em, 0) rotate(90deg);
+          }
+          &:nth-child(4) {
+            transform: translate(0.55em, 0.55em) rotate(135deg);
+          }
+          &:nth-child(5) {
+            transform: translate(0, 0.8em) rotate(180deg);
+          }
+          &:nth-child(6) {
+            transform: translate(-0.55em, 0.55em) rotate(225deg);
+          }
+          &:nth-child(7) {
+            transform: translate(-0.8em, 0) rotate(270deg);
+          }
+          &:nth-child(8) {
+            transform: translate(-0.55em, -0.55em) rotate(315deg);
+          }
+          &:nth-child(9) {
+            transform: translate(0em, -1em);
+            opacity: 0;
+          }
+          &:nth-child(10) {
+            transform: translate(0em, -1.5em);
+            opacity: 0;
+          }
+          &:nth-child(11) {
+            transform: translate(0em, -1.25em);
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &.dark {
+      label.darkmode-container {
+          input[type="checkbox"] {
+            &+.planet {
+              --bg-planet-bright: #D7D7D8;
+      
+              &::after {
+                opacity: 1;
+                transform: translate(0.4em, -0.3em);
+              }
+            }
+      
+            &~.elements {
+              transform: rotate(180deg);
+              z-index: 12;
+      
+              svg {
+                transform: translate(0.5em, 1em);
+                opacity: 0;
+
+                &:nth-child(9) {
+                  transform: translate(-0.2em, 0.4em);
+                  width: 0.2em;
+                  height: 0.2em;
+                  opacity: 1;
+                  circle {
+                    fill: var(--bg-planet-lightshadow);
+                  }
+                }
+                &:nth-child(10) {
+                  transform: translate(-0.35em, 0);
+                  width: 0.45em;
+                  height: 0.45em;
+                  opacity: 1;
+                  circle {
+                    fill: var(--bg-planet-lightshadow);
+                  }
+                }
+                &:nth-child(11) {
+                  transform: translate(0, 0.2em);
+                  width: 0.25em;
+                  height: 0.25em;
+                  opacity: 1;
+                  circle {
+                    fill: var(--bg-planet-lightshadow);
+                  }
+                }
+              }
+            }
+          }
+      }
+  }
+}
