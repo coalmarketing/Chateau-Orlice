@@ -1,0 +1,296 @@
+{% extends "layouts/base.njk" %}
+
+{% block body %}
+    {% include "sections/landing.njk" %}
+    {% include "sections/service-info.njk" %}
+
+    <!-- EQUIPMENT -->
+    <section class="py-24 ~px-4/8 bg-white">
+        <div class="container m-auto flex flex-col items-center ~gap-8/16">
+            <!-- TOPPER + HEADING -->
+            <div class="flex flex-col items-center gap-4">
+                <!-- TOPPER -->
+                <span class="topper-container">
+                    {% include "components/topper-decoration.njk" %}
+                    <span class="topper">{{ equipment.topper }}</span>
+                    {% include "components/topper-decoration.njk" %}
+                </span>
+
+                <h2 class="~max-w-sm/lg text-center ~text-3xl/5xl font-black uppercase">{{ equipment.heading | safe }}</h2>
+            </div>
+
+            <!-- ITEMS -->
+            <ul class="flex flex-wrap justify-center gap-8 w-full">
+                {% for item in equipment.items %}
+                    <li class="relative sm:h-[24rem] max-sm:aspect-square w-full sm:~max-w-sm/md p-4 z-10 before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-black/50 before:-z-10">
+                        <!-- INNER CONTAINER -->
+                        <div class="flex justify-center items-center h-full border-2 border-white">
+                            <h3 class="text-center ~text-3xl/4xl text-white font-black">{{ item.title }}</h3>
+                        </div>
+
+                        <!-- BACKGROUND IMAGE -->
+                        <picture>
+                            <!-- MOBILE IMAGE -->
+                            <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | avif %}" type="image/avif">
+                            <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | webp %}" type="image/webp">
+                            <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | jpeg %}" type="image/jpeg">
+                            <!-- TABLET IMAGE -->
+                            <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | avif %}" type="image/avif">
+                            <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | webp %}" type="image/webp">
+                            <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | jpeg %}" type="image/jpeg">
+                            <!-- DESKTOP IMAGE -->
+                            <source media="(min-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 896, height: 768 }) | avif %}" type="image/avif">
+                            <source media="(min-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 896, height: 768 }) | webp %}" type="image/webp">
+                            <source media="(min-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 896, height: 768 }) | jpeg %}" type="image/jpeg">
+                            <img
+                                class="object-cover absolute top-0 left-0 h-full w-full -z-20"
+                                src="{% getUrl item.imageUrl | resize({ width: 896, height: 768 }) | jpeg %}"
+                                alt="{{ item.imageAlt }}"
+                                width="448"
+                                height="384"
+                                loading="eager"
+                                decoding="async"
+                                aria-hidden="true"
+                                draggable="false">
+                        </picture>
+                    </li>
+                {% endfor %}
+            </ul>
+
+            <!-- CTA -->
+            <a href="#cenik" class="btn btn-lg">{{ equipment.cta }}</a>
+        </div>
+    </section>
+
+    <!-- SPA -->
+    <section>
+        <div class="flex max-lg:flex-col">
+            <picture>
+                <!-- MOBILE IMAGE -->
+                <source media="(max-width: 600px)" srcset="{% getUrl spa.imageUrl | resize({ width: 800, height: 504 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl spa.imageUrl | resize({ width: 800, height: 504 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl spa.imageUrl | resize({ width: 800, height: 504 }) | jpeg %}" type="image/jpeg">
+                <!-- TABLET IMAGE -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl spa.imageUrl | resize({ width: 1600, height: 1008 }) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl spa.imageUrl | resize({ width: 1600, height: 1008 }) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl spa.imageUrl | resize({ width: 1600, height: 1008 }) | jpeg %}" type="image/jpeg">
+                <!-- DESKTOP IMAGE -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl spa.imageUrl | resize({ width: 2688, height: 1694 }) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl spa.imageUrl | resize({ width: 2688, height: 1694 }) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl spa.imageUrl | resize({ width: 2688, height: 1694 }) | jpeg %}" type="image/jpeg">
+                <img
+                    class="object-cover h-full w-full"
+                    src="{% getUrl spa.imageUrl | resize({ width: 2688, height: 1694 }) | jpeg %}"
+                    alt="{{ spa.imageAlt }}"
+                    width="1344"
+                    height="847"
+                    loading="lazy"
+                    decoding="async"
+                    aria-hidden="true"
+                    draggable="false">
+            </picture>
+
+            <!-- TEXT -->
+            <div class="shrink-0 relative flex flex-col justify-center items-center gap-8 py-16 ~px-8/16 bg-cream z-10">
+                <!-- HEADING + TEXT -->
+                <div class="flex flex-col gap-6">
+                    <!-- TOPPER + HEADING -->
+                    <div class="flex flex-col items-center gap-4">
+                        <!-- TOPPER -->
+                        <span class="topper-container">
+                            {% include "components/topper-decoration.njk" %}
+                            <span class="topper">{{ spa.topper }}</span>
+                            {% include "components/topper-decoration.njk" %}
+                        </span>
+
+                        <h2 class="~max-w-sm/md text-center ~text-2xl/3xl font-black uppercase">{{ spa.heading | safe }}</h2>
+                    </div>
+
+                    <p class="max-w-md font-jakarta-sans text-center ~text-sm/base text-ochre">{{ spa.text }}</p>
+                </div>
+
+                <!-- BACKGROUND -->
+                <img
+                    class="object-cover absolute top-0 left-0 h-full w-full opacity-75 -z-10"
+                    src="/assets/svgs/tilling-background_gold.svg"
+                    alt="{{ spa.backgroundAlt }}"
+                    width="576"
+                    height="847"
+                    loading="lazy"
+                    decoding="async"
+                    aria-hidden="true"
+                    draggable="false">
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="cenik" class="py-24 ~px-4/8 bg-white">
+        <div class="container m-auto flex flex-col ~gap-8/16">
+            <!-- TOPPER + HEADING -->
+            <div class="flex flex-col items-center gap-4">
+                <!-- TOPPER -->
+                <span class="topper-container">
+                    {% include "components/topper-decoration.njk" %}
+                    <span class="topper">{{ pricing.topper }}</span>
+                    {% include "components/topper-decoration.njk" %}
+                </span>
+
+                <h2 class="~max-w-sm/lg text-center ~text-3xl/5xl font-black uppercase">{{ pricing.heading | safe }}</h2>
+            </div>
+
+            <!-- PRICING CONTAINER -->
+            <div class="p-8 bg-cream">
+                <!-- INNER CONTAINER -->
+                <div class="flex flex-col gap-8 p-12 border-2 border-gold">
+                    <!-- WELLNESS -->
+                    <div class="flex flex-col items-center gap-4">
+                        <!-- TOPPER -->
+                        <span class="topper-container">
+                            {% include "components/topper-decoration.njk" %}
+                            <span class="topper">{{ pricing.wellness.title }}</span>
+                            {% include "components/topper-decoration.njk" %}
+                        </span>
+
+                        <div class="flex gap-8 w-full">
+                            <!-- HOTEL GUESTS -->
+                            <div class="flex flex-col gap-3 w-full">
+                                <span class="font-jakarta-sans text-center font-bold">{{ pricing.wellness.hotelGuests.title }}</span>
+
+                                <table class="table-auto text-left">
+                                    <thead>
+                                        {% for row in pricing.wellness.hotelGuests.rows %}
+                                            {% if loop.index == 1 %}
+                                                <tr>
+                                                    {% for cell in row.cells %}
+                                                        <th class="py-2 px-2.5 font-jakarta-sans text-sm text-ochre font-bold border border-ochre/20">{{ cell.text }}</th>
+                                                    {% endfor %}
+                                                </tr>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </thead>
+                                    <tbody>
+                                        {% for row in pricing.wellness.hotelGuests.rows %}
+                                            {% if loop.index > 1 %}
+                                                <tr>
+                                                    {% for cell in row.cells %}
+                                                        <td class="py-2 px-2.5 font-jakarta-sans text-sm text-ochre border border-ochre/20">{{ cell.text }}</td>
+                                                    {% endfor %}
+                                                </tr>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- PUBLIC -->
+                            <div class="flex flex-col gap-3 w-full">
+                                <span class="font-jakarta-sans text-center font-bold">{{ pricing.wellness.public.title }}</span>
+
+                                <table class="table-auto text-left">
+                                    <thead>
+                                        {% for row in pricing.wellness.public.rows %}
+                                            {% if loop.index == 1 %}
+                                                <tr>
+                                                    {% for cell in row.cells %}
+                                                        <th class="py-2 px-2.5 font-jakarta-sans text-sm text-ochre font-bold border border-ochre/20">{{ cell.text }}</th>
+                                                    {% endfor %}
+                                                </tr>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </thead>
+                                    <tbody>
+                                        {% for row in pricing.wellness.public.rows %}
+                                            {% if loop.index > 1 %}
+                                                <tr>
+                                                    {% for cell in row.cells %}
+                                                        <td class="py-2 px-2.5 font-jakarta-sans text-sm text-ochre border border-ochre/20">{{ cell.text }}</td>
+                                                    {% endfor %}
+                                                </tr>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MASSAGES + SPECIAL WRAPS -->
+                    <div class="flex gap-8">
+                        <!-- MASSAGES -->
+                        <div class="flex flex-col items-center gap-3 w-full">
+                            <!-- TOPPER -->
+                            <span class="topper-container">
+                                {% include "components/topper-decoration.njk" %}
+                                <span class="topper">{{ pricing.massages.title }}</span>
+                                {% include "components/topper-decoration.njk" %}
+                            </span>
+
+                            <table class="table-auto text-left w-full">
+                                <thead>
+                                    {% for row in pricing.massages.rows %}
+                                        {% if loop.index == 1 %}
+                                            <tr>
+                                                {% for cell in row.cells %}
+                                                    <th class="py-2 px-2.5 font-jakarta-sans text-sm text-ochre font-bold border border-ochre/20">{{ cell.text }}</th>
+                                                {% endfor %}
+                                            </tr>
+                                        {% endif %}
+                                    {% endfor %}
+                                </thead>
+                                <tbody>
+                                    {% for row in pricing.massages.rows %}
+                                        {% if loop.index > 1 %}
+                                            <tr>
+                                                {% for cell in row.cells %}
+                                                    <td class="py-2 px-2.5 font-jakarta-sans text-sm text-ochre border border-ochre/20">{{ cell.text }}</td>
+                                                {% endfor %}
+                                            </tr>
+                                        {% endif %}
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- SPECIAL WRAPS -->
+                        <div class="flex flex-col items-center gap-3 w-full">
+                            <!-- TOPPER -->
+                            <span class="topper-container">
+                                {% include "components/topper-decoration.njk" %}
+                                <span class="topper">{{ pricing.specialWraps.title }}</span>
+                                {% include "components/topper-decoration.njk" %}
+                            </span>
+
+                            <table class="table-auto text-left w-full">
+                                <thead>
+                                    {% for row in pricing.specialWraps.rows %}
+                                        {% if loop.index == 1 %}
+                                            <tr>
+                                                {% for cell in row.cells %}
+                                                    <th class="py-2 px-2.5 font-jakarta-sans text-sm text-ochre font-bold border border-ochre/20">{{ cell.text }}</th>
+                                                {% endfor %}
+                                            </tr>
+                                        {% endif %}
+                                    {% endfor %}
+                                </thead>
+                                <tbody>
+                                    {% for row in pricing.specialWraps.rows %}
+                                        {% if loop.index > 1 %}
+                                            <tr>
+                                                {% for cell in row.cells %}
+                                                    <td class="py-2 px-2.5 font-jakarta-sans text-sm text-ochre border border-ochre/20">{{ cell.text }}</td>
+                                                {% endfor %}
+                                            </tr>
+                                        {% endif %}
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include "sections/cta.njk" %}
+{% endblock body %}

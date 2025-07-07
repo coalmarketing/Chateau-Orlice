@@ -1,0 +1,88 @@
+<!-- SERVICE INFO -->
+<section class="py-24 ~px-4/8 relative bg-cream z-10">
+    <div class="container m-auto flex flex-col gap-16">
+        <!-- HEADING + TEXT -->
+        <div class="flex max-lg:flex-col justify-between items-start gap-4 lg:gap-8">
+            <h2 class="shrink-0 ~max-w-sm/lg ~text-3xl/5xl font-black uppercase">{{ serviceInfo.heading | safe }}</h2>
+
+            <!-- TEXT -->
+            <p class="max-w-2xl font-jakarta-sans ~text-sm/base text-ochre">{{ serviceInfo.text }}</p>
+        </div>
+
+        <!-- INFO + CTA -->
+        <div class="flex flex-col items-center ~gap-4/8">
+            <!-- INFO -->
+            <ul class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 ~gap-4/8 w-full">
+                {% for item in serviceInfo.items %}
+                    <li class="p-4 bg-white">
+                        <!-- INNER CONTAINER -->
+                        <div class="flex flex-col justify-center items-center gap-4 h-full p-8 border-2 border-gold">
+                            <h3 class="text-center ~text-xl/2xl font-black">{{ item.title }}</h3>
+
+                            <!-- TEXT -->
+                            <div class="flex flex-col gap-1">
+                                {% for subitem in item.subitems %}
+                                    {% if subitem.url %}
+                                        <a 
+                                            href="{{ subitem.url }}"
+                                            {% if subitem.blank -%}
+                                                target="_blank"
+                                            {%- endif %}
+                                            class="font-jakarta-sans text-center text-sm text-ochre font-medium hover:underline hover:text-black">
+                                            {{ subitem.text }}
+                                        </a>
+                                    {% elif subitem.disclaimer %}
+                                        <span class="font-jakarta-sans text-center text-xs text-ochre font-medium italic">
+                                            {{ subitem.disclaimer }}
+                                        </span>
+                                    {% else %}
+                                        <span class="font-jakarta-sans text-center text-sm text-ochre font-medium">
+                                            {{ subitem.text }}
+                                        </span>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+
+            <picture class="w-full">
+                <!-- MOBILE IMAGE -->
+                <source media="(max-width: 600px)" srcset="{% getUrl serviceInfo.imageUrl | resize({ width: 736, height: 800 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl serviceInfo.imageUrl | resize({ width: 736, height: 800 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl serviceInfo.imageUrl | resize({ width: 736, height: 800 }) | jpeg %}" type="image/jpeg">
+                <!-- TABLET IMAGE -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl serviceInfo.imageUrl | resize({ width: 1524, height: 800 }) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl serviceInfo.imageUrl | resize({ width: 1524, height: 800 }) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl serviceInfo.imageUrl | resize({ width: 1524, height: 800 }) | jpeg %}" type="image/jpeg">
+                <!-- DESKTOP IMAGE -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl serviceInfo.imageUrl | resize({ width: 2880, height: 910 }) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl serviceInfo.imageUrl | resize({ width: 2880, height: 910 }) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl serviceInfo.imageUrl | resize({ width: 2880, height: 910 }) | jpeg %}" type="image/jpeg">
+                <img
+                    class="object-cover h-[25rem] w-full"
+                    src="{% getUrl serviceInfo.imageUrl | resize({ width: 2880, height: 910 }) | jpeg %}"
+                    alt="{{ serviceInfo.imageAlt }}"
+                    width="1440"
+                    height="405"
+                    loading="lazy"
+                    decoding="async"
+                    aria-hidden="true"
+                    draggable="false">
+            </picture>
+        </div>
+    </div>
+
+    <!-- BACKGROUND -->
+    <img
+        class="object-cover absolute top-0 left-0 h-full w-full -z-10"
+        src="/assets/svgs/tilling-background_black-gold.svg"
+        alt="{{ services.backgroundAlt }}"
+        width="1920"
+        height="1044"
+        loading="lazy"
+        decoding="async"
+        aria-hidden="true"
+        draggable="false">
+</section>

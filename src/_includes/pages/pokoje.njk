@@ -1,0 +1,154 @@
+{% extends "layouts/base.njk" %}
+
+{% block body %}
+    {% include "sections/landing.njk" %}
+    {% include "sections/service-info.njk" %}
+
+    <!-- STANDARD ROOM -->
+    <section id="standard" class="py-24 ~px-4/8">
+        <div class="container m-auto flex max-lg:flex-col lg:items-center ~gap-8/16">
+            <!-- ROOM IMAGE -->
+            <picture>
+                <!-- MOBILE IMAGE -->
+                <source media="(max-width: 600px)" srcset="{% getUrl standard.imageUrl | resize({ width: 736, height: 640, position: 'attention' }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl standard.imageUrl | resize({ width: 736, height: 640, position: 'attention' }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl standard.imageUrl | resize({ width: 736, height: 640, position: 'attention' }) | jpeg %}" type="image/jpeg">
+                <!-- TABLET IMAGE -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl standard.imageUrl | resize({ width: 1350, height: 896, position: 'attention' }) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl standard.imageUrl | resize({ width: 1350, height: 896, position: 'attention' }) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl standard.imageUrl | resize({ width: 1350, height: 896, position: 'attention' }) | jpeg %}" type="image/jpeg">
+                <!-- DESKTOP IMAGE -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl standard.imageUrl | resize({ width: 1600, height: 896, position: 'attention' }) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl standard.imageUrl | resize({ width: 1600, height: 896, position: 'attention' }) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl standard.imageUrl | resize({ width: 1600, height: 896, position: 'attention' }) | jpeg %}" type="image/jpeg">
+                <img
+                    class="object-cover h-[20rem] md:h-[28rem] w-full"
+                    src="{% getUrl standard.imageUrl | resize({ width: 1600, height: 896 }) | jpeg %}"
+                    alt="{{ standard.imageAlt }}"
+                    width="448"
+                    height="800"
+                    loading="lazy"
+                    decoding="async"
+                    aria-hidden="true"
+                    draggable="false">
+            </picture>
+
+            <!-- TEXT + SPECIFICATION -->
+            <div class="flex flex-col items-center gap-12">
+                <!-- HEADING + TEXT -->
+                <div class="flex flex-col gap-5">
+                    <!-- TOPPER + HEADING -->
+                    <div class="flex flex-col items-center gap-4">
+                        <!-- TOPPER -->
+                        <span class="topper-container">
+                            {% include "components/topper-decoration.njk" %}
+                            <span class="topper">{{ standard.topper }}</span>
+                            {% include "components/topper-decoration.njk" %}
+                        </span>
+
+                        <h2 class="~max-w-sm/md text-center ~text-2xl/3xl font-black uppercase">{{ standard.heading | safe }}</h2>
+                    </div>
+
+                    <!-- TEXT -->
+                    {% for paragraph in standard.paragraphs %}
+                        <p class="max-w-xl font-jakarta-sans text-center ~text-sm/base text-ochre">{{ paragraph.text }}</p>
+                    {% endfor %}
+                </div>
+
+                <!-- SPECIFICATION -->
+                <ul class="flex flex-wrap justify-center gap-6 max-w-md">
+                    {% for item in standard.specification %}
+                        <li class="flex items-center gap-2">
+                            <img
+                                src="{{ item.iconUrl }}"
+                                alt="{{ item.iconAlt }}"
+                                width="20"
+                                height="20"
+                                loading="lazy"
+                                decoding="async"
+                                aria-hidden="true"
+                                draggable="false">
+
+                            <span class="font-jakarta-sans text-sm text-ochre">{{ item.text }}</span>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUPERIOR ROOM -->
+    <section id="superior" class="py-24 ~px-4/8">
+        <div class="container m-auto flex max-lg:flex-col flex-row-reverse lg:items-center ~gap-8/16">
+            <!-- ROOM IMAGE -->
+            <picture>
+                <!-- MOBILE IMAGE -->
+                <source media="(max-width: 600px)" srcset="{% getUrl superior.imageUrl | resize({ width: 736, height: 640, position: 'attention' }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl superior.imageUrl | resize({ width: 736, height: 640, position: 'attention' }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl superior.imageUrl | resize({ width: 736, height: 640, position: 'attention' }) | jpeg %}" type="image/jpeg">
+                <!-- TABLET IMAGE -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl superior.imageUrl | resize({ width: 1350, height: 896, position: 'attention' }) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl superior.imageUrl | resize({ width: 1350, height: 896, position: 'attention' }) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl superior.imageUrl | resize({ width: 1350, height: 896, position: 'attention' }) | jpeg %}" type="image/jpeg">
+                <!-- DESKTOP IMAGE -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl superior.imageUrl | resize({ width: 1600, height: 896, position: 'attention' }) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl superior.imageUrl | resize({ width: 1600, height: 896, position: 'attention' }) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl superior.imageUrl | resize({ width: 1600, height: 896, position: 'attention' }) | jpeg %}" type="image/jpeg">
+                <img
+                    class="object-cover h-[20rem] md:h-[28rem] w-full"
+                    src="{% getUrl superior.imageUrl | resize({ width: 1600, height: 896 }) | jpeg %}"
+                    alt="{{ superior.imageAlt }}"
+                    width="448"
+                    height="800"
+                    loading="lazy"
+                    decoding="async"
+                    aria-hidden="true"
+                    draggable="false">
+            </picture>
+
+            <!-- TEXT + SPECIFICATION -->
+            <div class="flex flex-col items-center gap-12">
+                <!-- HEADING + TEXT -->
+                <div class="flex flex-col gap-5">
+                    <!-- TOPPER + HEADING -->
+                    <div class="flex flex-col items-center gap-4">
+                        <!-- TOPPER -->
+                        <span class="topper-container">
+                            {% include "components/topper-decoration.njk" %}
+                            <span class="topper">{{ superior.topper }}</span>
+                            {% include "components/topper-decoration.njk" %}
+                        </span>
+
+                        <h2 class="~max-w-sm/md text-center ~text-2xl/3xl font-black uppercase">{{ superior.heading | safe }}</h2>
+                    </div>
+
+                    <!-- TEXT -->
+                    {% for paragraph in superior.paragraphs %}
+                        <p class="max-w-xl font-jakarta-sans text-center ~text-sm/base text-ochre">{{ paragraph.text }}</p>
+                    {% endfor %}
+                </div>
+
+                <!-- SPECIFICATION -->
+                <ul class="flex flex-wrap justify-center gap-6 max-w-md">
+                    {% for item in superior.specification %}
+                        <li class="flex items-center gap-2">
+                            <img
+                                src="{{ item.iconUrl }}"
+                                alt="{{ item.iconAlt }}"
+                                width="20"
+                                height="20"
+                                loading="lazy"
+                                decoding="async"
+                                aria-hidden="true"
+                                draggable="false">
+
+                            <span class="font-jakarta-sans text-sm text-ochre">{{ item.text }}</span>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    {% include "sections/cta.njk" %}
+{% endblock body %}

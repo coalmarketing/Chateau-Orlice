@@ -49,68 +49,47 @@ document.addEventListener("click", function (event) {
     }
 });
 
-// Function to handle dropdown toggle
 function toggleDropdown(element, event) {
-    // Prevent the event from bubbling up to parent dropdowns
     event?.stopPropagation();
+    const isActive = element.classList.toggle("active");
 
-    // Toggle the active class
-    element.classList.toggle("active");
-
-    // Find and toggle the dropdown button's aria-expanded state
     const dropdownButton = element.querySelector(".dropdown-button");
-    if (dropdownButton) {
-        toggleAriaExpanded(dropdownButton);
-    }
-
-    // Find and toggle the dropdown content's visibility
     const dropdownContent = element.querySelector(".dropdown-content");
+
+    if (dropdownButton) {
+        dropdownButton.setAttribute("aria-expanded", isActive.toString());
+    }
     if (dropdownContent) {
-        const isVisible = element.classList.contains("active");
-        dropdownContent.setAttribute("aria-hidden", (!isVisible).toString());
+        dropdownContent.setAttribute("aria-hidden", (!isActive).toString());
     }
 }
 
-// Function to close dropdown
 function closeDropdown(element) {
     element.classList.remove("active");
     const dropdownButton = element.querySelector(".dropdown-button");
     const dropdownContent = element.querySelector(".dropdown-content");
 
-    if (dropdownButton) {
-        dropdownButton.setAttribute("aria-expanded", "false");
-    }
-
-    if (dropdownContent) {
-        dropdownContent.setAttribute("aria-hidden", "true");
-    }
+    dropdownButton?.setAttribute("aria-expanded", "false");
+    dropdownContent?.setAttribute("aria-hidden", "true");
 }
 
-// Initialize dropdowns
 const dropdownElements = document.querySelectorAll(".dropdown");
+
 dropdownElements.forEach(dropdown => {
     const dropdownButton = dropdown.querySelector(".dropdown-button");
     const dropdownContent = dropdown.querySelector(".dropdown-content");
 
-    // Set initial ARIA attributes
-    if (dropdownButton) {
-        dropdownButton.setAttribute("aria-expanded", "false");
-        dropdownButton.setAttribute("aria-haspopup", "true");
-    }
+    dropdownButton?.setAttribute("aria-expanded", "false");
+    dropdownButton?.setAttribute("aria-haspopup", "true");
+    dropdownContent?.setAttribute("aria-hidden", "true");
 
-    if (dropdownContent) {
-        dropdownContent.setAttribute("aria-hidden", "true");
-    }
-
-    // Handle click events on dropdown buttons
-    dropdownButton?.addEventListener("click", (event) => {
+    dropdownButton?.addEventListener("click", event => {
         event.preventDefault();
         event.stopPropagation();
         toggleDropdown(dropdown, event);
     });
 
-    // Handle keyboard navigation
-    dropdown.addEventListener("keydown", (event) => {
+    dropdown.addEventListener("keydown", event => {
         if (event.key === "Escape") {
             closeDropdown(dropdown);
             dropdownButton?.focus();
@@ -119,21 +98,23 @@ dropdownElements.forEach(dropdown => {
             toggleDropdown(dropdown, event);
         }
     });
+});
 
-    // Close dropdown when clicking outside
-    document.addEventListener("click", (event) => {
+// Global outside-click handler (once only)
+document.addEventListener("click", event => {
+    dropdownElements.forEach(dropdown => {
         if (!dropdown.contains(event.target)) {
             closeDropdown(dropdown);
         }
     });
 });
 
-// Handle dropdown links
+// Keyboard fallback for links
 const dropdownLinks = document.querySelectorAll(".drop-li > .li-link");
 dropdownLinks.forEach(link => {
-    link.addEventListener("keydown", function (event) {
+    link.addEventListener("keydown", event => {
         if (event.key === "Enter") {
-            window.location.href = this.href;
+            window.location.href = link.href;
         }
     });
 });

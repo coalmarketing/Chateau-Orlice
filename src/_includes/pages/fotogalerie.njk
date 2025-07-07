@@ -1,0 +1,52 @@
+{% extends "layouts/base.njk" %}
+
+{% block head %}
+    <script defer src="/assets/js/fslightbox.js"></script>
+{% endblock %}
+
+{% block body %}
+    {% include "sections/landing.njk" %}
+
+    <div class="py-8">
+        {% for album in gallery.albums %}
+            <!-- {{ album.name.toUpperCase() }} -->
+            <section class="py-16 ~px-4/8">
+                <div class="container m-auto flex flex-col ~gap-4/8">
+                    <!-- TOPPER + HEADING -->
+                    <div class="flex flex-col gap-4">
+                        <!-- TOPPER -->
+                        <span class="topper-container">
+                            {% include "components/topper-decoration.njk" %}
+                            <span class="topper">{{ gallery.topper }}</span>
+                            {% include "components/topper-decoration.njk" %}
+                        </span>
+
+                        <h2 class="~text-3xl/5xl font-black uppercase">{{ album.name }}</h2>
+                    </div>
+
+                    <!-- PHOTOS -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ~gap-4/8">
+                        {% for photo in album.photos %}
+                            <a data-fslightbox="{{ album.id }}" href="{% getUrl photo.url | resize({ height: 1944 }) | jpeg({ quality: 70 }) %}">
+                                <picture>
+                                    <source srcset="{% getUrl photo.url | resize({ width: 916, height: 688 }) | avif %}" type="image/avif">
+                                    <source srcset="{% getUrl photo.url | resize({ width: 916, height: 688 }) | webp %}" type="image/webp">
+                                    <source srcset="{% getUrl photo.url | resize({ width: 916, height: 688 }) | jpeg %}" type="image/jpeg">
+                                    <img
+                                        src="{% getUrl photo.url | resize({ width: 916, height: 688 }) | jpeg %}"
+                                        alt="{{ photo.alt }}"
+                                        width="458"
+                                        height="344" 
+                                        loading="lazy"
+                                        decoding="async"
+                                        aria-hidden="true"
+                                        draggable="false">
+                                </picture>
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+        {% endfor %}
+    </div>
+{% endblock %}

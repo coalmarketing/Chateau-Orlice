@@ -19,16 +19,20 @@ before:transition-transform before:duration-300 before:scale-y-0 before:origin-t
       <ul class="hidden 2xl:flex h-full">
         {% for item in header[page.lang].mainNavigation %}
           <li class="group relative transition-colors duration-300 hover:bg-cream/25">
-            <a href="{{ item.url | locale_url }}" class="flex justify-center items-center gap-1.5 h-full px-4 font-jakarta-sans text-sm text-white">
-              <span class="mb-1">{{ item.name }}</span>
+            {% if item.subitems %}
+              <div class="flex justify-center items-center gap-1.5 h-full px-4 font-jakarta-sans text-sm text-white hover:cursor-pointer">
+                <span class="mb-1">{{ item.name }}</span>
 
-              {% if item.subitems %}
                 <!-- CHEVRON ICON -->
-                <svg class="mt-[0.1875rem]" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                <svg class="mb-px" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
                 </svg>
-              {% endif %}
-            </a>
+              </div>
+            {% else %}
+              <a href="{{ item.url | locale_url }}" class="flex justify-center items-center gap-1.5 h-full px-4 font-jakarta-sans text-sm text-white">
+                <span class="mb-1">{{ item.name }}</span>
+              </a>
+            {% endif %}
 
             {% if item.subitems %}
               <ul class="absolute top-full left-0 flex flex-col gap-2 p-2 bg-cream transition-transform duration-300 scale-y-0 origin-top group-hover:scale-y-100">
@@ -128,16 +132,17 @@ before:transition-transform before:duration-300 before:scale-y-0 before:origin-t
   <!-- LOGO + NAVIGATION + CTA -->
   <div class="flex flex-col gap-12">
     <!-- LOGO -->
-    <img
-      class="self-center"
-      src="/assets/svgs/chateau_orlice-logo-light.svg"
-      alt="Cheteau Orlice - logo"
-      width="261"
-      height="40"
-      loading="lazy"
-      decoding="async"
-      aria-hidden="true"
-      draggable="false">
+    <a href="{{ '/' | locale_url }}" class="self-center">
+      <img
+        src="/assets/svgs/chateau_orlice-logo-light.svg"
+        alt="Cheteau Orlice - logo"
+        width="261"
+        height="40"
+        loading="lazy"
+        decoding="async"
+        aria-hidden="true"
+        draggable="false">
+    </a>
 
     <!-- NAVIGATION -->
     <nav>
@@ -148,77 +153,50 @@ before:transition-transform before:duration-300 before:scale-y-0 before:origin-t
           {# Define a hasChild variable to make it easier to test what navigation items are have child dropdown pages #}
           {% set hasChild = entry.children.length %}
 
-          <li class="group/li relative flex flex-col h-full max-xl:w-full" {%- if hasChild %} tabindex="0"{% endif %}>
+          <li class="group/li relative flex flex-col h-full max-xl:w-full {%- if hasChild %} dropdown{% endif %}" {%- if hasChild %} tabindex="0"{% endif %}>
             {# If the page has child dropdown pages, render it as a <a> with the dropdown icon and child links #}
             {% if hasChild %}
 
-              <a
-                href="{{ entry.url }}"
-                class="flex items-center gap-2 h-full w-full p-4 font-bold xl:border-b-2 max-xl:py-2
-                {%- if page.url === entry.url %} text-primary xl:border-primary
-                {%- elif page.url.includes(entry.url) %} xl:border-primary *:fill-primary
-                {%- else %} text-secondary border-transparent{% endif %}"
+              <button
+                type="button"
+                class="dropdown-button flex items-center gap-1.5 py-1 font-jakarta-sans hover:cursor-pointer
+                {%- if page.url === entry.url %} text-gold
+                {%- else %} text-white{% endif %}"
+                aria-haspopup="true"
+                aria-expanded="false"
               >
                 <span>{{ entry.key }}</span>
 
                 <!-- CHEVRON ICON -->
-                <svg class="mt-0.5" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                <svg class="mt-px transition-transform duration-300 -rotate-90 group-[.active]/li:rotate-0" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
                 </svg>
-              </a>
+              </button>
 
               {# Dropdowns have another ul/li set up within the parent li, which gets rendered in the same way as a normal link #}
-              <div class="xl:absolute xl:top-full xl:transition-transform xl:duration-300 xl:scale-y-0 xl:origin-top xl:group-hover/li:scale-y-100">
-                <ul class="flex flex-col gap-1 xl:gap-2 max-xl:pt-2 p-4 bg-white xl:shadow-md">
-                  {% for child in entry.children %}
-                    {# Define a hasSubchild variable to make it easier to test what navigation items are have child dropdown pages #}
-                    {% set hasSubchild = child.children.length %}
-
-                    <li class="flex flex-col">
-                      <a
-                          href="{{ child.url }}"
-                          class="li-link flex items-center gap-1.5 py-1.5 px-2.5 text-sm font-bold
-                          {%- if page.url === child.url %} text-primary
-                          {%- elif page.url.includes(entry.url) %} *:fill-primary
-                          {%- else %} text-secondary{% endif %}"
-                          {%- if child.url === page.url -%}aria-current="page"{%- endif -%}
-                        >
-                        <span>{{ child.key }}</span>
-
-                        {% if hasSubchild %}
-                          <!-- CHEVRON ICON -->
-                          <svg class="mt-0.5" xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
-                          </svg>
-                        {% endif %}
-                      </a>
-
-                      {# If the page has child dropdown pages, render it as a <a> with the dropdown icon and child links #}
-                      {% if hasSubchild %}
-                        <ul class="ml-2 my-1">
-                          {% for subchild in child.children %}
-                            <li>
-                              <a
-                                href="{{ subchild.url }}"
-                                class="li-link block py-1.5 px-2.5 text-sm font-bold
-                                {%- if page.url === subchild.url %} text-primary{% else %} text-secondary{% endif %}"
-                                {%- if subchild.url === page.url -%}aria-current="page"{%- endif -%}
-                              >
-                                {{ subchild.key }}
-                              </a>
-                            </li>
-                          {% endfor %}
-                        </ul>
-                      {% endif %}
-                    </li>
-                  {% endfor %}
-                </ul>
-              </div>
-            {% else %}
+              <ul 
+                class="dropdown-content flex flex-col h-0 p-0 opacity-0 group-[.active]/li:h-auto group-[.active]/li:opacity-100 group-[.active]/li:pb-2" 
+                aria-hidden="true"
+              >
+                {% for child in entry.children %}
+                  <li class="flex flex-col">
+                    <a
+                      href="{{ child.url }}"
+                      class="li-link py-1 px-4 font-jakarta-sans text-sm font-medium
+                      {%- if page.url === child.url %} text-gold
+                      {%- else %} text-white{% endif %}"
+                      {%- if child.url === page.url -%}aria-current="page"{%- endif -%}
+                    >
+                      <span>{{ child.key }}</span>
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% elif entry.url %}
               <a
                 href="{{ entry.url | locale_url }}"
                 hreflang="{{ page.lang }}"
-                class="flex items-center h-full py-1 font-jakarta-sans font-medium
+                class="py-1 font-jakarta-sans font-medium
                 {%- if entry.url === page.url %} text-gold
                 {%- else %} text-white{% endif %}">
                 {{ entry.title }}
@@ -230,7 +208,7 @@ before:transition-transform before:duration-300 before:scale-y-0 before:origin-t
     </nav>
 
     <!-- CTA -->
-    <a href="{{ '/rezervace' | locale_url }}" class="btn btn-lg text-center">{{ header[page.lang].cta }}</a>
+    <a href="{{ '/rezervace' | locale_url }}" class="btn btn-lg text-center hover:bg-cream hover:text-ochre">{{ header[page.lang].cta }}</a>
   </div>
 
   <!-- ADDRESS + SOCIALS -->

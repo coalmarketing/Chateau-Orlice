@@ -203,8 +203,8 @@
     <section class="py-24 ~px-4/8 bg-white">
         <div class="container m-auto flex flex-col gap-16">
             <!-- HEADING + TEXT -->
-            <div class="flex justify-between items-start">
-                <h2 class="max-w-xl text-5xl font-black uppercase">{{ about.heading }}</h2>
+            <div class="flex max-lg:flex-col justify-between items-start gap-8">
+                <h2 class="~max-w-sm/xl ~text-3xl/5xl font-black uppercase">{{ about.heading | safe }}</h2>
 
                 <!-- TEXT + CTA -->
                 <div class="flex flex-col items-start gap-6">
@@ -217,13 +217,13 @@
             <div class="flex flex-col items-center gap-8">
                 <picture class="w-full">
                     <!-- MOBILE IMAGE -->
-                    <source media="(max-width: 600px)" srcset="{% getUrl about.imageUrl | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl about.imageUrl | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl about.imageUrl | jpeg %}" type="image/jpeg">
+                    <source media="(max-width: 600px)" srcset="{% getUrl about.imageUrl | resize({ width: 736, height: 800 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl about.imageUrl | resize({ width: 736, height: 800 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl about.imageUrl | resize({ width: 736, height: 800 }) | jpeg %}" type="image/jpeg">
                     <!-- TABLET IMAGE -->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl about.imageUrl | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl about.imageUrl | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl about.imageUrl | jpeg %}" type="image/jpeg">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl about.imageUrl | resize({ width: 1524, height: 800 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl about.imageUrl | resize({ width: 1524, height: 800 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl about.imageUrl | resize({ width: 1524, height: 800 }) | jpeg %}" type="image/jpeg">
                     <!-- DESKTOP IMAGE -->
                     <source media="(min-width: 1024px)" srcset="{% getUrl about.imageUrl | resize({ width: 2880, height: 910 }) | avif %}" type="image/avif">
                     <source media="(min-width: 1024px)" srcset="{% getUrl about.imageUrl | resize({ width: 2880, height: 910 }) | webp %}" type="image/webp">
@@ -250,7 +250,7 @@
     <div class="flex justify-center bg-white before:h-[12rem] before:w-0.5 before:bg-gold"></div>
 
     <!-- ROOMS -->
-    <section class="py-24 ~px-4/8">
+    <section class="py-24 ~px-4/8 bg-white">
         <div class="container m-auto flex flex-col gap-16">
             <!-- HEADING + CTA -->
             <div class="flex flex-col items-center gap-8">
@@ -263,10 +263,204 @@
                         {% include "components/topper-decoration.njk" %}
                     </span>
 
-                    <h2 class="max-w-lg text-center ~text-3xl/5xl font-black uppercase">{{ rooms.heading }}</h2>
+                    <h2 class="~max-w-sm/lg text-center ~text-3xl/5xl font-black uppercase">{{ rooms.heading }}</h2>
                 </div>
 
-                <a href="{{ '/ubytovani' | locale_url }}" class="btn btn-lg">{{ rooms.ctaPrimary }}</a>
+                <a href="{{ '/pokoje' | locale_url }}" class="btn btn-lg">{{ rooms.ctaPrimary }}</a>
+            </div>
+
+            <!-- ITEMS -->
+            <ul class="flex flex-col gap-16 lg:gap-8">
+                {% for item in rooms.items %}
+                    <li class="group flex max-lg:flex-col lg:even:flex-row-reverse lg:items-center max-lg:gap-4">
+                        <picture class="relative z-0">
+                            <!-- MOBILE IMAGE -->
+                            <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | avif %}" type="image/avif">
+                            <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | webp %}" type="image/webp">
+                            <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | jpeg %}" type="image/jpeg">
+                            <!-- TABLET IMAGE -->
+                            <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | avif %}" type="image/avif">
+                            <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | webp %}" type="image/webp">
+                            <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | jpeg %}" type="image/jpeg">
+                            <!-- DESKTOP IMAGE -->
+                            <source media="(min-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1792, height: 1024 }) | avif %}" type="image/avif">
+                            <source media="(min-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1792, height: 1024 }) | webp %}" type="image/webp">
+                            <source media="(min-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1792, height: 1024 }) | jpeg %}" type="image/jpeg">
+                            <img
+                                class="object-cover h-[32rem] w-full lg:max-w-4xl"
+                                src="{% getUrl item.imageUrl | resize({ width: 1792, height: 1024 }) | jpeg %}"
+                                alt="{{ item.imageAlt }}"
+                                width="896"
+                                height="512"
+                                loading="lazy"
+                                decoding="async"
+                                aria-hidden="true"
+                                draggable="false">
+                        </picture>
+
+                        <!-- ROOM DESCRIPTION -->
+                        <div class="relative h-full w-full lg:max-w-sm lg:group-odd:-ml-24 lg:group-even:-mr-24 p-4 bg-cream z-10">
+                            <!-- INNER CONTAINER -->
+                            <div class="flex flex-col justify-center items-center gap-8 h-full p-8 border-2 border-gold">
+                                <!-- HEADING + TEXT -->
+                                <div class="flex flex-col items-center gap-4">
+                                    <h3 class="text-center text-2xl font-black">{{ item.title }}</h3>
+                                    <p class="font-jakarta-sans text-center text-sm text-ochre">{{ item.text }}</p>
+                                </div>
+
+                                <!-- CTA -->
+                                <a href="{{ '/pokoje#' + item.title.toLowerCase() | locale_url }}" class="btn-secondary text-sm">{{ rooms.ctaSecondary }}</a>
+                            </div>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+
+    <!-- WELLNESS -->
+    <section>
+        <div class="flex max-lg:flex-col">
+            <picture>
+                <!-- MOBILE IMAGE -->
+                <source media="(max-width: 600px)" srcset="{% getUrl wellness.imageUrl | resize({ width: 800, height: 504 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl wellness.imageUrl | resize({ width: 800, height: 504 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl wellness.imageUrl | resize({ width: 800, height: 504 }) | jpeg %}" type="image/jpeg">
+                <!-- TABLET IMAGE -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl wellness.imageUrl | resize({ width: 1600, height: 1008 }) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl wellness.imageUrl | resize({ width: 1600, height: 1008 }) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl wellness.imageUrl | resize({ width: 1600, height: 1008 }) | jpeg %}" type="image/jpeg">
+                <!-- DESKTOP IMAGE -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl wellness.imageUrl | resize({ width: 2688, height: 1694 }) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl wellness.imageUrl | resize({ width: 2688, height: 1694 }) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl wellness.imageUrl | resize({ width: 2688, height: 1694 }) | jpeg %}" type="image/jpeg">
+                <img
+                    class="object-cover h-full w-full"
+                    src="{% getUrl wellness.imageUrl | resize({ width: 2688, height: 1694 }) | jpeg %}"
+                    alt="{{ wellness.imageAlt }}"
+                    width="1344"
+                    height="847"
+                    loading="lazy"
+                    decoding="async"
+                    aria-hidden="true"
+                    draggable="false">
+            </picture>
+
+            <!-- TEXT -->
+            <div class="shrink-0 relative flex flex-col justify-center items-center gap-8 py-16 ~px-8/16 bg-cream z-10">
+                <!-- HEADING + TEXT -->
+                <div class="flex flex-col gap-6">
+                    <!-- TOPPER + HEADING -->
+                    <div class="flex flex-col items-center gap-4">
+                        <!-- TOPPER -->
+                        <span class="topper-container">
+                            {% include "components/topper-decoration.njk" %}
+                            <span class="topper">{{ wellness.topper }}</span>
+                            {% include "components/topper-decoration.njk" %}
+                        </span>
+
+                        <h2 class="~max-w-sm/md text-center ~text-2xl/3xl font-black uppercase">{{ wellness.heading }}</h2>
+                    </div>
+
+                    <p class="max-w-md font-jakarta-sans text-center ~text-sm/base text-ochre">{{ wellness.text }}</p>
+                </div>
+
+                <a href="{{ '/sluzby-zazitky/wellness' | locale_url }}" class="btn-secondary">{{ wellness.cta }}</a>
+
+                <!-- BACKGROUND -->
+                <img
+                    class="object-cover absolute top-0 left-0 h-full w-full opacity-75 -z-10"
+                    src="/assets/svgs/tilling-background_gold.svg"
+                    alt="{{ wellness.backgroundAlt }}"
+                    width="576"
+                    height="847"
+                    loading="lazy"
+                    decoding="async"
+                    aria-hidden="true"
+                    draggable="false">
+            </div>
+        </div>
+    </section>
+
+    <!-- STAY PACKAGES -->
+    <section class="py-24 ~px-4/8 bg-white">
+        <div class="container m-auto flex flex-col items-center gap-8">
+            <!-- TOPPER + HEADING -->
+            <div class="flex flex-col items-center gap-4">
+                <!-- TOPPER -->
+                <span class="topper-container">
+                    {% include "components/topper-decoration.njk" %}
+                    <span class="topper">{{ stayPackages.topper }}</span>
+                    {% include "components/topper-decoration.njk" %}
+                </span>
+
+                <h2 class="~max-w-xl/3xl text-center ~text-3xl/5xl font-black uppercase">{{ stayPackages.heading }}</h2>
+            </div>
+
+            <a href="{{ '/pobytove-balicky' | locale_url }}" class="btn btn-lg">{{ stayPackages.cta }}</a>
+        </div>
+    </section>
+
+    <!-- RESTAURANT -->
+    <section>
+        <div class="flex max-lg:flex-col flex-row-reverse">
+            <picture>
+                <!-- MOBILE IMAGE -->
+                <source media="(max-width: 600px)" srcset="{% getUrl restaurant.imageUrl | resize({ width: 800, height: 504 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl restaurant.imageUrl | resize({ width: 800, height: 504 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl restaurant.imageUrl | resize({ width: 800, height: 504 }) | jpeg %}" type="image/jpeg">
+                <!-- TABLET IMAGE -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl restaurant.imageUrl | resize({ width: 1600, height: 1008 }) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl restaurant.imageUrl | resize({ width: 1600, height: 1008 }) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl restaurant.imageUrl | resize({ width: 1600, height: 1008 }) | jpeg %}" type="image/jpeg">
+                <!-- DESKTOP IMAGE -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl restaurant.imageUrl | resize({ width: 2688, height: 1694 }) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl restaurant.imageUrl | resize({ width: 2688, height: 1694 }) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl restaurant.imageUrl | resize({ width: 2688, height: 1694 }) | jpeg %}" type="image/jpeg">
+                <img
+                    class="object-cover h-full w-full"
+                    src="{% getUrl restaurant.imageUrl | resize({ width: 2688, height: 1694 }) | jpeg %}"
+                    alt="{{ restaurant.imageAlt }}"
+                    width="1344"
+                    height="847"
+                    loading="lazy"
+                    decoding="async"
+                    aria-hidden="true"
+                    draggable="false">
+            </picture>
+
+            <!-- TEXT -->
+            <div class="shrink-0 relative flex flex-col justify-center items-center gap-8 py-16 ~px-8/16 bg-cream z-10">
+                <!-- HEADING + TEXT -->
+                <div class="flex flex-col gap-6">
+                    <!-- TOPPER + HEADING -->
+                    <div class="flex flex-col items-center gap-4">
+                        <!-- TOPPER -->
+                        <span class="topper-container">
+                            {% include "components/topper-decoration.njk" %}
+                            <span class="topper">{{ restaurant.topper }}</span>
+                            {% include "components/topper-decoration.njk" %}
+                        </span>
+
+                        <h2 class="~max-w-sm/md text-center ~text-2xl/3xl font-black uppercase">{{ restaurant.heading }}</h2>
+                    </div>
+
+                    <p class="max-w-md font-jakarta-sans text-center ~text-sm/base text-ochre">{{ restaurant.text }}</p>
+                </div>
+
+                <a href="{{ '/restaurace' | locale_url }}" class="btn-secondary">{{ restaurant.cta }}</a>
+
+                <!-- BACKGROUND -->
+                <img
+                    class="object-cover absolute top-0 left-0 h-full w-full opacity-75 -z-10"
+                    src="/assets/svgs/tilling-background_gold.svg"
+                    alt="{{ wellness.backgroundAlt }}"
+                    width="576"
+                    height="847"
+                    loading="lazy"
+                    decoding="async"
+                    aria-hidden="true"
+                    draggable="false">
             </div>
         </div>
     </section>

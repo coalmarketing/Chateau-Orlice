@@ -1,20 +1,59 @@
 <!-- LANDING -->
-<section class="relative ~px-4/8 pt-60 pb-16 bg-gray-900 dark:bg-gray-950 z-10">
-  <div class="container m-auto flex flex-col items-start gap-6">
-    <div class="flex flex-col gap-1">
-      <span class="relative text-primary font-medium
-      before:absolute before:top-1/2 before:-translate-y-1/2 before:right-[calc(100%+0.25rem)] lg:before:right-[calc(100%+1rem)] before:h-px before:w-[10vw] before:bg-primary">BV Speed</span>
-      <h1 class="text-white text-4xl font-semibold leading-none">
-        {{ title }}
-      </h1>
+<section 
+  class="relative py-24 ~px-4/8 flex justify-center min-h-screen z-10
+  before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-black/50 before:-z-10"
+>
+  <div class="container m-auto flex flex-col justify-center items-center gap-6">
+    <!-- BREADCRUMBS CONTAINER -->
+    <div class="flex items-center ~gap-2/4 before:h-px before:~w-6/16 before:bg-gold after:h-px after:~w-6/16 after:bg-gold">
+      {% include "components/topper-decoration.njk" %}
+      <!-- BREADCRUMBS -->
+      <div class="flex items-center gap-2">
+        <a href="{{ '/' | locale_url }}" class="topper ~text-sm/base text-cream hover:text-white">{{ landing.breadcrumbsHome }}</a>
+        <span class="font-trirong ~text-sm/base text-gold">/</span>
+        <span class="topper ~text-sm/base text-cream">{{ landing.breadcrumbsCurrent }}</span>
+      </div>
+      {% include "components/topper-decoration.njk" %}
     </div>
-    <div class="flex items-center gap-4 *:font-work-sans *:text-sm">
-      <a class="text-gray-300 hover:text-white" href="/">Domů</a>
-      <span class="text-gray-300">/</span>
-      <a class="text-white" href="#">{{ title }}</a>
-    </div>
+
+    <h1 class="~max-w-3xl/5xl ~text-3xl/7xl text-white font-black uppercase">{{ landing.heading }}</h1>
   </div>
 
-  <!-- BACKGROUND -->
-  <img class="absolute top-0 left-0 h-full w-full object-cover opacity-20 -z-10" src="/assets/svgs/landing/landing_background.svg" alt="Pozadí sekce CTA" decoding="async" loading="lazy" width="1920" height="24" draggable="false"/>
+  <!-- MOUSE ICON -->
+  <img
+    class="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce"
+    src="/assets/svgs/landing/mouse.svg"
+    alt="{{ landing.mouseIconAlt }}"
+    width="32"
+    height="32"
+    loading="eager"
+    decoding="async"
+    aria-hidden="true"
+    draggable="false">
+
+  <!-- BACKGROUND IMAGE -->
+  <picture>
+    <!-- MOBILE IMAGE -->
+    <source media="(max-width: 600px)" srcset="{% getUrl landing.imageUrl | resize({ width: 800, height: 1920, position: 'attention' }) | avif %}" type="image/avif">
+    <source media="(max-width: 600px)" srcset="{% getUrl landing.imageUrl | resize({ width: 800, height: 1920, position: 'attention' }) | webp %}" type="image/webp">
+    <source media="(max-width: 600px)" srcset="{% getUrl landing.imageUrl | resize({ width: 800, height: 1920, position: 'attention' }) | jpeg %}" type="image/jpeg">
+    <!-- TABLET IMAGE -->
+    <source media="(max-width: 1024px)" srcset="{% getUrl landing.imageUrl | resize({ width: 1600, height: 2560, position: 'attention' }) | avif %}" type="image/avif">
+    <source media="(max-width: 1024px)" srcset="{% getUrl landing.imageUrl | resize({ width: 1600, height: 2560, position: 'attention' }) | webp %}" type="image/webp">
+    <source media="(max-width: 1024px)" srcset="{% getUrl landing.imageUrl | resize({ width: 1600, height: 2560, position: 'attention' }) | jpeg %}" type="image/jpeg">
+    <!-- DESKTOP IMAGE -->
+    <source media="(min-width: 1024px)" srcset="{% getUrl landing.imageUrl | resize({ width: 3840, height: 2160, position: 'attention' }) | avif %}" type="image/avif">
+    <source media="(min-width: 1024px)" srcset="{% getUrl landing.imageUrl | resize({ width: 3840, height: 2160, position: 'attention' }) | webp %}" type="image/webp">
+    <source media="(min-width: 1024px)" srcset="{% getUrl landing.imageUrl | resize({ width: 3840, height: 2160, position: 'attention' }) | jpeg %}" type="image/jpeg">
+    <img
+      class="object-cover absolute top-0 left-0 h-full w-full -z-20"
+      src="{% getUrl landing.imageUrl | resize({ width: 3840, height: 2160, position: 'attention' }) | jpeg %}"
+      alt="{{ landing.imageAlt }}"
+      width="1920"
+      height="1080"
+      loading="eager"
+      decoding="async"
+      aria-hidden="true"
+      draggable="false">
+  </picture>
 </section>

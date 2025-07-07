@@ -18,7 +18,7 @@ hero:
   ctaSecondary: Rezervace
 
   imageUrl: /assets/images/hero/hero-image.jpg
-  imageAtl: Hotel Chateau Orlice u rybníku
+  imageAlt: Hotel Chateau Orlice u rybníku
 
 
 specialOffers:
@@ -61,7 +61,7 @@ services:
 
 
 about:
-  heading: Začněte svůj příběh v Chateau Orlice
+  heading: Začněte svůj příběh v&nbsp;Chateau Orlice
   text: Na pokraji Letohradu, v objetí malebné přírody Orlických hor, se tyčí Chateau Orlice – historický klenot s bohatým příběhem. Původní tvrz prošla staletími proměn, aby dnes hostům nabízela dokonalé spojení historického dědictví a moderního luxusu.
   
   ctaPrimary: Vyberte si svůj zážitek
@@ -77,10 +77,50 @@ rooms:
 
   items:
     - title: Standard
-      text: Pokoj Standard nabízí vše pro váš komfortní pobyt. Po dni stráveném objevováním krás Orlických hor vám poskytne klidné útočiště, kde načerpáte síly před večerní návštěvou naší restaurace nebo relaxační procedurou ve wellness centru.
+      text: Pokoj Standard nabízí vše pro váš komfortní pobyt. Po dni stráveném objevováním krás Orlických hor vám poskytne útočiště, kde načerpáte síly před večerní návštěvou naší restaurace nebo relaxační procedurou ve wellness centru.
 
-      imageUrl: /assets/images/
+      imageUrl: /assets/images/rooms/room-307.jpg
+      imageAlt: Fotka standard pokoje č. 307 v hotelu Chateau Orlice
+
+    - title: Superior
+      text: Pokoj Superior je ideálním místem pro odpočinek po celodenním cyklistickém výletu, relaxaci po wellness procedurách nebo přípravu na romantickou večeři při svíčkách v naší vyhlášené restauraci.
+
+      imageUrl: /assets/images/rooms/room-318.jpg
+      imageAlt: Fotka superior pokoje č. 318 v hotelu Chateau Orlice
 
   ctaPrimary: Více o ubytování
   ctaSecondary: Dozvědět se více
+
+
+wellness:
+  topper: Wellness & Spa
+  heading: Dopřejte svému tělu zasloužený odpočinek
+  text: Naše wellness centrum nabízí útočiště před každodenním shonem a probouzí ve vás novou energii.
+
+  cta: Dozvědět se více
+
+  imageUrl: /assets/images/wellness/wellness-1.jpg
+  imageAlt: Žena, která si užívá spa proceduru
+
+  backgroundAlt: Pozadí s grafikou Chateau Orlice
+
+
+stayPackages:
+  topper: Pobytové balíčky
+  heading: Objevte naše exkluzivní pobytové balíčky
+
+  cta: Pobytové balíčky
+
+
+restaurant:
+  topper: Restaurace
+  heading: Tradiční i moderní pokrmy pod klenbami
+  text: Vynikající jídlo má moc vytvářet vzpomínky. Proto spojujeme umění našich kuchařů s kouzlem historického prostředí a prvotřídním servisem.
+
+  cta: Dozvědět se více
+
+  imageUrl: /assets/images/restaurant/restaurant-1.jpg
+  imageAlt: Ženy na romantické večeři v Chateau Orlice
+
+  backgroundAlt: Pozadí s grafikou Chateau Orlice
 ---

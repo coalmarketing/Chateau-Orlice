@@ -4,15 +4,14 @@
         "mainNavigation": [
             {
                 "name": "Ubytování",
-                "url": "/ubytovani",
                 "subitems": [
                     {
                         "name": "Pokoje",
-                        "url": "/ubytovani/pokoje"
+                        "url": "/pokoje"
                     },
                     {
                         "name": "Pobytové balíčky",
-                        "url": "/ubytovani/pobytove-balicky"
+                        "url": "/pobytove-balicky"
                     }
                 ]
             },
@@ -22,7 +21,6 @@
             },
             {
                 "name": "Služby a zážitky",
-                "url": "/sluzby-zazitky",
                 "subitems": [
                     {
                         "name": "Wellness & Spa",
@@ -35,10 +33,6 @@
                     {
                         "name": "Okolí Chateau Orlice",
                         "url": "/okoli-chateau-orlice"
-                    },
-                    {
-                        "name": "Prohlídky",
-                        "url": "/prohlidky"
                     }
                 ]
             }
