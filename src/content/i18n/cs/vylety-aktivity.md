@@ -1,8 +1,8 @@
 ---
 layout: "pages/vylety-aktivity.njk"
 
-title: 'Efektivní weby na míru | Senoweb | Ústí nad Orlicí'
-description: 'V Senoweb se specializujeme na tvorbu webových stránek na míru. Nepoužíváme koupené šablony, nástroje pro automatizované budování webů ani nástroje, které by váš web zahlcovali zbytečným kódem a tím vaší stránku zpomalovaly.'
+title: 'Výlety a aktivity'
+description: 'Výlety a aktivity pro celou rodinu. Objevte cyklotrasy, památky, golf nebo relaxaci u vody v okolí Chateau Orlice.'
 permalink: 'cs/vylety-aktivity/'
 
 eleventyNavigation:
@@ -13,10 +13,32 @@ eleventyNavigation:
 
 landing:
   breadcrumbsHome: Domů
-  breadcrumbsCurrent: Wellness
+  breadcrumbsCurrent: Výlety a aktivity
 
-  heading: Wellness & Spa
+  heading: Naše tipy na výlety
 
-  imageUrl: /assets/images/wellness/wellness-2.jpg
-  imageAtl: Ženy na lehátkách ve wellness Chateau Orlice
+  mouseIconAlt: Ikona počítačové myši
+
+  imageUrl: /assets/images/trips/trips.jpg
+  imageAlt: Zámek Letohrad
+
+
+posts:
+  topper: Výlety a aktivity
+  heading: Kam vyrazit během pobytu
+
+
+ctaPosts:
+  items:
+    - title: Aktuality
+      url: /aktuality
+
+      imageUrl: /assets/images/news/news.jpg
+      imageAlt: Chateau Orlice z ptačího pohledu
+
+    - title: Pobytové balíčky
+      url: /pobytove-balicky
+
+      imageUrl: /assets/images/stay-packages/stay-packages-1.jpg
+      imageAlt: Hosté na koloběžkách u Chateau Orlice
 ---

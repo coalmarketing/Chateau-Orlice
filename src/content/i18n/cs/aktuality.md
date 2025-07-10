@@ -1,8 +1,8 @@
 ---
 layout: "pages/aktuality.njk"
 
-title: 'Efektivní weby na míru | Senoweb | Ústí nad Orlicí'
-description: 'V Senoweb se specializujeme na tvorbu webových stránek na míru. Nepoužíváme koupené šablony, nástroje pro automatizované budování webů ani nástroje, které by váš web zahlcovali zbytečným kódem a tím vaší stránku zpomalovaly.'
+title: 'Aktuality'
+description: 'Aktuality z Chateau Orlice – zajímavé zprávy, pozvánky na akce a sezónní tipy pro vaše nezapomenutelné zážitky.'
 permalink: 'cs/aktuality/'
 
 eleventyNavigation:
@@ -12,10 +12,32 @@ eleventyNavigation:
 
 landing:
   breadcrumbsHome: Domů
-  breadcrumbsCurrent: Wellness
+  breadcrumbsCurrent: Aktuality
 
-  heading: Wellness & Spa
+  heading: Zprávy & události
 
-  imageUrl: /assets/images/wellness/wellness-2.jpg
-  imageAlt: Ženy na lehátkách ve wellness Chateau Orlice
+  mouseIconAlt: Ikona počítačové myši
+
+  imageUrl: /assets/images/news/news.jpg
+  imageAlt: Chateau Orlice z ptačího pohledu
+
+
+posts:
+  topper: Aktuality
+  heading: Co je u nás nového
+
+
+ctaPosts:
+  items:
+    - title: Pobytové balíčky
+      url: /pobytove-balicky
+
+      imageUrl: /assets/images/news/news.jpg
+      imageAlt: Chateau Orlice z ptačího pohledu
+
+    - title: Výlety a aktivity
+      url: /vylety-aktivity
+
+      imageUrl: /assets/images/trips/trips.jpg
+      imageAlt: Zámek Letohrad
 ---

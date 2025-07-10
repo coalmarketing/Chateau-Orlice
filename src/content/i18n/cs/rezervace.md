@@ -1,8 +1,8 @@
 ---
 layout: "pages/rezervace.njk"
 
-title: 'Efektivní weby na míru | Senoweb | Ústí nad Orlicí'
-description: 'V Senoweb se specializujeme na tvorbu webových stránek na míru. Nepoužíváme koupené šablony, nástroje pro automatizované budování webů ani nástroje, které by váš web zahlcovali zbytečným kódem a tím vaší stránku zpomalovaly.'
+title: 'Rezervace pobytu'
+description: 'Rezervujte si svůj pobyt v hotelu Chateau Orlice snadno a rychle online. Užijte si komfortní ubytování a nezapomenutelné zážitky v Orlických horách.'
 permalink: 'cs/rezervace/'
 
 

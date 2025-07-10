@@ -1,8 +1,8 @@
 ---
 layout: "pages/restaurace.njk"
 
-title: 'Efektivní weby na míru | Senoweb | Ústí nad Orlicí'
-description: 'V Senoweb se specializujeme na tvorbu webových stránek na míru. Nepoužíváme koupené šablony, nástroje pro automatizované budování webů ani nástroje, které by váš web zahlcovali zbytečným kódem a tím vaší stránku zpomalovaly.'
+title: 'Naše restaurace'
+description: 'Dopřejte si gurmánský zážitek v restauraci Chateau Orlice. Česká i regionální jídla v historickém prostředí Orlických hor.'
 permalink: 'cs/restaurace/'
 
 eleventyNavigation:
@@ -80,7 +80,7 @@ pub:
   imageAlt: Středověká krčma v Chateau Orlice
 
   paragraphs:
-    - text: V srdci renesanční části tvrze se ukrývá místo, kde se zastavil čas – naše středověká krčma. Klenuté stropy, původní kamenná podlaha a masivní krb s otevřeným ohništěm vytvářejí kulisu jako z dávných časů. Právě zde zažijete atmosféru, která probouzí fantazii a chutě – ať už při hostině s pečení na prkně a žejdlíkem piva, nebo při souboji šermířů a vystoupení potulných umělců.
+    - text: V srdci renesanční části tvrze se ukrývá místo, kde se zastavil čas – naše středověká krčma. Klenuté stropy, původní kamenná podlaha a masivní krbs otevřeným ohništěm vytvářejí kulisu jako z dávných časů. Právě zde zažijete atmosféru, která probouzí fantazii a chutě – ať už při hostině s pečení na prkně a žejdlíkem piva, nebo při souboji šermířů a vystoupení potulných umělců.
 
     - text: Krčma je ideálním místem pro soukromé oslavy, firemní večírky nebo stylové setkání s přáteli. Otevřena je na objednávku – a pokaždé přináší jedinečný večer, na který se nezapomíná.
 ---

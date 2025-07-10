@@ -1,0 +1,38 @@
+{% extends "layouts/base.njk" %}
+
+{% block head %}
+    <script defer src="/assets/js/fslightbox.js"></script>
+{% endblock %}
+
+{% block body %}
+    {% include "sections/landing.njk" %}
+
+    <!-- POSTS -->
+    <section class="py-24 ~px-4/8">
+        <div class="container m-auto flex flex-col gap-8">
+            <!-- TOPPER + HEADING -->
+            <div class="flex flex-col gap-4">
+                <!-- TOPPER -->
+                <span class="topper-container">
+                    {% include "components/topper-decoration.njk" %}
+                    <span class="topper">{{ posts.topper }}</span>
+                    {% include "components/topper-decoration.njk" %}
+                </span>
+
+                <h2 class="~text-3xl/5xl font-black uppercase">{{ posts.heading }}</h2>
+            </div>
+
+            {% if collections.stayPackage | length == 0 %}
+                <p class="font-jakarta-sans ~text-sm/base text-ochre">{{ posts[page.lang].noPostsYet }}</p>
+            {% else %}
+                <ul class="grid grid-cols-3 gap-8">
+                    {% for post in collections.stayPackage | pageLang(page.lang) %}
+                        {% include "components/post-item.njk" %}
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+    </section>
+
+    {% include "sections/cta-posts.njk" %}
+{% endblock %}

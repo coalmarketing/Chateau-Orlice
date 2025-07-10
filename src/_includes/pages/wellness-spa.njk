@@ -22,7 +22,7 @@
             <!-- ITEMS -->
             <ul class="flex flex-wrap justify-center gap-8 w-full">
                 {% for item in equipment.items %}
-                    <li class="relative sm:h-[24rem] max-sm:aspect-square w-full sm:~max-w-sm/md p-4 z-10 before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-black/50 before:-z-10">
+                    <li class="relative sm:h-[24rem] max-sm:aspect-square w-full lg:~max-w-sm/md p-4 z-10 before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-black/50 before:-z-10">
                         <!-- INNER CONTAINER -->
                         <div class="flex justify-center items-center h-full border-2 border-white">
                             <h3 class="text-center ~text-3xl/4xl text-white font-black">{{ item.title }}</h3>
@@ -31,13 +31,13 @@
                         <!-- BACKGROUND IMAGE -->
                         <picture>
                             <!-- MOBILE IMAGE -->
-                            <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | avif %}" type="image/avif">
-                            <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | webp %}" type="image/webp">
-                            <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | jpeg %}" type="image/jpeg">
+                            <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | resize({ width: 768, height: 768 }) | avif %}" type="image/avif">
+                            <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | resize({ width: 768, height: 768 }) | webp %}" type="image/webp">
+                            <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | resize({ width: 768, height: 768 }) | jpeg %}" type="image/jpeg">
                             <!-- TABLET IMAGE -->
-                            <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | avif %}" type="image/avif">
-                            <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | webp %}" type="image/webp">
-                            <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | jpeg %}" type="image/jpeg">
+                            <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1524, height: 768 }) | avif %}" type="image/avif">
+                            <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1524, height: 768 }) | webp %}" type="image/webp">
+                            <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1524, height: 768 }) | jpeg %}" type="image/jpeg">
                             <!-- DESKTOP IMAGE -->
                             <source media="(min-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 896, height: 768 }) | avif %}" type="image/avif">
                             <source media="(min-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 896, height: 768 }) | webp %}" type="image/webp">
@@ -152,7 +152,7 @@
                             {% include "components/topper-decoration.njk" %}
                         </span>
 
-                        <div class="flex gap-8 w-full">
+                        <div class="flex max-xl:flex-col gap-8 w-full">
                             <!-- HOTEL GUESTS -->
                             <div class="flex flex-col gap-3 w-full">
                                 <span class="font-jakarta-sans text-center font-bold">{{ pricing.wellness.hotelGuests.title }}</span>
@@ -216,75 +216,83 @@
                     </div>
 
                     <!-- MASSAGES + SPECIAL WRAPS -->
-                    <div class="flex gap-8">
+                    <div class="flex max-xl:flex-col gap-8">
                         <!-- MASSAGES -->
-                        <div class="flex flex-col items-center gap-3 w-full">
-                            <!-- TOPPER -->
-                            <span class="topper-container">
-                                {% include "components/topper-decoration.njk" %}
-                                <span class="topper">{{ pricing.massages.title }}</span>
-                                {% include "components/topper-decoration.njk" %}
-                            </span>
+                        <div class="flex flex-col gap-8 w-full">
+                            {% for item in pricing.massages %}
+                                <div class="flex flex-col items-center gap-3 w-full">
+                                    <!-- TOPPER -->
+                                    <span class="topper-container">
+                                        {% include "components/topper-decoration.njk" %}
+                                        <span class="topper">{{ item.title }}</span>
+                                        {% include "components/topper-decoration.njk" %}
+                                    </span>
 
-                            <table class="table-auto text-left w-full">
-                                <thead>
-                                    {% for row in pricing.massages.rows %}
-                                        {% if loop.index == 1 %}
-                                            <tr>
-                                                {% for cell in row.cells %}
-                                                    <th class="py-2 px-2.5 font-jakarta-sans text-sm text-ochre font-bold border border-ochre/20">{{ cell.text }}</th>
-                                                {% endfor %}
-                                            </tr>
-                                        {% endif %}
-                                    {% endfor %}
-                                </thead>
-                                <tbody>
-                                    {% for row in pricing.massages.rows %}
-                                        {% if loop.index > 1 %}
-                                            <tr>
-                                                {% for cell in row.cells %}
-                                                    <td class="py-2 px-2.5 font-jakarta-sans text-sm text-ochre border border-ochre/20">{{ cell.text }}</td>
-                                                {% endfor %}
-                                            </tr>
-                                        {% endif %}
-                                    {% endfor %}
-                                </tbody>
-                            </table>
+                                    <table class="table-auto text-left w-full">
+                                        <thead>
+                                            {% for row in item.rows %}
+                                                {% if loop.index == 1 %}
+                                                    <tr>
+                                                        {% for cell in row.cells %}
+                                                            <th class="py-2 px-2.5 font-jakarta-sans text-sm text-ochre font-bold border border-ochre/20">{{ cell.text }}</th>
+                                                        {% endfor %}
+                                                    </tr>
+                                                {% endif %}
+                                            {% endfor %}
+                                        </thead>
+                                        <tbody>
+                                            {% for row in item.rows %}
+                                                {% if loop.index > 1 %}
+                                                    <tr>
+                                                        {% for cell in row.cells %}
+                                                            <td class="py-2 px-2.5 font-jakarta-sans text-sm text-ochre border border-ochre/20">{{ cell.text }}</td>
+                                                        {% endfor %}
+                                                    </tr>
+                                                {% endif %}
+                                            {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            {% endfor %}
                         </div>
 
                         <!-- SPECIAL WRAPS -->
-                        <div class="flex flex-col items-center gap-3 w-full">
-                            <!-- TOPPER -->
-                            <span class="topper-container">
-                                {% include "components/topper-decoration.njk" %}
-                                <span class="topper">{{ pricing.specialWraps.title }}</span>
-                                {% include "components/topper-decoration.njk" %}
-                            </span>
+                        <div class="flex flex-col gap-8 w-full">
+                            {% for item in pricing.specialWraps %}
+                                <div class="flex flex-col items-center gap-3 w-full">
+                                    <!-- TOPPER -->
+                                    <span class="topper-container">
+                                        {% include "components/topper-decoration.njk" %}
+                                        <span class="topper">{{ item.title }}</span>
+                                        {% include "components/topper-decoration.njk" %}
+                                    </span>
 
-                            <table class="table-auto text-left w-full">
-                                <thead>
-                                    {% for row in pricing.specialWraps.rows %}
-                                        {% if loop.index == 1 %}
-                                            <tr>
-                                                {% for cell in row.cells %}
-                                                    <th class="py-2 px-2.5 font-jakarta-sans text-sm text-ochre font-bold border border-ochre/20">{{ cell.text }}</th>
-                                                {% endfor %}
-                                            </tr>
-                                        {% endif %}
-                                    {% endfor %}
-                                </thead>
-                                <tbody>
-                                    {% for row in pricing.specialWraps.rows %}
-                                        {% if loop.index > 1 %}
-                                            <tr>
-                                                {% for cell in row.cells %}
-                                                    <td class="py-2 px-2.5 font-jakarta-sans text-sm text-ochre border border-ochre/20">{{ cell.text }}</td>
-                                                {% endfor %}
-                                            </tr>
-                                        {% endif %}
-                                    {% endfor %}
-                                </tbody>
-                            </table>
+                                    <table class="table-auto text-left w-full">
+                                        <thead>
+                                            {% for row in item.rows %}
+                                                {% if loop.index == 1 %}
+                                                    <tr>
+                                                        {% for cell in row.cells %}
+                                                            <th class="py-2 px-2.5 font-jakarta-sans text-sm text-ochre font-bold border border-ochre/20">{{ cell.text }}</th>
+                                                        {% endfor %}
+                                                    </tr>
+                                                {% endif %}
+                                            {% endfor %}
+                                        </thead>
+                                        <tbody>
+                                            {% for row in item.rows %}
+                                                {% if loop.index > 1 %}
+                                                    <tr>
+                                                        {% for cell in row.cells %}
+                                                            <td class="py-2 px-2.5 font-jakarta-sans text-sm text-ochre border border-ochre/20">{{ cell.text }}</td>
+                                                        {% endfor %}
+                                                    </tr>
+                                                {% endif %}
+                                            {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>

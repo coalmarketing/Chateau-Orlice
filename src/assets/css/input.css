@@ -24,7 +24,7 @@
   }
 
   .btn-secondary {
-    @apply relative flex flex-col gap-1 font-jakarta-sans ~text-sm/base text-ochre font-semibold transition-colors duration-300 after:w-full after:border-b-2 after:border-ochre;
+    @apply relative flex flex-col gap-1 font-jakarta-sans ~text-sm/base text-ochre font-semibold transition-colors duration-300 after:w-full after:border-b-2 after:border-ochre after:transition-transform after:duration-300 after:hover:scale-x-0;
   }
 
   .topper-container {
@@ -32,7 +32,7 @@
   }
 
   .topper {
-    @apply font-trirong text-sm text-ochre font-medium tracking-[0.3rem] uppercase
+    @apply font-trirong text-center text-sm text-ochre font-medium tracking-[0.3rem] uppercase
   }
 
   .input {

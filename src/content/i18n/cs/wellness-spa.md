@@ -1,8 +1,8 @@
 ---
 layout: "pages/wellness-spa.njk"
 
-title: 'Efektivní weby na míru | Senoweb | Ústí nad Orlicí'
-description: 'V Senoweb se specializujeme na tvorbu webových stránek na míru. Nepoužíváme koupené šablony, nástroje pro automatizované budování webů ani nástroje, které by váš web zahlcovali zbytečným kódem a tím vaší stránku zpomalovaly.'
+title: 'Wellness & Spa'
+description: 'Wellness centrum Chateau Orlice – místo, kde zapomenete na každodenní shon. Nechte se hýčkat a načerpejte novou energii.'
 permalink: 'cs/wellness-spa/'
 
 eleventyNavigation:
@@ -174,70 +174,135 @@ pricing:
         - text: 650 Kč
 
   massages: 
-    title: Masáže
+    - title: Masáže
 
-    rows:
-      - cells:
-        - text: Typ vstupu
-        - text: Počet osob
-        - text: Doba
-        - text: Cena
+      rows:
+        - cells:
+          - text: Partie
+          - text: Délka
+          - text: Cena
 
-      - cells:
-        - text: Skupina max. 6 osob
-        - text: 1-2 os.
-        - text: 60 min.
-        - text: 650 Kč
+        - cells:
+          - text: Relax záda, šíje
+          - text: 30 min.
+          - text: 650 Kč
 
-      - cells:
-        - text: 
-        - text: 1-2 os.
-        - text: 90 min.
-        - text: 750 Kč
+        - cells:
+          - text: Záda, šíje, nohy
+          - text: 60 min.
+          - text: 950 Kč
 
-      - cells:
-        - text: 
-        - text: 3-6 os.
-        - text: 90 min.
-        - text: 1200 Kč
+        - cells:
+          - text: Celé tělo
+          - text: 90 min.
+          - text: 1250 Kč
 
-      - cells:
-        - text: Doplatek za privát
-        - text: 2 os.
-        - text: 60 min.
-        - text: 550 Kč
+    - title: Havajské masáže
+
+      rows:
+        - cells:
+          - text: Partie
+          - text: Délka
+          - text: Cena
+
+        - cells:
+          - text: Záda, šíje
+          - text: 45 min.
+          - text: 900 Kč
+
+        - cells:
+          - text: Záda, šíje, nohy
+          - text: 90 min.
+          - text: 1200 Kč
+
+    - title: Masáž s horkými kameny
+
+      rows:
+        - cells:
+          - text: Partie
+          - text: Délka
+          - text: Cena
+
+        - cells:
+          - text: Záda, šíje, nohy
+          - text: 60 min.
+          - text: 1200 Kč
+
+        - cells:
+          - text: Záda, šíje, chodidla
+          - text: 90 min.
+          - text: 1800 Kč
 
   specialWraps:
-    title: Speciální zábaly
+    - title: Levandulový zábal
 
-    rows:
-      - cells:
-        - text: Typ vstupu
-        - text: Počet osob
-        - text: Doba
-        - text: Cena
+      rows:
+        - cells:
+          - text: Partie
+          - text: Délka
+          - text: Cena
 
-      - cells:
-        - text: Skupina max. 6 osob
-        - text: 1-2 os.
-        - text: 60 min.
-        - text: 650 Kč
+        - cells:
+          - text: Záda, šíje
+          - text: 25 min.
+          - text: 690 Kč
 
-      - cells:
-        - text: 
-        - text: 1-2 os.
-        - text: 90 min.
-        - text: 750 Kč
+        - cells:
+          - text: Nohy, runce
+          - text: 20 min.
+          - text: 490 Kč
 
-      - cells:
-        - text: 
-        - text: 3-6 os.
-        - text: 90 min.
-        - text: 1200 Kč
+    - title: Rašelinový zábal
 
-      - cells:
-        - text: Doplatek za privát
-        - text: 2 os.
-        - text: 60 min.
-        - text: 550 Kč
+      rows:
+        - cells:
+          - text: Partie
+          - text: Délka
+          - text: Cena
+
+        - cells:
+          - text: Záda, šíje
+          - text: 25 min.
+          - text: 690 Kč
+
+        - cells:
+          - text: Nohy, runce
+          - text: 20 min.
+          - text: 590 Kč
+
+    - title: Zábal z konopí
+
+      rows:
+        - cells:
+          - text: Partie
+          - text: Délka
+          - text: Cena
+
+        - cells:
+          - text: Záda, šíje
+          - text: 25 min.
+          - text: 690 Kč
+
+        - cells:
+          - text: Nohy, runce
+          - text: 20 min.
+          - text: 490 Kč
+
+    - title: Kokosový zábal
+
+      rows:
+        - cells:
+          - text: Partie
+          - text: Délka
+          - text: Cena
+
+        - cells:
+          - text: Záda, šíje
+          - text: 25 min.
+          - text: 790 Kč
+
+        - cells:
+          - text: Nohy, runce
+          - text: 20 min.
+          - text: 590 Kč
 ---

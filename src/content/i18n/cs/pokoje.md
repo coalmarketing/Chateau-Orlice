@@ -1,13 +1,13 @@
 ---
 layout: "pages/pokoje.njk"
 
-title: 'Efektivní weby na míru | Senoweb | Ústí nad Orlicí'
-description: 'V Senoweb se specializujeme na tvorbu webových stránek na míru. Nepoužíváme koupené šablony, nástroje pro automatizované budování webů ani nástroje, které by váš web zahlcovali zbytečným kódem a tím vaší stránku zpomalovaly.'
+title: 'Naše pokoje'
+description: 'Stylové pokoje s historickou atmosférou a moderním komfortem. Vyberte si ubytování Superior nebo Standard v Chateau Orlice. Užijte si výjimečný pobyt.'
 permalink: 'cs/pokoje/'
 
 eleventyNavigation:
-  key: Ubytování
-  parent: Pokoje
+  key: Pokoje
+  parent: Ubytování
   order: 100
 
 

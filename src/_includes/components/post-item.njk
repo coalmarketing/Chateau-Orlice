@@ -1,0 +1,45 @@
+<li class="flex flex-col gap-5">
+    <!-- POST IMAGE -->
+    <a href="{{ post.url }}">
+        <picture>
+            <source srcset="{% getUrl post.data.image | resize({ width: 918, height: 632 }) | avif %}" type="image/avif">
+            <source srcset="{% getUrl post.data.image | resize({ width: 918, height: 632 }) | webp %}" type="image/webp">
+            <source srcset="{% getUrl post.data.image | resize({ width: 918, height: 632 }) | jpeg %}" type="image/jpeg">
+            <img
+                class="object-cover h-[20rem] w-full"
+                src="{% getUrl post.data.image | resize({ width: 918, height: 632 }) | jpeg %}"
+                alt="{{ post.data.imageAlt }}"
+                width="459"
+                height="316"
+                loading="lazy"
+                decoding="async"
+                aria-hidden="true"
+                draggable="false">
+        </picture>
+    </a>
+
+    <!-- DATE + TITLE -->
+    <div class="flex flex-col items-center gap-3">
+        {% if post.data.date %}
+            <!-- DATE -->
+            <div class="flex items-center gap-1.5">
+                <img
+                    src="/assets/svgs/posts/clock.svg"
+                    alt="{{ posts[page.lang].clockIconAlt }}"
+                    width="14"
+                    height="14"
+                    loading="lazy"
+                    decoding="async"
+                    aria-hidden="true"
+                    draggable="false">
+
+                <span class="font-jakarta-sans text-sm text-gold">{{ post.data.date | postDate }}</span>
+            </div>
+        {% endif %}
+
+        <h3 class="text-center text-2xl font-black">{{ post.data.title }}</h3>
+    </div>
+
+    <!-- CTA -->
+    <a href="{{ post.url }}" class="btn-secondary self-center">{{ posts[page.lang].cta }}</a>
+</li>

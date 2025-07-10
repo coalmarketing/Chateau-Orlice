@@ -27,43 +27,6 @@ i18n:
   default_locale: cs
 
 collections:
-  # BLOG CONFIG
-  - label: "Blog"
-    name: "blog"
-    folder: "src/content/blog"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Název", name: "title", widget: "string" }
-      - {
-          label: "URL odkaz",
-          name: "url",
-          widget: "string",
-          hint: "Určete, kam bude stránka zapsána. Pokud použijete „Blogový příspěvek“, bude příspěvek přístupný z „blog/blogovy-prispevek“.",
-          pattern:
-            [
-              "^[A-Za-z0-9 ]+(?:-[A-Za-z0-9 ]+)*$",
-              "Pouze písmena (A-Z, a-z), číslice a pomlčky (-). Žádná lomítka ani speciální znaky.",
-            ],
-        }
-      - {
-          label: "Popis",
-          name: "description",
-          widget: "string",
-          hint: "Kratší popis blogového příspěvku, který se zobrazuje na náhledech příspěvků",
-        }
-      - { label: "Autor", name: "author", widget: "string" }
-      - { label: "Datum", name: "date", widget: "datetime" }
-      - { label: "Štítky", name: "tags", widget: "list", default: ["post"] }
-      - {
-          label: "Náhledový obrázek",
-          name: "image",
-          widget: "image",
-          choose_url: false, # Only allow local images - for image optimization reasons
-        }
-      - { label: "Popis obrázku", name: "imageAlt", widget: "string" }
-      - { label: "Obsah", name: "body", widget: "markdown" }
-
   # SPECIAL OFFERS CONFIG
   - label: "Akční nabídky"
     name: "specialOffers"
@@ -72,7 +35,13 @@ collections:
     slug: "{{slug}}"
     i18n: true
     fields:
-      - { label: "Název", name: "title", widget: "string", i18n: true }
+      - {
+          label: "Název",
+          name: "title",
+          widget: "string",
+          hint: "Vyplňte prosím všechny překlady pro všechny jazyky k funkčnímu zobrazení obsahu.",
+          i18n: true,
+        }
       - {
           label: "Datum",
           name: "date",
@@ -97,7 +66,127 @@ collections:
           label: "Popis obrázku",
           name: "imageAlt",
           widget: "string",
-          hint: "Krátce popište, co je na obrázku - slouží k validnímu SEO",
+          hint: "Krátce popište, co je na obrázku - slouží k validnímu SEO. Vyplňte prosím všechny překlady pro všechny jazyky k funkčnímu zobrazení obsahu.",
+          i18n: true,
+        }
+      - { label: "Obsah", name: "body", widget: "markdown", i18n: true }
+
+  # STAY PACKAGES CONFIG
+  - label: "Pobytové balíčky"
+    name: "stayPackages"
+    folder: "src/content/stay-packages"
+    create: true
+    slug: "{{slug}}"
+    i18n: true
+    fields:
+      - {
+          label: "Název",
+          name: "title",
+          widget: "string",
+          hint: "Vyplňte prosím všechny překlady pro všechny jazyky k funkčnímu zobrazení obsahu.",
+          i18n: true,
+        }
+      - {
+          label: "Datum",
+          name: "date",
+          widget: "datetime",
+          default: "{{ now }}",
+          i18n: duplicate,
+        }
+      - {
+          label: "Štítky",
+          name: "tags",
+          widget: "hidden",
+          default: ["stayPackage"],
+        }
+      - {
+          label: "Náhledový obrázek",
+          name: "image",
+          widget: "image",
+          choose_url: false, # Only allow local images - for image optimization reasons
+          i18n: duplicate,
+        }
+      - {
+          label: "Popis obrázku",
+          name: "imageAlt",
+          widget: "string",
+          hint: "Krátce popište, co je na obrázku - slouží k validnímu SEO. Vyplňte prosím všechny překlady pro všechny jazyky k funkčnímu zobrazení obsahu.",
+          i18n: true,
+        }
+      - { label: "Obsah", name: "body", widget: "markdown", i18n: true }
+
+  # TRIP RECOMMENDATION CONFIG
+  - label: "Tipy na výlety"
+    name: "tripRecommendations"
+    folder: "src/content/trip-recommendations"
+    create: true
+    slug: "{{slug}}"
+    i18n: true
+    fields:
+      - {
+          label: "Název",
+          name: "title",
+          widget: "string",
+          hint: "Vyplňte prosím všechny překlady pro všechny jazyky k funkčnímu zobrazení obsahu.",
+          i18n: true,
+        }
+      - {
+          label: "Štítky",
+          name: "tags",
+          widget: "hidden",
+          default: ["tripRecommendation"],
+        }
+      - {
+          label: "Náhledový obrázek",
+          name: "image",
+          widget: "image",
+          choose_url: false, # Only allow local images - for image optimization reasons
+          i18n: duplicate,
+        }
+      - {
+          label: "Popis obrázku",
+          name: "imageAlt",
+          widget: "string",
+          hint: "Krátce popište, co je na obrázku - slouží k validnímu SEO. Vyplňte prosím všechny překlady pro všechny jazyky k funkčnímu zobrazení obsahu.",
+          i18n: true,
+        }
+      - { label: "Obsah", name: "body", widget: "markdown", i18n: true }
+
+  # NEWS CONFIG
+  - label: "Aktuality"
+    name: "news"
+    folder: "src/content/news"
+    create: true
+    slug: "{{slug}}"
+    i18n: true
+    fields:
+      - {
+          label: "Název",
+          name: "title",
+          widget: "string",
+          hint: "Vyplňte prosím všechny překlady pro všechny jazyky k funkčnímu zobrazení obsahu.",
+          i18n: true,
+        }
+      - {
+          label: "Datum",
+          name: "date",
+          widget: "datetime",
+          default: "{{ now }}",
+          i18n: duplicate,
+        }
+      - { label: "Štítky", name: "tags", widget: "hidden", default: ["news"] }
+      - {
+          label: "Náhledový obrázek",
+          name: "image",
+          widget: "image",
+          choose_url: false, # Only allow local images - for image optimization reasons
+          i18n: duplicate,
+        }
+      - {
+          label: "Popis obrázku",
+          name: "imageAlt",
+          widget: "string",
+          hint: "Krátce popište, co je na obrázku - slouží k validnímu SEO. Vyplňte prosím všechny překlady pro všechny jazyky k funkčnímu zobrazení obsahu.",
           i18n: true,
         }
       - { label: "Obsah", name: "body", widget: "markdown", i18n: true }

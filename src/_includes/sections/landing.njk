@@ -16,13 +16,37 @@
       {% include "components/topper-decoration.njk" %}
     </div>
 
-    <h1 class="~max-w-3xl/5xl ~text-3xl/7xl text-white font-black uppercase">{{ landing.heading }}</h1>
+    <h1 class="~max-w-2xl/4xl text-center ~text-3xl/7xl text-white font-black uppercase">{{ landing.heading | safe }}</h1>
   </div>
 
   <!-- MOUSE ICON -->
   <img
-    class="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce"
+    class="max-lg:hidden absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce"
     src="/assets/svgs/landing/mouse.svg"
+    alt="{{ landing.mouseIconAlt }}"
+    width="32"
+    height="32"
+    loading="eager"
+    decoding="async"
+    aria-hidden="true"
+    draggable="false">
+
+  <!-- TABLET ICON -->
+  <img
+    class="max-sm:hidden lg:hidden absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce"
+    src="/assets/svgs/landing/tablet.svg"
+    alt="{{ landing.mouseIconAlt }}"
+    width="32"
+    height="32"
+    loading="eager"
+    decoding="async"
+    aria-hidden="true"
+    draggable="false">
+
+  <!-- PHONE ICON -->
+  <img
+    class="sm:hidden absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce"
+    src="/assets/svgs/landing/phone.svg"
     alt="{{ landing.mouseIconAlt }}"
     width="32"
     height="32"

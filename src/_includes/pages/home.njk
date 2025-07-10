@@ -31,13 +31,13 @@
 
         <picture>
             <!-- MOBILE IMAGE -->
-            <source media="(max-width: 600px)" srcset="{% getUrl hero.imageUrl | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl hero.imageUrl | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl hero.imageUrl | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 600px)" srcset="{% getUrl hero.imageUrl | resize({ width: 800, height: 1920 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl hero.imageUrl | resize({ width: 800, height: 1920 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl hero.imageUrl | resize({ width: 800, height: 1920 }) | jpeg %}" type="image/jpeg">
             <!-- TABLET IMAGE -->
-            <source media="(max-width: 1024px)" srcset="{% getUrl hero.imageUrl | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl hero.imageUrl | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl hero.imageUrl | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="{% getUrl hero.imageUrl | resize({ width: 1600, height: 2560 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl hero.imageUrl | resize({ width: 1600, height: 2560 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl hero.imageUrl | resize({ width: 1600, height: 2560 }) | jpeg %}" type="image/jpeg">
             <!-- DESKTOP IMAGE -->
             <source media="(min-width: 1024px)" srcset="{% getUrl hero.imageUrl | resize({ width: 3840, height: 2160 }) | avif %}" type="image/avif">
             <source media="(min-width: 1024px)" srcset="{% getUrl hero.imageUrl | resize({ width: 3840, height: 2160 }) | webp %}" type="image/webp">
@@ -55,65 +55,67 @@
         </picture>
     </section>
 
-    <!-- SPECIAL OFFERS -->
-    <section id="akcni-nabidky" class="py-24 ~px-4/8 bg-white">
-        <div class="container m-auto flex flex-col gap-8">
-            <!-- TOPPER + HEADING -->
-            <div class="flex flex-col items-center gap-4">
-                <!-- TOPPER -->
-                <span class="topper-container">
-                    {% include "components/topper-decoration.njk" %}
-                    <span class="topper">{{ specialOffers.topper }}</span>
-                    {% include "components/topper-decoration.njk" %}
-                </span>
+    {% if collections.specialOffer | length > 0 %}
+        <!-- SPECIAL OFFERS -->
+        <section id="akcni-nabidky" class="py-24 ~px-4/8 bg-white">
+            <div class="container m-auto flex flex-col gap-8">
+                <!-- TOPPER + HEADING -->
+                <div class="flex flex-col items-center gap-4">
+                    <!-- TOPPER -->
+                    <span class="topper-container">
+                        {% include "components/topper-decoration.njk" %}
+                        <span class="topper">{{ specialOffers.topper }}</span>
+                        {% include "components/topper-decoration.njk" %}
+                    </span>
 
-                <h2 class="text-center ~text-3xl/5xl font-black uppercase">{{ specialOffers.heading }}</h2>
-            </div>
+                    <h2 class="text-center ~text-3xl/5xl font-black uppercase">{{ specialOffers.heading }}</h2>
+                </div>
 
-            <!-- ITEMS -->
-            <ul class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                {% for item in collections.specialOffer | pageLang(page.lang) | limit(2) | reverse %}
-                    <li class="flex flex-col ~gap-4/8">
-                        <a href="{{ item.url }}">
-                            <picture>
-                                <!-- MOBILE IMAGE -->
-                                <source media="(max-width: 600px)" srcset="{% getUrl item.data.image | resize({ width: 736, height: 640, position: 'attention' }) | avif %}" type="image/avif">
-                                <source media="(max-width: 600px)" srcset="{% getUrl item.data.image | resize({ width: 736, height: 640, position: 'attention' }) | webp %}" type="image/webp">
-                                <source media="(max-width: 600px)" srcset="{% getUrl item.data.image | resize({ width: 736, height: 640, position: 'attention' }) | jpeg %}" type="image/jpeg">
-                                <!-- TABLET IMAGE -->
-                                <source media="(max-width: 1024px)" srcset="{% getUrl item.data.image | resize({ width: 1524, height: 768, position: 'attention' }) | avif %}" type="image/avif">
-                                <source media="(max-width: 1024px)" srcset="{% getUrl item.data.image | resize({ width: 1524, height: 768, position: 'attention' }) | webp %}" type="image/webp">
-                                <source media="(max-width: 1024px)" srcset="{% getUrl item.data.image | resize({ width: 1524, height: 768, position: 'attention' }) | jpeg %}" type="image/jpeg">
-                                <!-- DESKTOP IMAGE -->
-                                <source media="(min-width: 1024px)" srcset="{% getUrl item.data.image | resize({ width: 1408, height: 1024, position: 'attention' }) | avif %}" type="image/avif">
-                                <source media="(min-width: 1024px)" srcset="{% getUrl item.data.image | resize({ width: 1408, height: 1024, position: 'attention' }) | webp %}" type="image/webp">
-                                <source media="(min-width: 1024px)" srcset="{% getUrl item.data.image | resize({ width: 1408, height: 1024, position: 'attention' }) | jpeg %}" type="image/jpeg">
-                                <img
-                                    class="object-cover h-[20rem] md:h-[24rem] lg:h-[32rem] w-full"
-                                    src="{% getUrl item.data.image | resize({ width: 1408, height: 1024, position: 'attention' }) | jpeg %}"
-                                    alt="{{ item.data.imageAlt }}"
-                                    width="704"
-                                    height="503"
-                                    loading="lazy"
-                                    decoding="async"
-                                    aria-hidden="true"
-                                    draggable="false">
-                            </picture>
-                        </a>
-
-                        <!-- TITLE + CTA -->
-                        <div class="flex flex-col items-center ~gap-4/6">
-                            <h3 class="~max-w-lg/xl text-center ~text-2xl/3xl font-black">{{ item.data.title }}</h3>
-
-                            <a href="{{ item.url }}" class="btn-secondary">
-                                {{ specialOffers.cta }}
+                <!-- ITEMS -->
+                <ul class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    {% for item in collections.specialOffer | pageLang(page.lang) | limit(2) | reverse %}
+                        <li class="flex flex-col ~gap-4/8">
+                            <a href="{{ item.url }}">
+                                <picture>
+                                    <!-- MOBILE IMAGE -->
+                                    <source media="(max-width: 600px)" srcset="{% getUrl item.data.image | resize({ width: 736, height: 640, position: 'attention' }) | avif %}" type="image/avif">
+                                    <source media="(max-width: 600px)" srcset="{% getUrl item.data.image | resize({ width: 736, height: 640, position: 'attention' }) | webp %}" type="image/webp">
+                                    <source media="(max-width: 600px)" srcset="{% getUrl item.data.image | resize({ width: 736, height: 640, position: 'attention' }) | jpeg %}" type="image/jpeg">
+                                    <!-- TABLET IMAGE -->
+                                    <source media="(max-width: 1024px)" srcset="{% getUrl item.data.image | resize({ width: 1524, height: 768, position: 'attention' }) | avif %}" type="image/avif">
+                                    <source media="(max-width: 1024px)" srcset="{% getUrl item.data.image | resize({ width: 1524, height: 768, position: 'attention' }) | webp %}" type="image/webp">
+                                    <source media="(max-width: 1024px)" srcset="{% getUrl item.data.image | resize({ width: 1524, height: 768, position: 'attention' }) | jpeg %}" type="image/jpeg">
+                                    <!-- DESKTOP IMAGE -->
+                                    <source media="(min-width: 1024px)" srcset="{% getUrl item.data.image | resize({ width: 1408, height: 1024, position: 'attention' }) | avif %}" type="image/avif">
+                                    <source media="(min-width: 1024px)" srcset="{% getUrl item.data.image | resize({ width: 1408, height: 1024, position: 'attention' }) | webp %}" type="image/webp">
+                                    <source media="(min-width: 1024px)" srcset="{% getUrl item.data.image | resize({ width: 1408, height: 1024, position: 'attention' }) | jpeg %}" type="image/jpeg">
+                                    <img
+                                        class="object-cover h-[20rem] md:h-[24rem] lg:h-[32rem] w-full"
+                                        src="{% getUrl item.data.image | resize({ width: 1408, height: 1024, position: 'attention' }) | jpeg %}"
+                                        alt="{{ item.data.imageAlt }}"
+                                        width="704"
+                                        height="503"
+                                        loading="lazy"
+                                        decoding="async"
+                                        aria-hidden="true"
+                                        draggable="false">
+                                </picture>
                             </a>
-                        </div>
-                    </li>
-                {% endfor %}
-            </ul>
-        </div>
-    </section>
+
+                            <!-- TITLE + CTA -->
+                            <div class="flex flex-col items-center ~gap-4/6">
+                                <h3 class="~max-w-lg/xl text-center ~text-2xl/3xl font-black">{{ item.data.title }}</h3>
+
+                                <a href="{{ item.url }}" class="btn-secondary">
+                                    {{ specialOffers.cta }}
+                                </a>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </section>
+    {% endif %}
 
     <!-- SERVICES -->
     <section class="py-24 ~px-4/8 relative bg-cream z-10">
@@ -275,20 +277,20 @@
                     <li class="group flex max-lg:flex-col lg:even:flex-row-reverse lg:items-center max-lg:gap-4">
                         <picture class="relative z-0">
                             <!-- MOBILE IMAGE -->
-                            <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | avif %}" type="image/avif">
-                            <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | webp %}" type="image/webp">
-                            <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | jpeg %}" type="image/jpeg">
+                            <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | resize({ width: 736, height: 736, position: 'attention' }) | avif %}" type="image/avif">
+                            <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | resize({ width: 736, height: 736, position: 'attention' }) | webp %}" type="image/webp">
+                            <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | resize({ width: 736, height: 736, position: 'attention' }) | jpeg %}" type="image/jpeg">
                             <!-- TABLET IMAGE -->
-                            <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | avif %}" type="image/avif">
-                            <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | webp %}" type="image/webp">
-                            <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | jpeg %}" type="image/jpeg">
+                            <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1524, height: 1024, position: 'attention' }) | avif %}" type="image/avif">
+                            <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1524, height: 1024, position: 'attention' }) | webp %}" type="image/webp">
+                            <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1524, height: 1024, position: 'attention' }) | jpeg %}" type="image/jpeg">
                             <!-- DESKTOP IMAGE -->
-                            <source media="(min-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1792, height: 1024 }) | avif %}" type="image/avif">
-                            <source media="(min-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1792, height: 1024 }) | webp %}" type="image/webp">
-                            <source media="(min-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1792, height: 1024 }) | jpeg %}" type="image/jpeg">
+                            <source media="(min-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1792, height: 1024, position: 'attention' }) | avif %}" type="image/avif">
+                            <source media="(min-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1792, height: 1024, position: 'attention' }) | webp %}" type="image/webp">
+                            <source media="(min-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1792, height: 1024, position: 'attention' }) | jpeg %}" type="image/jpeg">
                             <img
-                                class="object-cover h-[32rem] w-full lg:max-w-4xl"
-                                src="{% getUrl item.imageUrl | resize({ width: 1792, height: 1024 }) | jpeg %}"
+                                class="object-cover h-[23rem] sm:h-[32rem] w-full lg:max-w-4xl"
+                                src="{% getUrl item.imageUrl | resize({ width: 1792, height: 1024, position: 'attention' }) | jpeg %}"
                                 alt="{{ item.imageAlt }}"
                                 width="896"
                                 height="512"

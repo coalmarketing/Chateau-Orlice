@@ -1,8 +1,8 @@
 ---
 layout: "pages/kontakt.njk"
 
-title: 'Efektivní weby na míru | Senoweb | Ústí nad Orlicí'
-description: 'V Senoweb se specializujeme na tvorbu webových stránek na míru. Nepoužíváme koupené šablony, nástroje pro automatizované budování webů ani nástroje, které by váš web zahlcovali zbytečným kódem a tím vaší stránku zpomalovaly.'
+title: 'Kontakt'
+description: 'Rychlý kontakt na recepci a služby hotelu Chateau Orlice. Rezervace, informace a podpora kdykoliv potřebujete.'
 permalink: 'cs/kontakt/'
 
 eleventyNavigation:

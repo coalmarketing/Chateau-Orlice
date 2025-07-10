@@ -1,8 +1,8 @@
 ---
 layout: "pages/fotogalerie.njk"
 
-title: 'Efektivní weby na míru | Senoweb | Ústí nad Orlicí'
-description: 'V Senoweb se specializujeme na tvorbu webových stránek na míru. Nepoužíváme koupené šablony, nástroje pro automatizované budování webů ani nástroje, které by váš web zahlcovali zbytečným kódem a tím vaší stránku zpomalovaly.'
+title: 'Fotogalerie'
+description: 'Prohlédněte si fotogalerii Chateau Orlice. Inspirujte se atmosférou našeho hotelu, restaurace, wellness a nádherného okolí.'
 permalink: 'cs/fotogalerie/'
 
 eleventyNavigation:

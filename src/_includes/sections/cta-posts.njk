@@ -1,0 +1,43 @@
+<!-- POSTS CTA -->
+<section class="py-24 ~px-4/8">
+    <div class="container m-auto">
+        <ul class="grid grid-cols-2 gap-8">
+            {% for item in ctaPosts.items %}
+                <li class="relative h-[28rem] p-4 z-10 before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-black/50 before:-z-10">
+                    <!-- INNER CONTAINER -->
+                    <div class="flex flex-col justify-center items-center gap-8 h-full w-full border-2 border-white">
+                        <span class="text-center ~text-2xl/4xl text-white font-black">{{ item.title }}</span>
+
+                        <a href="{{ item.url | locale_url }}" class="btn-secondary text-white after:border-white">{{ posts[page.lang].cta }}</a>
+                    </div>
+
+                    <!-- BACKGROUND IMAGE -->
+                    <picture>
+                        <!-- MOBILE IMAGE -->
+                        <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | resize({ width: 736, height: 768, position: 'attention' }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | resize({ width: 736, height: 768, position: 'attention' }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | resize({ width: 736, height: 768, position: 'attention' }) | jpeg %}" type="image/jpeg">
+                        <!-- TABLET IMAGE -->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1524, height: 768, position: 'attention' }) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1524, height: 768, position: 'attention' }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1524, height: 768, position: 'attention' }) | jpeg %}" type="image/jpeg">
+                        <!-- DESKTOP IMAGE -->
+                        <source media="(min-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1408, height: 896, position: 'attention' }) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1408, height: 896, position: 'attention' }) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1408, height: 896, position: 'attention' }) | jpeg %}" type="image/jpeg">
+                        <img
+                            class="object-cover absolute top-0 left-0 h-full w-full -z-20"
+                            src="{% getUrl item.imageUrl | resize({ width: 1408, height: 896, position: 'attention' }) | jpeg %}"
+                            alt="{{ item.imageAlt }}"
+                            width="704"
+                            height="448"
+                            loading="lazy"
+                            decoding="async"
+                            aria-hidden="true"
+                            draggable="false">
+                    </picture>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>

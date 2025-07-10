@@ -1,8 +1,8 @@
 ---
 layout: "pages/home.njk"
 
-title: 'Efektivní weby na míru | Senoweb | Ústí nad Orlicí'
-description: 'V Senoweb se specializujeme na tvorbu webových stránek na míru. Nepoužíváme koupené šablony, nástroje pro automatizované budování webů ani nástroje, které by váš web zahlcovali zbytečným kódem a tím vaší stránku zpomalovaly.'
+title: 'Hotel, wellness a zážitky v Orlických horách'
+description: 'Stylový hotel s wellness, restaurací a možností svateb i firemních akcí. Ubytování s kouzlem historie v srdci Orlických hor. Objevte Chateau Orlice.'
 permalink: 'cs/'
 
 eleventyNavigation:

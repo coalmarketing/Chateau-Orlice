@@ -42,7 +42,7 @@
 
     {% block head %}{% endblock %}
 
-    <title>{{ title }}</title>
+    <title>{{ title }} • {{ client.name }}</title>
   </head>
 
   <body class="group/body [&.menu]:overflow-hidden {% if page.url == '/' + page.lang + '/' %} home{% else %} interior{% endif %}">
