@@ -43,6 +43,18 @@ collections:
           i18n: true,
         }
       - {
+          label: "URL odkaz",
+          name: "url",
+          widget: "string",
+          hint: "Určete, kam bude stránka zapsána. Pokud použijete „Akční nabídka“, bude příspěvek přístupný z „akcni-nabidky/akcni-nabidka“.",
+          i18n: duplicate,
+          pattern:
+            [
+              "^[A-Za-zÀ-ž0-9 ]+(?:-[A-Za-zÀ-ž0-9 ]+)*$",
+              "Pouze písmena (A-Z, a-z), číslice a pomlčky (-). Žádná lomítka ani speciální znaky.",
+            ],
+        }
+      - {
           label: "Datum",
           name: "date",
           widget: "datetime",
@@ -85,6 +97,18 @@ collections:
           widget: "string",
           hint: "Vyplňte prosím všechny překlady pro všechny jazyky k funkčnímu zobrazení obsahu.",
           i18n: true,
+        }
+      - {
+          label: "URL odkaz",
+          name: "url",
+          widget: "string",
+          hint: "Určete, kam bude stránka zapsána. Pokud použijete „Pobytový balíček“, bude příspěvek přístupný z „pobytove-balicky/pobytovy-balicek“.",
+          i18n: duplicate,
+          pattern:
+            [
+              "^[A-Za-zÀ-ž0-9 ]+(?:-[A-Za-zÀ-ž0-9 ]+)*$",
+              "Pouze písmena (A-Z, a-z), číslice a pomlčky (-). Žádná lomítka ani speciální znaky.",
+            ],
         }
       - {
           label: "Datum",
@@ -131,6 +155,18 @@ collections:
           i18n: true,
         }
       - {
+          label: "URL odkaz",
+          name: "url",
+          widget: "string",
+          hint: "Určete, kam bude stránka zapsána. Pokud použijete „Tip na výlet“, bude příspěvek přístupný z „vylety-aktivity/tip-na-vylet“.",
+          i18n: duplicate,
+          pattern:
+            [
+              "^[A-Za-zÀ-ž0-9 ]+(?:-[A-Za-zÀ-ž0-9 ]+)*$",
+              "Pouze písmena (A-Z, a-z), číslice a pomlčky (-). Žádná lomítka ani speciální znaky.",
+            ],
+        }
+      - {
           label: "Štítky",
           name: "tags",
           widget: "hidden",
@@ -166,6 +202,18 @@ collections:
           widget: "string",
           hint: "Vyplňte prosím všechny překlady pro všechny jazyky k funkčnímu zobrazení obsahu.",
           i18n: true,
+        }
+      - {
+          label: "URL odkaz",
+          name: "url",
+          widget: "string",
+          hint: "Určete, kam bude stránka zapsána. Pokud použijete „Aktualita“, bude příspěvek přístupný z „aktuality/aktualita“.",
+          i18n: duplicate,
+          pattern:
+            [
+              "^[A-Za-zÀ-ž0-9 ]+(?:-[A-Za-zÀ-ž0-9 ]+)*$",
+              "Pouze písmena (A-Z, a-z), číslice a pomlčky (-). Žádná lomítka ani speciální znaky.",
+            ],
         }
       - {
           label: "Datum",

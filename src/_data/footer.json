@@ -7,5 +7,32 @@
         "whereToFindUs": "Kde nás najdete",
         "copyrightReserved": "Všechna práva vyhrazena",
         "handCodedBy": "Ručně vyvinuto od"
+    },
+    "en": {
+        "address": "Address",
+        "showOnMap": "Show on map",
+        "contact": "Contact",
+        "reservation": "Reservation",
+        "whereToFindUs": "Where to find us",
+        "copyrightReserved": "All rights reserved",
+        "handCodedBy": "Hand coded by"
+    },
+    "de": {
+        "address": "Adresse",
+        "showOnMap": "Auf der Karte anzeigen",
+        "contact": "Kontakt",
+        "reservation": "Reservierung",
+        "whereToFindUs": "Wo Sie uns finden",
+        "copyrightReserved": "Alle Rechte vorbehalten",
+        "handCodedBy": "Handgefertigt von"
+    },
+    "pl": {
+        "address": "Adres",
+        "showOnMap": "Pokaż na mapie",
+        "contact": "Kontakt",
+        "reservation": "Rezerwacja",
+        "whereToFindUs": "Gdzie nas znaleźć",
+        "copyrightReserved": "Wszelkie prawa zastrzeżone",
+        "handCodedBy": "Ręcznie wykonane przez"
     }
 }

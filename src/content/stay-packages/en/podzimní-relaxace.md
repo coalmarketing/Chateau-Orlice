@@ -1,5 +1,6 @@
 ---
 title: Autumn relaxation
+url: Podzimní relaxace
 date: 2025-04-04T20:00:00.000Z
 image: /assets/images/cms/image.jpg
 imageAlt: Relaxing pair

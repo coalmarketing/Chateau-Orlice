@@ -41,5 +41,134 @@
         "languageSelector": "Tlačítko pro výběr jazyka",
         "languageSelectorIconAlt": "Ikona zeměkoule",
         "cta": "Rezervace"
+    },
+    "en": {
+        "openNavigation": "Open navigation",
+        "mainNavigation": [
+            {
+                "name": "Accommodation",
+                "subitems": [
+                    {
+                        "name": "Rooms",
+                        "url": "/pokoje"
+                    },
+                    {
+                        "name": "Stay packages",
+                        "url": "/pobytove-balicky"
+                    }
+                ]
+            },
+            {
+                "name": "Restaurant",
+                "url": "/restaurace"
+            },
+            {
+                "name": "Services & Experiences",
+                "subitems": [
+                    {
+                        "name": "Wellness & Spa",
+                        "url": "/wellness-spa"
+                    },
+                    {
+                        "name": "Trips & Activities",
+                        "url": "/vylety-aktivity"
+                    },
+                    {
+                        "name": "Surroundings of Chateau Orlice",
+                        "url": "/okoli-chateau-orlice"
+                    }
+                ]
+            }
+        ],
+        "backToHomepage": "Back to homepage",
+        "languageSelector": "Language selector button",
+        "languageSelectorIconAlt": "Globe icon",
+        "cta": "Book now"
+    },
+    "de": {
+        "openNavigation": "Navigation öffnen",
+        "mainNavigation": [
+            {
+                "name": "Unterkunft",
+                "subitems": [
+                    {
+                        "name": "Zimmer",
+                        "url": "/pokoje"
+                    },
+                    {
+                        "name": "Pauschalangebote",
+                        "url": "/pobytove-balicky"
+                    }
+                ]
+            },
+            {
+                "name": "Restaurant",
+                "url": "/restaurace"
+            },
+            {
+                "name": "Services & Erlebnisse",
+                "subitems": [
+                    {
+                        "name": "Wellness & Spa",
+                        "url": "/wellness-spa"
+                    },
+                    {
+                        "name": "Ausflüge & Aktivitäten",
+                        "url": "/vylety-aktivity"
+                    },
+                    {
+                        "name": "Umgebung von Chateau Orlice",
+                        "url": "/okoli-chateau-orlice"
+                    }
+                ]
+            }
+        ],
+        "backToHomepage": "Zur Startseite",
+        "languageSelector": "Sprachauswahl-Button",
+        "languageSelectorIconAlt": "Globus-Symbol",
+        "cta": "Jetzt buchen"
+    },
+    "pl": {
+        "openNavigation": "Otwórz nawigację",
+        "mainNavigation": [
+            {
+                "name": "Zakwaterowanie",
+                "subitems": [
+                    {
+                        "name": "Pokoje",
+                        "url": "/pokoje"
+                    },
+                    {
+                        "name": "Pakiety pobytowe",
+                        "url": "/pobytove-balicky"
+                    }
+                ]
+            },
+            {
+                "name": "Restauracja",
+                "url": "/restaurace"
+            },
+            {
+                "name": "Usługi i atrakcje",
+                "subitems": [
+                    {
+                        "name": "Wellness & Spa",
+                        "url": "/wellness-spa"
+                    },
+                    {
+                        "name": "Wycieczki i aktywności",
+                        "url": "/vylety-aktivity"
+                    },
+                    {
+                        "name": "Okolice Chateau Orlice",
+                        "url": "/okoli-chateau-orlice"
+                    }
+                ]
+            }
+        ],
+        "backToHomepage": "Powrót do strony głównej",
+        "languageSelector": "Przycisk wyboru języka",
+        "languageSelectorIconAlt": "Ikona globu",
+        "cta": "Rezerwuj"
     }
 }

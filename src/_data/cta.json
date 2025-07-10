@@ -4,5 +4,23 @@
         "heading": "Dopřejte si svůj zasloužený odpočinek",
         "text": "Dokonalý pobyt je ten, který vytváří vzpomínky. V <b><i>Chateau Orlice</b></i> na vás čeká atmosféra, služby a pozornost, díky kterým se budete rádi vracet.",
         "cta": "Rezervace"
+    },
+    "en": {
+        "topper": "Experience Orlice",
+        "heading": "Treat Yourself to a Well-Deserved Rest",
+        "text": "The perfect stay is one that creates memories. At <b><i>Chateau Orlice</b></i>, you will find an atmosphere, services, and care that will make you want to return.",
+        "cta": "Book Now"
+    },
+    "de": {
+        "topper": "Erleben Sie Orlice",
+        "heading": "Gönnen Sie sich Ihre wohlverdiente Erholung",
+        "text": "Der perfekte Aufenthalt ist der, der Erinnerungen schafft. Im <b><i>Chateau Orlice</b></i> erwartet Sie eine Atmosphäre, Services und Aufmerksamkeit, die Sie immer wieder zurückkehren lässt.",
+        "cta": "Jetzt buchen"
+    },
+    "pl": {
+        "topper": "Przeżyj Orlicę",
+        "heading": "Zasługujesz na zasłużony odpoczynek",
+        "text": "Idealny pobyt to taki, który tworzy wspomnienia. W <b><i>Chateau Orlice</b></i> czeka na Ciebie atmosfera, usługi i troska, które sprawią, że chętnie będziesz wracać.",
+        "cta": "Rezerwuj"
     }
 }

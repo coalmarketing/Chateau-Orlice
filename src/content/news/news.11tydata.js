@@ -12,7 +12,7 @@ module.exports = {
 		permalink: data => {
 			const parts = data.page.inputPath.split("/");
 			const lang = parts[parts.length - 2];
-			return `/${lang}/aktuality/${slugify(data.title, { lower: true })}/index.html`;
+			return `/${lang}/aktuality/${slugify(data.url, { lower: true })}/index.html`;
 		}
 	}
 };

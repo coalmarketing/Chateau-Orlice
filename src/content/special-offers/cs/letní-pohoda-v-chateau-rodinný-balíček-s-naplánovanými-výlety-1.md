@@ -1,5 +1,6 @@
 ---
 title: Letní pohoda v Chateau - rodinný balíček s naplánovanými výlety
+url: Letní pohoda v Chateau
 date: 2025-06-07T20:00:00.000Z
 tags:
   - specialOffer

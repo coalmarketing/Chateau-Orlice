@@ -1,5 +1,6 @@
 ---
 title: Kopečková pouť v Letohradě!
+url: Kopečková pouť v Letohradě
 date: 2025-05-19T20:00:00.000Z
 tags:
   - news

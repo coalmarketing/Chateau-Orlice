@@ -1,5 +1,6 @@
 ---
 title: Grabhügel-Wallfahrt in Letohrad!
+url: Kopečková pouť v Letohradě
 date: 2025-05-19T20:00:00.000Z
 image: /assets/images/cms/trips.jpg
 imageAlt: Burg Letohrad

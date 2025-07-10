@@ -1,5 +1,6 @@
 ---
 title: Summer comfort in the Chateau - family package with planned trips
+url: Letní pohoda v Chateau
 date: 2025-06-07T20:00:00.000Z
 image: /assets/images/cms/pexels-paultheodoroja-2393531.jpg
 imageAlt: Women getting out of the orange car

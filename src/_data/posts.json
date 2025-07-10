@@ -9,5 +9,38 @@
         "cta": "Dozvědět se více",
         "clockIconAlt": "Ikona hodin",
         "landingImageAlt": "Fotografie příspěvku"
+    },
+    "en": {
+        "home": "Home",
+        "specialOffer": "Special Offer",
+        "stayPackage": "Stay Package",
+        "tripRecommendation": "Trip Recommendation",
+        "news": "News",
+        "noPostsYet": "Nothing here yet.",
+        "cta": "Learn more",
+        "clockIconAlt": "Clock icon",
+        "landingImageAlt": "Post photo"
+    },
+    "de": {
+        "home": "Startseite",
+        "specialOffer": "Aktionsangebot",
+        "stayPackage": "Pauschalangebot",
+        "tripRecommendation": "Ausflugstipp",
+        "news": "Aktuelles",
+        "noPostsYet": "Hier gibt es noch nichts.",
+        "cta": "Mehr erfahren",
+        "clockIconAlt": "Uhr-Symbol",
+        "landingImageAlt": "Beitragsfoto"
+    },
+    "pl": {
+        "home": "Strona główna",
+        "specialOffer": "Oferta specjalna",
+        "stayPackage": "Pakiet pobytowy",
+        "tripRecommendation": "Polecana wycieczka",
+        "news": "Aktualności",
+        "noPostsYet": "Jeszcze nic tutaj nie ma.",
+        "cta": "Dowiedz się więcej",
+        "clockIconAlt": "Ikona zegara",
+        "landingImageAlt": "Zdjęcie wpisu"
     }
 }
