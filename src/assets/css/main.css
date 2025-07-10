@@ -2372,6 +2372,14 @@ select {
   height: clamp(2rem,0.93rem + 2.68vw,3.5rem)/* fluid from 2rem at 40rem to 3.5rem at 96rem */;
 }
 
+.\~h-\[24rem\]\/\[28rem\] {
+  height: clamp(24rem,21.14rem + 7.14vw,28rem)/* fluid from 24rem at 40rem to 28rem at 96rem */;
+}
+
+.\~h-\[20rem\]\/\[28rem\] {
+  height: clamp(20rem,14.29rem + 14.29vw,28rem)/* fluid from 20rem at 40rem to 28rem at 96rem */;
+}
+
 .\~w-3 /* error - Missing end value */ {
 }
 
@@ -3348,6 +3356,10 @@ html {
 
   .xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .xl\:justify-around {

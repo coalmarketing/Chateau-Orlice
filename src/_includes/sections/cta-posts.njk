@@ -1,9 +1,9 @@
 <!-- POSTS CTA -->
 <section class="py-24 ~px-4/8">
     <div class="container m-auto">
-        <ul class="grid grid-cols-2 gap-8">
+        <ul class="grid grid-cols-1 xl:grid-cols-2 ~gap-4/8">
             {% for item in ctaPosts.items %}
-                <li class="relative h-[28rem] p-4 z-10 before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-black/50 before:-z-10">
+                <li class="relative ~h-[24rem]/[28rem] p-4 z-10 before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-black/50 before:-z-10">
                     <!-- INNER CONTAINER -->
                     <div class="flex flex-col justify-center items-center gap-8 h-full w-full border-2 border-white">
                         <span class="text-center ~text-2xl/4xl text-white font-black">{{ item.title }}</span>
@@ -18,9 +18,9 @@
                         <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | resize({ width: 736, height: 768, position: 'attention' }) | webp %}" type="image/webp">
                         <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | resize({ width: 736, height: 768, position: 'attention' }) | jpeg %}" type="image/jpeg">
                         <!-- TABLET IMAGE -->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1524, height: 768, position: 'attention' }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1524, height: 768, position: 'attention' }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1524, height: 768, position: 'attention' }) | jpeg %}" type="image/jpeg">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1524, height: 790, position: 'attention' }) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1524, height: 790, position: 'attention' }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1524, height: 790, position: 'attention' }) | jpeg %}" type="image/jpeg">
                         <!-- DESKTOP IMAGE -->
                         <source media="(min-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1408, height: 896, position: 'attention' }) | avif %}" type="image/avif">
                         <source media="(min-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1408, height: 896, position: 'attention' }) | webp %}" type="image/webp">
