@@ -22,11 +22,11 @@
             {% set navigation = [
                 {
                     name: "Pokoje",
-                    url: "/ubytovani/pokoje"
+                    url: "/pokoje"
                 },
                 {
                     name: "Pobytové balíčky",
-                    url: "/ubytovani/pobytove-balicky"
+                    url: "/pobytove-balicky"
                 },
                 {
                     name: "Restaurace",
@@ -34,19 +34,19 @@
                 },
                 {
                     name: "Wellness",
-                    url: "/sluzby-zazitky/wellness"
+                    url: "/wellness-spa"
                 },
                 {
                     name: "Výlety a aktivity",
-                    url: "/sluzby-zazitky/vylety-aktivity"
+                    url: "/vylety-aktivity"
                 },
                 {
                     name: "Svatby",
-                    url: "/udalosti/svatby"
+                    url: "/svatby"
                 },
                 {
                     name: "Firemní akce",
-                    url: "/udalosti/konference-firemni-akce"
+                    url: "/konference"
                 },
                 {
                     name: "Aktuality",
@@ -57,7 +57,7 @@
             <ul class="grid grid-cols-2 sm:grid-cols-4 gap-2 place-items-center lg:flex lg:justify-around">
                 {% for item in navigation %}
                     <li>
-                        <a href="{{ item.url }}" class="font-jakarta-sans ~text-sm/base text-black font-medium transition-colors duration-300 hover:text-gold">
+                        <a href="{{ item.url | locale_url }}" class="font-jakarta-sans ~text-sm/base text-black font-medium transition-colors duration-300 hover:text-gold">
                             {{ item.name }}
                         </a>
                     </li>
