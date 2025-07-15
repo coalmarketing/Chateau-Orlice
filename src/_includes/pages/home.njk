@@ -75,7 +75,7 @@
                 <ul class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     {% for item in collections.specialOffer | pageLang(page.lang) | limit(2) | reverse %}
                         <li class="flex flex-col ~gap-4/8">
-                            <a href="{{ item.url }}">
+                            <a href="{{ item.url }}" aria-label="{{ item.data.title }}">
                                 <picture>
                                     <!-- MOBILE IMAGE -->
                                     <source media="(max-width: 600px)" srcset="{% getUrl item.data.image | resize({ width: 736, height: 640, position: 'attention' }) | avif %}" type="image/avif">

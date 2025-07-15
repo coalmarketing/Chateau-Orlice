@@ -1,0 +1,3 @@
+---
+title: Wnętrze hotelu
+---

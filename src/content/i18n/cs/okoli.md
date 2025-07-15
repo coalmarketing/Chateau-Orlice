@@ -63,4 +63,55 @@ sport:
     - text: A pokud toužíte po klidnějším tempu, projížďka na kole krajinou nebo golf s výhledem do údolí budou ideální volbou.
 
   cta: Tipy na výlety
+
+
+pricing:
+  topper: Vybavení
+  heading: Ceník wellness a&nbsp;spa procedur
+
+  items: 
+    - title: Kola
+
+      rows:
+        - cells:
+          - text: Typ
+          - text: Cena
+
+        - cells:
+          - text: Půjčení kola na 6 hodin
+          - text: 250 Kč
+
+        - cells:
+          - text: Půjčení kola na 6 a více hodin
+          - text: 350 Kč
+
+    - title: Loďky
+
+      rows:
+        - cells:
+          - text: Typ
+          - text: Cena
+
+        - cells:
+          - text: Půjčení lodičky na 45 minut
+          - text: 250 Kč
+
+        - cells:
+          - text: Půjčení lodičky na 60 minut
+          - text: 350 Kč
+
+    - title: Rybaření
+
+      rows:
+        - cells:
+          - text: Typ
+          - text: Cena
+
+        - cells:
+          - text: Zapůjčení prutu pro ubytované na 1 den
+          - text: 350 Kč
+
+        - cells:
+          - text: Zapůjčení prutu pro návštěvníky na 1 den
+          - text: 500 Kč
 ---

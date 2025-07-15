@@ -1,0 +1,3 @@
+---
+title: Zewnętrzna część hotelu
+---

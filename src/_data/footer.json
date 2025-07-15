@@ -6,7 +6,7 @@
         "reservation": "Rezervace",
         "whereToFindUs": "Kde nás najdete",
         "copyrightReserved": "Všechna práva vyhrazena",
-        "handCodedBy": "Ručně vyvinuto od"
+        "handCodedBy": "Vytvořeno s 💜 od"
     },
     "en": {
         "address": "Address",
@@ -15,7 +15,7 @@
         "reservation": "Reservation",
         "whereToFindUs": "Where to find us",
         "copyrightReserved": "All rights reserved",
-        "handCodedBy": "Hand coded by"
+        "handCodedBy": "Made with 💜 by"
     },
     "de": {
         "address": "Adresse",
@@ -24,7 +24,7 @@
         "reservation": "Reservierung",
         "whereToFindUs": "Wo Sie uns finden",
         "copyrightReserved": "Alle Rechte vorbehalten",
-        "handCodedBy": "Handgefertigt von"
+        "handCodedBy": "Erstellt mit 💜 von"
     },
     "pl": {
         "address": "Adres",
@@ -33,6 +33,6 @@
         "reservation": "Rezerwacja",
         "whereToFindUs": "Gdzie nas znaleźć",
         "copyrightReserved": "Wszelkie prawa zastrzeżone",
-        "handCodedBy": "Ręcznie wykonane przez"
+        "handCodedBy": "Stworzone z 💜 przez"
     }
 }

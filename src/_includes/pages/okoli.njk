@@ -138,5 +138,68 @@
         </div>
     </section>
 
+    <!-- PRICING -->
+    <section id="cenik" class="py-24 ~px-4/8 bg-white">
+        <div class="container m-auto flex flex-col ~gap-8/16">
+            <!-- TOPPER + HEADING -->
+            <div class="flex flex-col items-center gap-4">
+                <!-- TOPPER -->
+                <span class="topper-container">
+                    {% include "components/topper-decoration.njk" %}
+                    <span class="topper">{{ pricing.topper }}</span>
+                    {% include "components/topper-decoration.njk" %}
+                </span>
+
+                <h2 class="~max-w-sm/lg text-center ~text-3xl/5xl font-black uppercase">{{ pricing.heading | safe }}</h2>
+            </div>
+
+            <!-- PRICING CONTAINER -->
+            <div class="~p-4/8 bg-cream">
+                <!-- INNER CONTAINER -->
+                <div class="flex flex-col gap-8 ~p-6/12 border-2 border-gold">
+
+                    <!-- MASSAGES -->
+                    <div class="flex max-lg:flex-col lg:flex-wrap justify-center gap-8">
+                        {% for item in pricing.items %}
+                            <div class="lg:basis-[calc(50%-1rem)] flex flex-col items-center gap-3">
+                                <!-- TOPPER -->
+                                <span class="topper-container">
+                                    {% include "components/topper-decoration.njk" %}
+                                    <span class="topper">{{ item.title }}</span>
+                                    {% include "components/topper-decoration.njk" %}
+                                </span>
+
+                                <table class="table-auto text-left w-full">
+                                    <thead>
+                                        {% for row in item.rows %}
+                                            {% if loop.index == 1 %}
+                                                <tr>
+                                                    {% for cell in row.cells %}
+                                                        <th class="py-2 px-2.5 font-jakarta-sans text-sm text-ochre font-bold border border-ochre/20">{{ cell.text }}</th>
+                                                    {% endfor %}
+                                                </tr>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </thead>
+                                    <tbody>
+                                        {% for row in item.rows %}
+                                            {% if loop.index > 1 %}
+                                                <tr>
+                                                    {% for cell in row.cells %}
+                                                        <td class="py-2 px-2.5 font-jakarta-sans text-sm text-ochre border border-ochre/20">{{ cell.text }}</td>
+                                                    {% endfor %}
+                                                </tr>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     {% include "sections/cta.njk" %}
 {% endblock body %}

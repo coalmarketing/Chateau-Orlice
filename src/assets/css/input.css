@@ -32,7 +32,7 @@
   }
 
   .topper {
-    @apply font-trirong text-center text-sm text-ochre font-medium tracking-[0.3rem] uppercase
+    @apply font-trirong text-center text-sm text-ochre font-medium ~tracking-[0.2rem]/[0.3rem] uppercase
   }
 
   .input {

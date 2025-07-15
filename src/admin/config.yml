@@ -238,3 +238,59 @@ collections:
           i18n: true,
         }
       - { label: "Obsah", name: "body", widget: "markdown", i18n: true }
+
+  # GALLERY ALBUMS
+  - label: "Alba galerie"
+    name: "galleryAlbums"
+    folder: "src/content/gallery-albums"
+    editor:
+      preview: false
+    create: true
+    slug: "{{slug}}"
+    i18n: true
+    fields:
+      - {
+          label: "Název alba",
+          name: "title",
+          widget: "string",
+          hint: "Zadejte název alba, tento název se zobrazí na webu na podstránce 'Fotogalerie'. Vyplňte prosím všechny překlady pro všechny jazyky k funkčnímu zobrazení obsahu.",
+          i18n: true,
+        }
+
+      - {
+          label: "Štítky",
+          name: "tags",
+          widget: "hidden",
+          default: ["galleryAlbum"],
+        }
+
+  # GALLERY PHOTOS
+  - label: "Fotky galerie"
+    name: "galleryPhotos"
+    folder: "src/content/gallery-photos"
+    editor:
+      preview: false
+    create: true
+    identifier_field: "album"
+    slug: "{{slug}}"
+    fields:
+      - label: "Album"
+        name: "album"
+        widget: "relation"
+        collection: "galleryAlbums"
+        search_fields: ["title"]
+        value_field: "title"
+        display_fields: ["title"]
+
+      - name: images
+        label: Fotografie
+        widget: list
+        i18n: true
+        fields:
+          - { name: url, label: Fotografie, widget: image }
+          - {
+              label: "Štítky",
+              name: "tags",
+              widget: "hidden",
+              default: ["galleryPhoto"],
+            }
