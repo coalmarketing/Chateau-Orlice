@@ -43,8 +43,8 @@ serviceInfo:
 
     - title: Kontakt
       subitems:
-        - text: +420 465 677 720
-          url: tel:+420465677720
+        - text: +420 774 000 309
+          url: tel:+420774000309
 
         - text: recepce@eywan.cz
           url: mailto:recepce@eywan.cz
@@ -107,7 +107,7 @@ superior:
   imageAlt: Standard pokoj číslo 318 v Chateau Orlice
 
   paragraphs:
-    - text: Stylové pokoje Superior vás okouzlí atmosférou původních prostor. Oblouková okna vpouštějí denní světlo i pohledy do klidného areálu, zatímco interiér kombinuje historický šarm s moderním komfortem.
+    - text: Stylové pokoje Superior vás okouzlí atmosférou původních prostor. Interiér kombinuje historický šarm s moderním komfortem.
 
     - text: Dopřejte si relax ve vlastní masážní vaně, pohodlně se usaďte k psacímu stolu, nebo si jen užijte klid u šálku čaje v útulném posezení. Pokoje jsou klimatizované, vybavené TV, WiFi, trezorem a kvalitní koupelnovou kosmetikou.
 

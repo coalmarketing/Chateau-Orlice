@@ -35,6 +35,19 @@
                         "url": "/okoli-chateau-orlice"
                     }
                 ]
+            },
+            {
+                "name": "Události",
+                "subitems": [
+                    {
+                        "name": "Svatby",
+                        "url": "/svatby"
+                    },
+                    {
+                        "name": "Konference a firemní akce",
+                        "url": "/konference"
+                    }
+                ]
             }
         ],
         "backToHomepage": "Přejít na domovskou stránku",

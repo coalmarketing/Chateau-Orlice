@@ -7,7 +7,7 @@ module.exports = {
   address: {
     lineOne: "Orlice 1",
     city: "Letohrad",
-    zip: "566 01",
+    zip: "561 51",
     mapLink: "https://maps.app.goo.gl/tp9qCYar7462dqA78"
   },
   socials: {

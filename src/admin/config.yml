@@ -30,7 +30,7 @@ collections:
   # SPECIAL OFFERS CONFIG
   - label: "Akční nabídky"
     name: "specialOffers"
-    folder: "src/content/special-offers"
+    folder: "src/content/cms/special-offers"
     create: true
     slug: "{{slug}}"
     i18n: true
@@ -86,7 +86,7 @@ collections:
   # STAY PACKAGES CONFIG
   - label: "Pobytové balíčky"
     name: "stayPackages"
-    folder: "src/content/stay-packages"
+    folder: "src/content/cms/stay-packages"
     create: true
     slug: "{{slug}}"
     i18n: true
@@ -142,7 +142,7 @@ collections:
   # TRIP RECOMMENDATION CONFIG
   - label: "Tipy na výlety"
     name: "tripRecommendations"
-    folder: "src/content/trip-recommendations"
+    folder: "src/content/cms/trip-recommendations"
     create: true
     slug: "{{slug}}"
     i18n: true
@@ -191,7 +191,7 @@ collections:
   # NEWS CONFIG
   - label: "Aktuality"
     name: "news"
-    folder: "src/content/news"
+    folder: "src/content/cms/news"
     create: true
     slug: "{{slug}}"
     i18n: true
@@ -242,7 +242,7 @@ collections:
   # GALLERY ALBUMS
   - label: "Alba galerie"
     name: "galleryAlbums"
-    folder: "src/content/gallery-albums"
+    folder: "src/content/cms/gallery-albums"
     editor:
       preview: false
     create: true
@@ -267,7 +267,7 @@ collections:
   # GALLERY PHOTOS
   - label: "Fotky galerie"
     name: "galleryPhotos"
-    folder: "src/content/gallery-photos"
+    folder: "src/content/cms/gallery-photos"
     editor:
       preview: false
     create: true
@@ -294,3 +294,94 @@ collections:
               widget: "hidden",
               default: ["galleryPhoto"],
             }
+
+  # JOB POSTS
+  - label: "Volné pracovní pozice"
+    name: "jobPosts"
+    folder: "src/content/cms/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Název pracovní pozice", name: "title", widget: "string" }
+      - {
+          label: "URL odkaz",
+          name: "url",
+          widget: "string",
+          hint: "Určete, kam bude stránka zapsána. Pokud použijete „Pracovní pozice“, bude příspěvek přístupný z „kariera/pracovni-pozice“.",
+          pattern:
+            [
+              "^[A-Za-zÀ-ž0-9 ]+(?:-[A-Za-zÀ-ž0-9 ]+)*$",
+              "Pouze písmena (A-Z, a-z), číslice a pomlčky (-). Žádná lomítka ani speciální znaky.",
+            ],
+        }
+      - { label: "Typ úvazku", name: "type", widget: "string" }
+      - { label: "Místo výkonu práce", name: "location", widget: "string" }
+      - { label: "Odměna", name: "salary", widget: "string" }
+      - {
+          label: "Štítky",
+          name: "tags",
+          widget: "hidden",
+          default: ["jobPost"],
+        }
+      - {
+          label: "Náhledový obrázek",
+          name: "image",
+          widget: "image",
+          choose_url: false, # Only allow local images - for image optimization reasons
+        }
+      - {
+          label: "Popis obrázku",
+          name: "imageAlt",
+          widget: "string",
+          hint: "Krátce popište, co je na obrázku - slouží k validnímu SEO.",
+        }
+      - { label: "Obsah", name: "body", widget: "markdown" }
+
+  # BLOG CONFIG
+  - label: "Blog"
+    name: "blog"
+    folder: "src/content/cms/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Název", name: "title", widget: "string" }
+      - {
+          label: "URL odkaz",
+          name: "url",
+          widget: "string",
+          hint: "Určete, kam bude stránka zapsána. Pokud použijete „Blogový příspěvek“, bude příspěvek přístupný z „blog/blogovy-prispevek“.",
+          pattern:
+            [
+              "^[A-Za-z0-9 ]+(?:-[A-Za-z0-9 ]+)*$",
+              "Pouze písmena (A-Z, a-z), číslice a pomlčky (-). Žádná lomítka ani speciální znaky.",
+            ],
+        }
+      - {
+          label: "Popis",
+          name: "description",
+          widget: "string",
+          hint: "Kratší popis blogového příspěvku, který se zobrazuje na náhledech příspěvků",
+        }
+      - {
+          label: "Kategorie",
+          name: "category",
+          widget: "string",
+          hint: "Kategorie, do které blogový příspěvek patří",
+        }
+      - { label: "Autor", name: "author", widget: "string" }
+      - { label: "Datum", name: "date", widget: "datetime" }
+      - {
+          label: "Štítky",
+          name: "tags",
+          widget: "list",
+          default: ["post"],
+          hint: "Pro pobytové kurzy přidat 'pobytoveKurzy' - poté se příspěvek zobrazí na stránce pobytových kurzů",
+        }
+      - {
+          label: "Náhledový obrázek",
+          name: "image",
+          widget: "image",
+          choose_url: false,
+        }
+      - { label: "Popis obrázku", name: "imageAlt", widget: "string" }
+      - { label: "Obsah", name: "body", widget: "markdown" }

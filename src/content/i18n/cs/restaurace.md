@@ -45,8 +45,8 @@ serviceInfo:
 
     - title: Kontakt
       subitems:
-        - text: +420 465 677 730
-          url: tel:+420465677730
+        - text: +420 774 000 309
+          url: tel:+420774000309
 
         - text: gastro@eywan.cz
           url: mailto:gastro@eywan.cz

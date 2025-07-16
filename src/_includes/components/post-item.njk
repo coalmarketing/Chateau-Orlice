@@ -35,6 +35,21 @@
 
                 <span class="font-jakarta-sans text-sm text-gold">{{ post.data.date | postDate }}</span>
             </div>
+        {% elif post.data.type %}
+            <!-- DATE -->
+            <div class="flex items-center gap-1.5">
+                <img
+                    src="/assets/svgs/posts/clock.svg"
+                    alt="{{ posts[page.lang].clockIconAlt }}"
+                    width="14"
+                    height="14"
+                    loading="lazy"
+                    decoding="async"
+                    aria-hidden="true"
+                    draggable="false">
+
+                <span class="font-jakarta-sans text-sm text-gold">{{ post.data.type }}</span>
+            </div>
         {% endif %}
 
         <h3 class="text-center text-2xl font-black">{{ post.data.title }}</h3>

@@ -42,9 +42,9 @@ serviceInfo:
 
     - title: Kontakt
       subitems:
-        - text: +420 465 677 720
-          url: tel:+420465677720
-
+        - text: +420 774 000 309
+          url: tel:+420774000309
+          
         - text: recepce@eywan.cz
           url: mailto:recepce@eywan.cz
 

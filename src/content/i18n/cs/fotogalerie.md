@@ -7,7 +7,7 @@ permalink: 'cs/fotogalerie/'
 
 eleventyNavigation:
   key: Fotogalerie
-  order: 600
+  order: 650
 
 
 landing:

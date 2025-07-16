@@ -139,5 +139,53 @@
         draggable="false">
     </section>
 
+    <!-- CONTACT FORM -->
+    <section class="py-24 ~px-4/8 bg-white">
+        <div class="container m-auto flex flex-col items-center gap-8">
+            <!-- TOPPER + HEADING -->
+            <div class="flex flex-col items-center gap-4">
+                <!-- TOPPER -->
+                <span class="topper-container">
+                    {% include "components/topper-decoration.njk" %}
+                    <span class="topper">{{ contactForm.topper }}</span>
+                    {% include "components/topper-decoration.njk" %}
+                </span>
+
+                <h2 class="text-center ~text-3xl/5xl font-black uppercase">{{ contactForm.heading }}</h2>
+            </div>
+
+            <form class="flex flex-col gap-4 w-full max-w-4xl" method="POST" name="Kontaktní formulář" netlify-honeypot="bot-field" netlify>
+                <fieldset class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <!-- HONEYPOT -->
+                    <input class="sr-only" type="search" name="bot-field" tabindex="-1" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off" placeholder="Leave this empty">
+
+                    <!-- FIRST NAME -->
+                    <input class="input" type="text" name="Jméno" autocomplete="given-name" placeholder="{{ contactForm.firstName }}" required>
+
+                    <!-- LAST NAME -->
+                    <input class="input" type="text" name="Příjmení" autocomplete="family-name" placeholder="{{ contactForm.lastName }}" required>
+
+                    <!-- EMAIL -->
+                    <input class="input" type="email" name="Email" autocomplete="email" placeholder="{{ contactForm.email }}" required>
+
+                    <!-- PHONE -->
+                    <input class="input" type="tel" name="Telefon" autocomplete="tel" placeholder="{{ contactForm.phone }}" required>
+                </fieldset>
+
+                <!-- MESSAGE -->
+                <textarea class="input min-h-[6lh] max-h-[30lh]" name="Zpráva" placeholder="{{ contactForm.yourMessage }}" required></textarea>
+
+                <!-- PRIVACY POLICY -->
+                <p class="font-jakarta-sans text-center ~text-xs/sm text-ochre">
+                    {{ contactForm.bySendingYouAgreeWith }}
+                    <a href="{{ '/gdpr' | locale_url }}" class="underline hover:text-black">{{ contactForm.privacyPolicy }}</a>
+                </p>
+
+                <!-- SUBMIT -->
+                <button type="submit" class="btn self-center">{{ contactForm.submit }}</button>
+            </form>
+        </div>
+    </section>
+
     {% include "sections/cta.njk" %}
 {% endblock body %}

@@ -59,4 +59,20 @@ serviceInfo:
       imageAlt: Svatební koordinace v Chateau Orlice
 
   backgroundAlt: Pozadí s grafikou Chateau Orlice
+
+
+contactForm:
+  topper: Poptávkový formulář
+  heading: Nezávazná poptávka
+
+  firstName: Jméno
+  lastName: Příjmení
+  email: Email
+  phone: Telefon
+  yourMessage: Vaše zpráva
+
+  bySendingYouAgreeWith: Odesláním souhlasíte se
+  privacyPolicy: zpracováním osobních údajů
+
+  submit: Odeslat
 ---

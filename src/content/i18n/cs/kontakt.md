@@ -7,7 +7,7 @@ permalink: 'cs/kontakt/'
 
 eleventyNavigation:
   key: Kontakt
-  order: 800
+  order: 1000
 
 
 landing:
