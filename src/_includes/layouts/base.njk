@@ -56,6 +56,9 @@
     {% include "sections/footer.njk" %}
 
     {% block javascript %}{% endblock %}
-  </body>
 
+    <!-- RESERVATION PANEL -->
+    <div class="be-panel relative z-30"></div>
+    <script src="https://wis.upperbooking.com/hoteltvrzorlice/be-panel?locale={{ reservation[page.lang].locale }}" async></script>
+  </body>
 </html>

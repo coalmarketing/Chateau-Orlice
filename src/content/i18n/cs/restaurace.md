@@ -36,7 +36,7 @@ serviceInfo:
     - title: Jídelní lístek
       subitems:
         - text: Zobrazit více
-          url: /assets/pdf/chateau-orlice-jidelni-listek.pdf
+          url: /assets/cms/chateau-orlice-jidelni-listek.pdf
           blank: true
 
     - title: Platební karty

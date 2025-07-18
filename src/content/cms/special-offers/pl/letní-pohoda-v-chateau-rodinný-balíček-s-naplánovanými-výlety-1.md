@@ -2,7 +2,7 @@
 title: Letni relaks w zamku - pakiet rodzinny z zaplanowanymi wycieczkami
 url: Letní pohoda v Chateau
 date: 2025-06-07T20:00:00.000Z
-image: /assets/images/cms/pexels-paultheodoroja-2393531.jpg
+image: /assets/cms/pexels-paultheodoroja-2393531.jpg
 imageAlt: Kobiety wysiadające z pomarańczowego samochodu
 ---
 Ciesz się beztroskim latem pełnym przygód, relaksu i odkryć. Przygotowaliśmy specjalny pakiet rodzinny, który łączy komfort Chateau Orlice ze starannie zaplanowanym programem na każdy dzień.

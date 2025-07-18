@@ -9,10 +9,10 @@ logo_url: "https://www.senoweb.cz/assets/images/senoweb_og_logo_rounded.png"
 locale: "cs"
 
 # Where should uploaded files be saved
-media_folder: "src/assets/images/cms"
+media_folder: "src/assets/cms"
 
 # Where should media be served, relative to the base of the built site
-public_folder: "/assets/images/cms"
+public_folder: "/assets/cms"
 
 # i18n settings
 i18n:
@@ -66,6 +66,7 @@ collections:
           name: "tags",
           widget: "hidden",
           default: ["specialOffer"],
+          i18n: duplicate,
         }
       - {
           label: "Náhledový obrázek",
@@ -122,6 +123,7 @@ collections:
           name: "tags",
           widget: "hidden",
           default: ["stayPackage"],
+          i18n: duplicate,
         }
       - {
           label: "Náhledový obrázek",
@@ -171,6 +173,7 @@ collections:
           name: "tags",
           widget: "hidden",
           default: ["tripRecommendation"],
+          i18n: duplicate,
         }
       - {
           label: "Náhledový obrázek",
@@ -285,7 +288,6 @@ collections:
       - name: images
         label: Fotografie
         widget: list
-        i18n: true
         fields:
           - { name: url, label: Fotografie, widget: image }
           - {
@@ -322,6 +324,7 @@ collections:
           name: "tags",
           widget: "hidden",
           default: ["jobPost"],
+          i18n: duplicate,
         }
       - {
           label: "Náhledový obrázek",
@@ -337,51 +340,22 @@ collections:
         }
       - { label: "Obsah", name: "body", widget: "markdown" }
 
-  # BLOG CONFIG
-  - label: "Blog"
-    name: "blog"
-    folder: "src/content/cms/blog"
-    create: true
+  # RESTAURANT MENU
+  - name: "documents"
+    label: "Dokumenty"
+    label_singular: "Dokument"
+    folder: "src/content/cms/documents"
+    create: false # Prevents adding new entries
     slug: "{{slug}}"
+    editor:
+      preview: false
     fields:
+      - { name: "id", widget: "hidden" }
       - { label: "Název", name: "title", widget: "string" }
       - {
-          label: "URL odkaz",
-          name: "url",
-          widget: "string",
-          hint: "Určete, kam bude stránka zapsána. Pokud použijete „Blogový příspěvek“, bude příspěvek přístupný z „blog/blogovy-prispevek“.",
-          pattern:
-            [
-              "^[A-Za-z0-9 ]+(?:-[A-Za-z0-9 ]+)*$",
-              "Pouze písmena (A-Z, a-z), číslice a pomlčky (-). Žádná lomítka ani speciální znaky.",
-            ],
-        }
-      - {
-          label: "Popis",
-          name: "description",
-          widget: "string",
-          hint: "Kratší popis blogového příspěvku, který se zobrazuje na náhledech příspěvků",
-        }
-      - {
-          label: "Kategorie",
-          name: "category",
-          widget: "string",
-          hint: "Kategorie, do které blogový příspěvek patří",
-        }
-      - { label: "Autor", name: "author", widget: "string" }
-      - { label: "Datum", name: "date", widget: "datetime" }
-      - {
-          label: "Štítky",
-          name: "tags",
-          widget: "list",
-          default: ["post"],
-          hint: "Pro pobytové kurzy přidat 'pobytoveKurzy' - poté se příspěvek zobrazí na stránce pobytových kurzů",
-        }
-      - {
-          label: "Náhledový obrázek",
-          name: "image",
-          widget: "image",
+          label: "Soubor",
+          name: "file",
+          widget: "file",
           choose_url: false,
+          hint: "Je zapotřebí zachovat stejný název jako původní soubor!",
         }
-      - { label: "Popis obrázku", name: "imageAlt", widget: "string" }
-      - { label: "Obsah", name: "body", widget: "markdown" }

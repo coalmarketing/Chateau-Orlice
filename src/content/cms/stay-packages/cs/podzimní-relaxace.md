@@ -4,7 +4,7 @@ url: Podzimní relaxace
 date: 2025-04-04T20:00:00.000Z
 tags:
   - stayPackage
-image: /assets/images/cms/image.jpg
+image: /assets/cms/image.jpg
 imageAlt: Relaxující pár
 ---
 # 🍂 Podzimní relaxace v Chateau Orlice

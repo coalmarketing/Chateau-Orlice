@@ -4,7 +4,7 @@ url: Letní pohoda v Chateau
 date: 2025-06-07T20:00:00.000Z
 tags:
   - specialOffer
-image: /assets/images/cms/pexels-paultheodoroja-2393531.jpg
+image: /assets/cms/pexels-paultheodoroja-2393531.jpg
 imageAlt: Ženy vystupující z oranžového auta
 ---
 Užijte si bezstarostné léto plné zážitků, odpočinku i objevování. Připravili jsme pro vás speciální **rodinný balíček**, který kombinuje pohodlí Chateau Orlice s pečlivě naplánovaným programem na každý den.

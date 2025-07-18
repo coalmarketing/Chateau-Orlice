@@ -2,7 +2,7 @@
 title: Sommerkomfort im Schloss - Familienpaket mit geplanten Ausflügen
 url: Letní pohoda v Chateau
 date: 2025-06-07T20:00:00.000Z
-image: /assets/images/cms/pexels-paultheodoroja-2393531.jpg
+image: /assets/cms/pexels-paultheodoroja-2393531.jpg
 imageAlt: Frauen, die aus dem orangefarbenen Auto aussteigen
 ---
 Genießen Sie einen sorglosen Sommer voller Abenteuer, Entspannung und Entdeckungen. Wir haben ein spezielles Familienpaket vorbereitet, das den Komfort von Chateau Orlice mit einem sorgfältig geplanten Programm für jeden Tag verbindet.

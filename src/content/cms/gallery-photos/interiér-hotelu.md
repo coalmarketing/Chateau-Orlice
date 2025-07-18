@@ -3,11 +3,11 @@ album: Interiér hotelu
 images:
   - tags:
       - galleryPhoto
-    url: /assets/images/cms/recepce.jpg
+    url: /assets/cms/recepce.jpg
   - tags:
       - galleryPhoto
-    url: /assets/images/cms/chodba.jpg
+    url: /assets/cms/chodba.jpg
   - tags:
       - galleryPhoto
-    url: /assets/images/cms/chateau-orlice-chodba.jpg
+    url: /assets/cms/chateau-orlice-chodba.jpg
 ---

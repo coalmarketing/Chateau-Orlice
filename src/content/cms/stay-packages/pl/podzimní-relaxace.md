@@ -2,7 +2,7 @@
 title: Jesienny relaks
 url: Podzimní relaxace
 date: 2025-04-04T20:00:00.000Z
-image: /assets/images/cms/image.jpg
+image: /assets/cms/image.jpg
 imageAlt: Relaksująca para
 ---
 # 🍂 Podzimní relaxace v Chateau Orlice
