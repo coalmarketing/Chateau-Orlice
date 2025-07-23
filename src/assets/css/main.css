@@ -1536,6 +1536,10 @@ select {
   z-index: 50;
 }
 
+.z-\[25\] {
+  z-index: 25;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -2088,6 +2092,21 @@ select {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .\!pt-16 {
@@ -2923,7 +2942,7 @@ html {
 /* ========================= */
 
 .wis2-panel {
-  background-color: rgb(240 236 225) !important;
+  background-color: rgb(255 255 255) !important;
 }
 
 .before\:absolute::before {

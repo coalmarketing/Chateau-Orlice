@@ -60,5 +60,14 @@
     <!-- RESERVATION PANEL -->
     <div class="be-panel max-lg:hidden relative z-30"></div>
     <script src="https://wis.upperbooking.com/hoteltvrzorlice/be-panel?locale={{ reservation[page.lang].locale }}" async></script>
+
+    <!-- MOBILE RESERVATION BUTTON -->
+    <a 
+      href="https://booking.profitroom.com/{{ reservation[page.lang].locale }}/hoteltvrzorlice"
+      target="_blank"
+      class="lg:hidden flex justify-center fixed bottom-0 w-full py-4 px-6 bg-gold font-jakarta-sans text-ochre font-semibold leading-none z-30"
+    >
+      {{ reservation[page.lang].mobileCta }}
+    </a>
   </body>
 </html>

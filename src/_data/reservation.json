@@ -1,14 +1,18 @@
 {
     "cs": {
-        "locale": "cz"
+        "locale": "cz",
+        "mobileCta": "Rezervace"
     },
     "en": {
-        "locale": "en"
+        "locale": "en",
+        "mobileCta": "Reservation"
     },
     "de": {
-        "locale": "de"
+        "locale": "de",
+        "mobileCta": "Reservierung"
     },
     "pl": {
-        "locale": "sk"
+        "locale": "sk",
+        "mobileCta": "Rezerwacja"
     }
 }

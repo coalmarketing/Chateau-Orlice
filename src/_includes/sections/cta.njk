@@ -17,7 +17,7 @@
 				<p class="max-w-xl font-jakarta-sans text-center ~text-sm/base text-ochre">{{ cta[page.lang].text | safe }}</p>
 			</div>
 
-			<a href="{{ '/rezervace' | locale_url }}" class="btn btn-lg bg-cream">{{ cta[page.lang].cta }}</a>
+			<a href="#book" class="btn btn-lg bg-cream" onclick="Booking.Open(); return false;">{{ cta[page.lang].cta }}</a>
 		</div>
 	</div>
 </section>

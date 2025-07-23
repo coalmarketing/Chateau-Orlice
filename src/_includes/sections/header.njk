@@ -106,7 +106,7 @@ before:transition-transform before:duration-300 before:scale-y-0 before:origin-t
       </div>
 
       <!-- CTA -->
-      <a href="{{ '/rezervace' | locale_url }}" class="btn max-lg:hidden">{{ header[page.lang].cta }}</a>
+      <a href="#book" class="btn max-lg:hidden" onclick="Booking.Open(); return false;">{{ header[page.lang].cta }}</a>
     </div>
   </div>
 </header>
@@ -204,7 +204,7 @@ before:transition-transform before:duration-300 before:scale-y-0 before:origin-t
     </nav>
 
     <!-- CTA -->
-    <a href="{{ '/rezervace' | locale_url }}" class="btn btn-lg text-center hover:bg-cream hover:text-ochre">{{ header[page.lang].cta }}</a>
+    <a href="#book" class="btn btn-lg text-center hover:bg-cream hover:text-ochre" onclick="Booking.Open(); return false;">{{ header[page.lang].cta }}</a>
   </div>
 
   <!-- ADDRESS + SOCIALS -->
