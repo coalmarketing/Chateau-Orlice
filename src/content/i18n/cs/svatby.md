@@ -1,7 +1,7 @@
 ---
 layout: "pages/svatby.njk"
 
-title: 'Nezapomenutlné svatby'
+title: 'Nezapomenutelné svatby'
 description: 'Prožijte svatbu snů v Chateau Orlice. Romantické prostory, prvotřídní služby a kouzelné prostředí Orlických hor pro váš velký den.'
 permalink: 'cs/svatby/'
 
@@ -15,7 +15,7 @@ landing:
   breadcrumbsHome: Domů
   breadcrumbsCurrent: Svatby
 
-  heading: Nezapomenutlné svatby
+  heading: Nezapomenutelné svatby
 
   mouseIconAlt: Ikona počítačové myši
 
