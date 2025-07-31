@@ -67,7 +67,7 @@ sport:
 
 pricing:
   topper: Vybavení
-  heading: Ceník wellness a&nbsp;spa procedur
+  heading: Ceník půjčovny vybavení
 
   items: 
     - title: Kola

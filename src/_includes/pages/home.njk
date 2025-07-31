@@ -25,7 +25,7 @@
             <!-- CTA BUTTONS -->
             <div class="flex gap-2">
                 <a href="#akcni-nabidky" class="max-sm:hidden btn btn-lg">{{ hero.ctaPrimary }}</a>
-                <a href="{{ '/rezervace' | locale_url }}" class="btn btn-lg sm:bg-transparent sm:text-white">{{ hero.ctaSecondary }}</a>
+                <a  href="#book" class="btn btn-lg sm:bg-transparent sm:text-white" onclick="Booking.Open(); return false;">{{ hero.ctaSecondary }}</a>
             </div>
         </div>
 
