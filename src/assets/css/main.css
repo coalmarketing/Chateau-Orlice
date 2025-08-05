@@ -1872,6 +1872,10 @@ select {
   gap: 0.375rem;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-12 {
   gap: 3rem;
 }
@@ -2095,8 +2099,8 @@ select {
   padding-bottom: 2rem;
 }
 
-.\!pt-16 {
-  padding-top: 4rem !important;
+.\!pt-12 {
+  padding-top: 3rem !important;
 }
 
 .pt-64 {
@@ -2357,8 +2361,8 @@ select {
   height: clamp(0.875rem,0.786rem + 0.223vw,1rem)/* fluid from 0.875rem at 40rem to 1rem at 96rem */;
 }
 
-.\~h-8\/14 {
-  height: clamp(2rem,0.93rem + 2.68vw,3.5rem)/* fluid from 2rem at 40rem to 3.5rem at 96rem */;
+.\~h-8\/10 {
+  height: clamp(2rem,1.64rem + 0.89vw,2.5rem)/* fluid from 2rem at 40rem to 2.5rem at 96rem */;
 }
 
 .\~h-\[24rem\]\/\[28rem\] {
@@ -2928,7 +2932,17 @@ html {
 /* ========================= */
 
 .wis2-panel {
-  background-color: rgb(255 255 255) !important;
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  transition-property: transform, translate, scale, rotate;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  translate: 0 100%;
+}
+
+/* === ON SCROLL TRANSITION === */
+
+.group\/body.scroll .wis2-panel {
+  translate: 0 0;
 }
 
 .before\:absolute::before {
@@ -3183,8 +3197,8 @@ html {
   opacity: 1;
 }
 
-.group\/body.scroll .group-\[\.scroll\]\/body\:\~h-6\/10 {
-  height: clamp(1.5rem,0.79rem + 1.79vw,2.5rem)/* fluid from 1.5rem at 40rem to 2.5rem at 96rem */;
+.group\/body.scroll .group-\[\.scroll\]\/body\:\~h-6\/8 {
+  height: clamp(1.5rem,1.14rem + 0.89vw,2rem)/* fluid from 1.5rem at 40rem to 2rem at 96rem */;
 }
 
 .group\/body.scroll .group-\[\.scroll\]\/body\:before\:scale-y-100::before {
@@ -3342,6 +3356,14 @@ html {
 }
 
 @media (min-width: 64rem) {
+  .lg\:sticky {
+    position: sticky;
+  }
+
+  .lg\:top-24 {
+    top: 6rem;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -3380,6 +3402,10 @@ html {
 
   .lg\:flex-wrap {
     flex-wrap: wrap;
+  }
+
+  .lg\:items-start {
+    align-items: flex-start;
   }
 
   .lg\:items-center {

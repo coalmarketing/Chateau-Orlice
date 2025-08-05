@@ -298,5 +298,16 @@ html {
 /* ========================= */
 
 .wis2-panel {
-  background-color: rgb(255 255 255) !important;
+  background-color: rgba(255, 255, 255, 0.9) !important;
+
+  transition-property: transform, translate, scale, rotate;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+
+  translate: 0 100%;
+}
+
+/* === ON SCROLL TRANSITION === */
+.group\/body.scroll .wis2-panel {
+  translate: 0 0;
 }

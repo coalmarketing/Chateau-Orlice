@@ -7,8 +7,7 @@ permalink: 'cs/konference/'
 
 eleventyNavigation:
   key: Konference a firemní akce
-  parent: Události
-  order: 200
+  order: 550
 
 
 landing:

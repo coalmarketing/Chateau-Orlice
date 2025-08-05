@@ -49,20 +49,20 @@
 
             <picture class="w-full">
                 <!-- MOBILE IMAGE -->
-                <source media="(max-width: 600px)" srcset="{% getUrl serviceInfo.imageUrl | resize({ width: 736, height: 800 }) | avif %}" type="image/avif">
-                <source media="(max-width: 600px)" srcset="{% getUrl serviceInfo.imageUrl | resize({ width: 736, height: 800 }) | webp %}" type="image/webp">
-                <source media="(max-width: 600px)" srcset="{% getUrl serviceInfo.imageUrl | resize({ width: 736, height: 800 }) | jpeg %}" type="image/jpeg">
+                <source media="(max-width: 600px)" srcset="{% getUrl serviceInfo.imageUrl | resize({ width: 736, height: 800, position: 'attention' }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl serviceInfo.imageUrl | resize({ width: 736, height: 800, position: 'attention' }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl serviceInfo.imageUrl | resize({ width: 736, height: 800, position: 'attention' }) | jpeg %}" type="image/jpeg">
                 <!-- TABLET IMAGE -->
-                <source media="(max-width: 1024px)" srcset="{% getUrl serviceInfo.imageUrl | resize({ width: 1524, height: 800 }) | avif %}" type="image/avif">
-                <source media="(max-width: 1024px)" srcset="{% getUrl serviceInfo.imageUrl | resize({ width: 1524, height: 800 }) | webp %}" type="image/webp">
-                <source media="(max-width: 1024px)" srcset="{% getUrl serviceInfo.imageUrl | resize({ width: 1524, height: 800 }) | jpeg %}" type="image/jpeg">
+                <source media="(max-width: 1024px)" srcset="{% getUrl serviceInfo.imageUrl | resize({ width: 1524, height: 800, position: 'attention' }) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl serviceInfo.imageUrl | resize({ width: 1524, height: 800, position: 'attention' }) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl serviceInfo.imageUrl | resize({ width: 1524, height: 800, position: 'attention' }) | jpeg %}" type="image/jpeg">
                 <!-- DESKTOP IMAGE -->
-                <source media="(min-width: 1024px)" srcset="{% getUrl serviceInfo.imageUrl | resize({ width: 2880, height: 910 }) | avif %}" type="image/avif">
-                <source media="(min-width: 1024px)" srcset="{% getUrl serviceInfo.imageUrl | resize({ width: 2880, height: 910 }) | webp %}" type="image/webp">
-                <source media="(min-width: 1024px)" srcset="{% getUrl serviceInfo.imageUrl | resize({ width: 2880, height: 910 }) | jpeg %}" type="image/jpeg">
+                <source media="(min-width: 1024px)" srcset="{% getUrl serviceInfo.imageUrl | resize({ width: 2880, height: 910, position: 'attention' }) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl serviceInfo.imageUrl | resize({ width: 2880, height: 910, position: 'attention' }) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl serviceInfo.imageUrl | resize({ width: 2880, height: 910, position: 'attention' }) | jpeg %}" type="image/jpeg">
                 <img
                     class="object-cover h-[25rem] w-full"
-                    src="{% getUrl serviceInfo.imageUrl | resize({ width: 2880, height: 910 }) | jpeg %}"
+                    src="{% getUrl serviceInfo.imageUrl | resize({ width: 2880, height: 910, position: 'attention' }) | jpeg %}"
                     alt="{{ serviceInfo.imageAlt }}"
                     width="1440"
                     height="405"

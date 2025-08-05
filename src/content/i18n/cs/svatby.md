@@ -7,8 +7,7 @@ permalink: 'cs/svatby/'
 
 eleventyNavigation:
   key: Svatby
-  parent: Události
-  order: 100
+  order: 500
 
 
 landing:
@@ -33,7 +32,7 @@ weddings:
   paragraphs:
     - text: U nás se sny mění ve skutečnost. Historická tvrz, zámecké nádvoří i okolní příroda tvoří kouzelnou kulisu pro jeden z nejdůležitějších dnů vašeho života. Ať už toužíte po romantickém obřadu pod širým nebem u rybníka, slavnostní hostině ve sloupovém sále, nebo komorním setkání v loveckém salonku, každé místo v sobě nese jedinečnou atmosféru a eleganci.
 
-    - text: Naše prostory pojmou malé i velké svatby – venkovní areál až 150 hostů, jednotlivé sály 40–50 osob. Společně s vámi vytvoříme svatbu přesně podle vašich představ – s péčí, vkusem a smyslem pro detail.
+    - text: Naše prostory pojmou malé i velké svatby – venkovní areál až 150 hostů, jednotlivé sály 60–80 osob. Společně s vámi vytvoříme svatbu přesně podle vašich představ – s péčí, vkusem a smyslem pro detail.
 
     - text: Chateau Orlice není jen místo. Je to zážitek, na který vy ani vaši hosté nezapomenete.
 
