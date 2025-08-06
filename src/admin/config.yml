@@ -32,7 +32,7 @@ collections:
     name: "specialOffers"
     folder: "src/content/cms/special-offers"
     create: true
-    slug: "{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
     i18n: true
     fields:
       - {
@@ -89,7 +89,7 @@ collections:
     name: "stayPackages"
     folder: "src/content/cms/stay-packages"
     create: true
-    slug: "{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
     i18n: true
     fields:
       - {
@@ -146,7 +146,7 @@ collections:
     name: "tripRecommendations"
     folder: "src/content/cms/trip-recommendations"
     create: true
-    slug: "{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
     i18n: true
     fields:
       - {
@@ -196,7 +196,7 @@ collections:
     name: "news"
     folder: "src/content/cms/news"
     create: true
-    slug: "{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
     i18n: true
     fields:
       - {
@@ -249,7 +249,7 @@ collections:
     editor:
       preview: false
     create: true
-    slug: "{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
     i18n: true
     fields:
       - {
@@ -275,7 +275,7 @@ collections:
       preview: false
     create: true
     identifier_field: "album"
-    slug: "{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
     fields:
       - label: "Album"
         name: "album"
@@ -300,9 +300,9 @@ collections:
   # JOB POSTS
   - label: "Volné pracovní pozice"
     name: "jobPosts"
-    folder: "src/content/cms/blog"
+    folder: "src/content/cms/job-posts"
     create: true
-    slug: "{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
     fields:
       - { label: "Název pracovní pozice", name: "title", widget: "string" }
       - {
@@ -346,7 +346,7 @@ collections:
     label_singular: "Dokument"
     folder: "src/content/cms/documents"
     create: false # Prevents adding new entries
-    slug: "{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
     editor:
       preview: false
     fields:
