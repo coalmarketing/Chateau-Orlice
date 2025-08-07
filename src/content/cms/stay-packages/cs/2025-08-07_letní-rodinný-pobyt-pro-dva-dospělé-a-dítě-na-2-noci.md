@@ -35,3 +35,5 @@ Ubytování ve dvoulůžkovém pokoji kategorie STANDARD s přistýlkou pro dít
 * Dítě na přistýlce do 12 let za příplatek 600 Kč / noc včetně stravy, 500 Kč / noc pouze snídaně.
 * Osoba nad 12 let na přistýlce za příplatek 1250 Kč / noc včetně stravy.
 * Parkoviště v areálu zdarma.
+
+**[Rezervujte svůj podzimní pobyt včas](<>) – počet balíčků je omezen.**
