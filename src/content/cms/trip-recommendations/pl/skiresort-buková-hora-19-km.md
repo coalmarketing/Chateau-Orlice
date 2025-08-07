@@ -1,6 +1,8 @@
 ---
 title: SkiResort Buková Hora (19 km)
 url: SkiResort Buková Hora
+tags:
+  - tripRecommendation
 image: /assets/cms/image.jpg
 imageAlt: Kolejka linowa na Beech Mountain
 ---
