@@ -21,4 +21,4 @@ imageAlt: Ženy vystupující z oranžového auta
 
 **Cena:** Od 5 990 Kč
 
-**[REZERVUJTE SI POBYT UŽ DNES](https://www.tvrzorlice.cz/rezervace)** **– počet balíčků je omezený.**
+**[REZERVUJTE SI POBYT UŽ DNES](https://chateau-orlice.cz/cs/)** **– počet balíčků je omezený.**
