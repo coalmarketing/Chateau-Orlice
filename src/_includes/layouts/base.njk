@@ -43,6 +43,9 @@
     {% block head %}{% endblock %}
 
     <title>{{ title }} • {{ client.name }}</title>
+
+    <!-- Plausible Analytics -->
+    <script defer data-domain="chateauorlice.cz" src="https://analytics.senoweb.cz/js/script.outbound-links.js"></script>
   </head>
 
   <body class="group/body [&.menu]:overflow-hidden {% if page.url == '/' + page.lang + '/' %} home{% else %} interior{% endif %}">
