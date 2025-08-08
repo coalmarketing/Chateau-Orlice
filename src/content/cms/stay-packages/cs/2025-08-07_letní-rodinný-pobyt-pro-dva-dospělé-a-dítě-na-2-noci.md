@@ -36,4 +36,4 @@ Ubytování ve dvoulůžkovém pokoji kategorie STANDARD s přistýlkou pro dít
 * Osoba nad 12 let na přistýlce za příplatek 1250 Kč / noc včetně stravy.
 * Parkoviště v areálu zdarma.
 
-**[Rezervujte svůj podzimní pobyt včas](<>) – počet balíčků je omezen.**
+**[Rezervujte svůj podzimní pobyt včas](https://chateau-orlice.cz/cs/) – počet balíčků je omezen.**
