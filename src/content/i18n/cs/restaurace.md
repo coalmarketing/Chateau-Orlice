@@ -29,9 +29,9 @@ serviceInfo:
   items:
     - title: Otevírací doba
       subitems:
-        - text: "Po - Čt: 17:00 - 20:00"
-        - text: "Pá - So: 12:00 - 22:00"
-        - text: "Ne: 12:00 - 20:00"
+        - text: "Po - Čt: 17:00 - 21:00"
+        - text: "Pá - So: 11:00 - 22:00"
+        - text: "Ne: 11:00 - 20:00"
 
     - title: Jídelní lístek
       subitems:

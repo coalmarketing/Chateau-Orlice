@@ -2059,6 +2059,11 @@ select {
   padding-right: 0.625rem;
 }
 
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -2099,17 +2104,8 @@ select {
   padding-bottom: 2rem;
 }
 
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
 .\!pt-12 {
   padding-top: 3rem !important;
-}
-
-.pt-64 {
-  padding-top: 16rem;
 }
 
 .pb-24 {
@@ -2118,6 +2114,10 @@ select {
 
 .pt-16 {
   padding-top: 4rem;
+}
+
+.pt-64 {
+  padding-top: 16rem;
 }
 
 .text-left {
