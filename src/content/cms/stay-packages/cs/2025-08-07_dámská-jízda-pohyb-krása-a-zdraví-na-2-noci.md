@@ -34,4 +34,4 @@ imageAlt: Ženy relaxující na sportovní podložce u jógy
 * Osoba nad 12 let na přistýlce za příplatek 1250 Kč / noc včetně stravy.
 * Parkoviště v areálu zdarma, vyhrazené parkoviště před hotelem za 200 Kč / noc.
 
-**[Rezervujte svůj podzimní pobyt včas](<>) – počet balíčků je omezen.**
+**[Rezervujte svůj podzimní pobyt včas](https://chateau-orlice.cz/cs/) – počet balíčků je omezen.**
