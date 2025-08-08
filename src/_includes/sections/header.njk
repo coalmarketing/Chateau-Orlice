@@ -2,17 +2,17 @@
 before:transition-transform before:duration-300 before:scale-y-0 before:origin-top group-[.scroll]/body:before:scale-y-100">
   <div class="relative flex justify-between items-center h-16">
     <!-- MAIN NAVIGATION -->
-    <nav id="navigation" class="flex items-center gap-4 h-full">
+    <nav id="navigation" class="flex items-center gap-2 h-full">
       <!-- MENU BUTTON -->
       <button
           class="toggle group flex justify-center items-center gap-1 h-11 w-11 transition-transform duration-300 [&.active]:rotate-90"
           type="button"
           aria-expanded="false">
         <span class="sr-only">{{ header[page.lang].openNavigation }}</span>
-        <div class="relative h-1.5 w-6">
+        <span class="relative block h-1.5 w-6">
           <span class="absolute top-0 block h-px w-full bg-white rounded-full transition-transform duration-300 group-[.active]:rotate-45 group-[.active]:top-1/2 group-[.active]:-translate-y-1/2 group-[.active]:left-1/2 group-[.active]:-translate-x-1/2"></span>
           <span class="absolute bottom-0 block h-px w-full bg-white rounded-full transition-transform duration-300 group-[.active]:rotate-[315deg] group-[.active]:top-1/2 group-[.active]:-translate-y-1/2 group-[.active]:left-1/2 group-[.active]:-translate-x-1/2"></span>
-        </div>
+        </span>
       </button>
 
       <!-- NAVIGATION ITEMS -->
@@ -20,7 +20,7 @@ before:transition-transform before:duration-300 before:scale-y-0 before:origin-t
         {% for item in header[page.lang].mainNavigation %}
           <li class="group relative transition-colors duration-300 hover:bg-cream/25">
             {% if item.subitems %}
-              <div class="flex justify-center items-center gap-1.5 h-full px-4 font-jakarta-sans text-sm text-white hover:cursor-pointer">
+              <div class="flex justify-center items-center gap-1.5 h-full px-3 font-jakarta-sans text-sm text-white hover:cursor-pointer">
                 <span class="mb-1">{{ item.name }}</span>
 
                 <!-- CHEVRON ICON -->
@@ -29,7 +29,7 @@ before:transition-transform before:duration-300 before:scale-y-0 before:origin-t
                 </svg>
               </div>
             {% else %}
-              <a href="{{ item.url | locale_url }}" class="flex justify-center items-center gap-1.5 h-full px-4 font-jakarta-sans text-sm text-white">
+              <a href="{{ item.url | locale_url }}" class="flex justify-center items-center gap-1.5 h-full px-3 font-jakarta-sans text-sm text-white">
                 <span class="mb-1">{{ item.name }}</span>
               </a>
             {% endif %}
@@ -119,10 +119,10 @@ before:transition-transform before:duration-300 before:scale-y-0 before:origin-t
     type="button"
     aria-expanded="false">
     <span class="sr-only">{{ header[page.lang].openNavigation }}</span>
-    <div class="relative h-1.5 w-6">
+    <span class="relative block h-1.5 w-6">
       <span class="absolute top-0 block h-px w-full bg-white rounded-full transition-transform duration-300 group-[.active]:rotate-45 group-[.active]:top-1/2 group-[.active]:-translate-y-1/2 group-[.active]:left-1/2 group-[.active]:-translate-x-1/2"></span>
       <span class="absolute bottom-0 block h-px w-full bg-white rounded-full transition-transform duration-300 group-[.active]:rotate-[315deg] group-[.active]:top-1/2 group-[.active]:-translate-y-1/2 group-[.active]:left-1/2 group-[.active]:-translate-x-1/2"></span>
-    </div>
+    </span>
   </button>
 
   <!-- LOGO + NAVIGATION + CTA -->

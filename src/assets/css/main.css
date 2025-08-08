@@ -2099,12 +2099,25 @@ select {
   padding-bottom: 2rem;
 }
 
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .\!pt-12 {
   padding-top: 3rem !important;
 }
 
 .pt-64 {
   padding-top: 16rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .text-left {
