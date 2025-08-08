@@ -28,4 +28,4 @@ imageAlt: Relaxující pár
 
 Dopřejte si chvíle, kdy nic nemusíte – jen odpočívat a vnímat barevné proměny přírody.
 
-**[Rezervujte svůj podzimní pobyt včas](https://www.tvrzorlice.cz/rezervace/) – počet balíčků je omezen.**
+**[Rezervujte svůj podzimní pobyt včas](https://chateau-orlice.cz/cs/) – počet balíčků je omezen.**
