@@ -1,6 +1,6 @@
 ---
 title: Mound pilgrimage in Letohrad!
-url: Kopečková pouť v Letohradě
+url: 5 tipů na výlety v okolí Chateau Orlice
 date: 2025-05-19T20:00:00.000Z
 image: /assets/cms/trips.jpg
 imageAlt: Letohrad Castle

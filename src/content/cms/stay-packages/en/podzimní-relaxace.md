@@ -1,8 +1,10 @@
 ---
 title: Autumn relaxation
 url: Podzimní relaxace
-date: 2025-04-04T20:00:00.000Z
-image: /assets/cms/image.jpg
+date: 2025-08-07T15:39:00.000+02:00
+tags:
+  - stayPackage
+image: /assets/cms/20200702114027_wylmm9_full.jpg
 imageAlt: Relaxing pair
 ---
 # 🍂 Podzimní relaxace v Chateau Orlice

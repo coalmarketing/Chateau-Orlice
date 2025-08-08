@@ -1,14 +1,24 @@
 ---
-title: Letní pohoda v Chateau - rodinný balíček s naplánovanými výlety
-url: Letní pohoda v Chateau
-date: 2025-06-07T20:00:00.000Z
+title: "Romantika v Chateau Orlice: Pobyt s privátním wellness!"
+url: Zážitek s privátním wellness
+date: 2025-08-07T14:56:00.000+02:00
 tags:
   - specialOffer
-image: /assets/cms/pexels-paultheodoroja-2393531.jpg
+image: /assets/cms/wellness_fotka.jpg
 imageAlt: Ženy vystupující z oranžového auta
 ---
-Užijte si bezstarostné léto plné zážitků, odpočinku i objevování. Připravili jsme pro vás speciální **rodinný balíček**, který kombinuje pohodlí Chateau Orlice s pečlivě naplánovaným programem na každý den.
+**Hledáte dokonalý relax pro dva? Užijte si jedinečný pobyt v Chateau Orlice, kde se můžete uvolnit v našem moderním privátním wellness.**
 
-Těšit se můžete na ubytování v prostorných pokojích, snídaně z čerstvých regionálních surovin i volný vstup do hotelového wellness. Každý den vás čeká **doporučený výlet** – romantická projížďka na lodičkách, cyklostezky vhodné i pro děti nebo návštěva aquaparku a pohádkového zámku v okolí.
+## Co vás čeká?
 
-Dopřejte své rodině léto, na které budete vzpomínat. **Rezervujte včas – počet balíčků je omezený.**
+* **Ubytování na 2 noci pro 2 osoby:** Ve stylovém pokoji, kde se snoubí historie s moderním komfortem.
+* **Bohaté snídaně formou bufetu:** Každé ráno si pochutnáte na čerstvých a lokálních specialitách.
+* **Jedna romantická večeře pro dva:** Vychutnejte si lahodnou večeři o třech chodech v naší zámecké restauraci.
+* **Vstup do privátního wellness na 60 minut:** Dopřejte si relaxaci ve vířivce a sauně jen pro sebe.
+* **10% sleva na veškeré služby hotelu:** Ať už se rozhodnete pro další večeři, masáž, nebo láhev vína.
+
+![](/assets/cms/wellness-4.jpg)
+
+**Cena:** Od 5 990 Kč
+
+**[REZERVUJTE SI POBYT UŽ DNES](https://chateau-orlice.cz/cs/)** **– počet balíčků je omezený.**
