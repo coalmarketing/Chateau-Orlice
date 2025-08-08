@@ -19,5 +19,4 @@ imageAlt: Letní pobyt pro dva s wellness a piknikem - 4 noci
 
 **Cena:** Od 6 490 Kč
 
-
-**[REZERVUJTE SI POBYT UŽ DNES](https://www.tvrzorlice.cz/rezervace) - počet balíčků je omezen!**
+**[REZERVUJTE SI POBYT UŽ DNES](https://chateau-orlice.cz/cs/) - počet balíčků je omezen!**
