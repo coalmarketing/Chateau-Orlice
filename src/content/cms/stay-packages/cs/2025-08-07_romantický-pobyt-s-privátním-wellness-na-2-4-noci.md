@@ -34,4 +34,4 @@ imageAlt: Pár odpočívá na lehátku v privátním wellness po masáži
 * Možnost využít slevu 10% na nákup masáží a zábalů.
 * Na hotelu k dispozici biliard, stolní a karetní hry.
 
-**[Rezervujte svůj podzimní pobyt včas](<>) – počet balíčků je omezen.**
+**[Rezervujte svůj podzimní pobyt včas](https://chateau-orlice.cz/cs/) – počet balíčků je omezen.**
