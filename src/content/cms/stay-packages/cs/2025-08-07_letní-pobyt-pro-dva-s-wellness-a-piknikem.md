@@ -25,4 +25,4 @@ imageAlt: Zamilovaný pár užívající si chutné jídlo
 
 **Cena:** Od 6 490 Kč
 
-[REZERVUJTE SI POBYT UŽ DNES](https://www.tvrzorlice.cz/rezervace/#balicky)
+[REZERVUJTE SI POBYT UŽ DNES](https://chateau-orlice.cz/cs/)
