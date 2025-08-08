@@ -25,6 +25,6 @@ Přemýšlíte, co podniknout během vašeho pobytu v Chateau Orlice? Okolí Let
 
    ![](/assets/cms/foto-3-a.png)
 
-**Po návratu z výletu se můžete těšit na zasloužený odpočinek v našem hotelu, ať už [v privátním wellness](https://chateauorlice.netlify.app/cs/wellness-spa/), nebo u sklenky vína v zámecké restauraci.** 
+**Po návratu z výletu se můžete těšit na zasloužený odpočinek v našem hotelu, ať už [v privátním wellness](https://chateau-orlice.cz/cs/wellness-spa/), nebo u sklenky vína v zámecké restauraci.** 
 
 Těšíme se na vás!
