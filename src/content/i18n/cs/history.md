@@ -1,20 +1,20 @@
 ---
 layout: "pages/history.njk"
 
-title: 'Historie Tvrze'
-description: 'Aktuality z Chateau Orlice – zajímavé zprávy, pozvánky na akce a sezónní tipy pro vaše nezapomenutelné zážitky.'
-permalink: 'cs/historie-tvrze/'
+title: 'Historie'
+description: 'Objevte fascinující historii Chateau Orlice – od středověké tvrze po elegantní hotel, kde se minulost snoubí s pohodlím současnosti.'
+permalink: 'cs/historie/'
 
 eleventyNavigation:
-  key: Historie Tvrze
+  key: Historie
   order: 450
 
 
 landing:
   breadcrumbsHome: Domů
-  breadcrumbsCurrent: Historie Tvrze
+  breadcrumbsCurrent: Historie
 
-  heading: Historie Tvrze
+  heading: Historie
 
   mouseIconAlt: Ikona počítačové myši
 
@@ -23,7 +23,7 @@ landing:
 
 
 history:
-  topper: Historie Tvrze
+  topper: Historie
   heading: Po stopách času v&nbsp;Chateau Orlice
 
   imageUrl: /assets/images/history/tvrz-orlice-2.jpg
