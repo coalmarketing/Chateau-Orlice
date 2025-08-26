@@ -13,7 +13,7 @@
 
 {% block body %}
     <!-- HERO -->
-    <section class="relative py-24 ~px-4/8 flex justify-start items-end min-h-screen z-10
+    <section class="relative pt-24 pb-12 ~px-4/8 flex justify-start items-end min-h-screen z-10
         before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-black/50 before:-z-10">
         <div class="container mx-auto flex flex-col justify-end ~gap-8/10">
             <!-- HEADING + TEXT -->
@@ -25,7 +25,7 @@
             <!-- CTA BUTTONS -->
             <div class="flex gap-2">
                 <a href="#akcni-nabidky" class="max-sm:hidden btn btn-lg">{{ hero.ctaPrimary }}</a>
-                <a  href="#book" class="btn btn-lg sm:bg-transparent sm:text-white" onclick="Booking.Open(); return false;">{{ hero.ctaSecondary }}</a>
+                <a href="#book" class="btn btn-lg sm:bg-transparent sm:text-white" onclick="Booking.Open(); return false;">{{ hero.ctaSecondary }}</a>
             </div>
         </div>
 
@@ -252,7 +252,7 @@
     <div class="flex justify-center bg-white before:h-[12rem] before:w-0.5 before:bg-gold"></div>
 
     <!-- ROOMS -->
-    <section class="py-24 ~px-4/8 bg-white">
+    <section id="pokoje" class="py-24 ~px-4/8 bg-white">
         <div class="container m-auto flex flex-col gap-16">
             <!-- HEADING + CTA -->
             <div class="flex flex-col items-center gap-8">

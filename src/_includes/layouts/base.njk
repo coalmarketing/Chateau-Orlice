@@ -1,7 +1,7 @@
 <!-- A fully fleshed-out <head>, dynamically changing based on client.json and the page front matter -->
 
 <!DOCTYPE html>
-<html lang="cs" class="scroll-smooth">
+<html lang="{{ page.lang }}" class="scroll-smooth">
 
   <head>
     <!-- Standard meta tags -->
@@ -50,7 +50,7 @@
 
   <body class="group/body [&.menu]:overflow-hidden {% if page.url == '/' + page.lang + '/' %} home{% else %} interior{% endif %}">
     <!-- Screen reader skip main nav -->
-    <a class="sr-only" aria-label="Kliknutím přeskočíte na hlavní obsah" href="#main">Kliknutím přeskočíte na hlavní obsah</a>
+    <a class="sr-only" aria-label="{{ global[page.lang].skipToMainContent }}" href="#main">{{ global[page.lang].skipToMainContent }}</a>
 
     {% include "sections/header.njk" %}
     <main id="main">

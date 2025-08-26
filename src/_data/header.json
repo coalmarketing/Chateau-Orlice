@@ -61,7 +61,7 @@
                         "url": "/pokoje"
                     },
                     {
-                        "name": "Stay packages",
+                        "name": "Accommodation packages",
                         "url": "/pobytove-balicky"
                     }
                 ]
@@ -71,14 +71,14 @@
                 "url": "/restaurace"
             },
             {
-                "name": "Services & Experiences",
+                "name": "Services and experiences",
                 "subitems": [
                     {
                         "name": "Wellness & Spa",
                         "url": "/wellness-spa"
                     },
                     {
-                        "name": "Trips & Activities",
+                        "name": "Trips and activities",
                         "url": "/vylety-aktivity"
                     },
                     {
@@ -86,12 +86,20 @@
                         "url": "/okoli-chateau-orlice"
                     }
                 ]
+            },
+            {
+                "name": "Weddings",
+                "url": "/svatby"
+            },
+            {
+                "name": "Corporate events",
+                "url": "/konference"
             }
         ],
-        "backToHomepage": "Back to homepage",
-        "languageSelector": "Language selector button",
+        "backToHomepage": "Go to home page",
+        "languageSelector": "Language selection button",
         "languageSelectorIconAlt": "Globe icon",
-        "cta": "Book now"
+        "cta": "Reservation"
     },
     "de": {
         "openNavigation": "Navigation öffnen",
@@ -104,7 +112,7 @@
                         "url": "/pokoje"
                     },
                     {
-                        "name": "Pauschalangebote",
+                        "name": "Aufenthaltspakete",
                         "url": "/pobytove-balicky"
                     }
                 ]
@@ -114,27 +122,35 @@
                 "url": "/restaurace"
             },
             {
-                "name": "Services & Erlebnisse",
+                "name": "Dienstleistungen und Erlebnisse",
                 "subitems": [
                     {
                         "name": "Wellness & Spa",
                         "url": "/wellness-spa"
                     },
                     {
-                        "name": "Ausflüge & Aktivitäten",
+                        "name": "Ausflüge und Aktivitäten",
                         "url": "/vylety-aktivity"
                     },
                     {
-                        "name": "Umgebung von Chateau Orlice",
+                        "name": "Umgebung des Chateau Orlice",
                         "url": "/okoli-chateau-orlice"
                     }
                 ]
+            },
+            {
+                "name": "Hochzeiten",
+                "url": "/svatby"
+            },
+            {
+                "name": "Konferenzen",
+                "url": "/konference"
             }
         ],
         "backToHomepage": "Zur Startseite",
-        "languageSelector": "Sprachauswahl-Button",
+        "languageSelector": "Schaltfläche zur Sprachauswahl",
         "languageSelectorIconAlt": "Globus-Symbol",
-        "cta": "Jetzt buchen"
+        "cta": "Reservierung"
     },
     "pl": {
         "openNavigation": "Otwórz nawigację",
@@ -164,7 +180,7 @@
                         "url": "/wellness-spa"
                     },
                     {
-                        "name": "Wycieczki i aktywności",
+                        "name": "Wycieczki i atrakcje",
                         "url": "/vylety-aktivity"
                     },
                     {
@@ -172,11 +188,19 @@
                         "url": "/okoli-chateau-orlice"
                     }
                 ]
+            },
+            {
+                "name": "Wesela",
+                "url": "/svatby"
+            },
+            {
+                "name": "Konferencje i imprezy firmowe",
+                "url": "/konference"
             }
         ],
         "backToHomepage": "Powrót do strony głównej",
         "languageSelector": "Przycisk wyboru języka",
         "languageSelectorIconAlt": "Ikona globu",
-        "cta": "Rezerwuj"
+        "cta": "Rezerwacja"
     }
 }

@@ -18,44 +18,8 @@
             <!-- DIVIDER -->
             <div class="h-px bg-ochre/30"></div>
 
-            <!-- NAVIGATION -->
-            {% set navigation = [
-                {
-                    name: "Pokoje",
-                    url: "/pokoje"
-                },
-                {
-                    name: "Pobytové balíčky",
-                    url: "/pobytove-balicky"
-                },
-                {
-                    name: "Restaurace",
-                    url: "/restaurace"
-                },
-                {
-                    name: "Wellness",
-                    url: "/wellness-spa"
-                },
-                {
-                    name: "Výlety a aktivity",
-                    url: "/vylety-aktivity"
-                },
-                {
-                    name: "Svatby",
-                    url: "/svatby"
-                },
-                {
-                    name: "Firemní akce",
-                    url: "/konference"
-                },
-                {
-                    name: "Aktuality",
-                    url: "/aktuality"
-                }
-            ] %}
-
             <ul class="grid grid-cols-2 sm:grid-cols-4 gap-2 place-items-center lg:flex lg:justify-around">
-                {% for item in navigation %}
+                {% for item in footer[page.lang].navigation %}
                     <li>
                         <a href="{{ item.url | locale_url }}" class="font-jakarta-sans ~text-sm/base text-black font-medium transition-colors duration-300 hover:text-gold">
                             {{ item.name }}

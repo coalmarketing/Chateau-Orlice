@@ -2,25 +2,25 @@
     "cs": {
         "topper": "Zažijte Orlici",
         "heading": "Dopřejte si svůj zasloužený odpočinek",
-        "text": "Dokonalý pobyt je ten, který vytváří vzpomínky. V <b><i>Chateau Orlice</b></i> na vás čeká atmosféra, služby a pozornost, díky kterým se budete rádi vracet.",
+        "text": "Dokonalý pobyt je ten, který vytváří vzpomínky. V <b><i>Chateau Orlice</i></b> na vás čeká atmosféra, služby a pozornost, díky kterým se budete rádi vracet.",
         "cta": "Rezervace"
     },
     "en": {
         "topper": "Experience Orlice",
-        "heading": "Treat Yourself to a Well-Deserved Rest",
-        "text": "The perfect stay is one that creates memories. At <b><i>Chateau Orlice</b></i>, you will find an atmosphere, services, and care that will make you want to return.",
-        "cta": "Book Now"
+        "heading": "Treat yourself to a well-deserved break",
+        "text": "A perfect stay is one that creates memories. At <b><i>Chateau Orlice</i></b>, you will find an atmosphere, services, and attention that will make you want to come back again and again.",
+        "cta": "Reservation"
     },
     "de": {
         "topper": "Erleben Sie Orlice",
         "heading": "Gönnen Sie sich Ihre wohlverdiente Erholung",
-        "text": "Der perfekte Aufenthalt ist der, der Erinnerungen schafft. Im <b><i>Chateau Orlice</b></i> erwartet Sie eine Atmosphäre, Services und Aufmerksamkeit, die Sie immer wieder zurückkehren lässt.",
-        "cta": "Jetzt buchen"
+        "text": "Ein perfekter Aufenthalt ist einer, der Erinnerungen schafft. Im <b><i>Chateau Orlice</b></i> erwarten Sie eine Atmosphäre, Serviceleistungen und Aufmerksamkeit, die Sie gerne wiederkommen lassen.",
+        "cta": "Reservierung"
     },
     "pl": {
-        "topper": "Przeżyj Orlicę",
-        "heading": "Zasługujesz na zasłużony odpoczynek",
-        "text": "Idealny pobyt to taki, który tworzy wspomnienia. W <b><i>Chateau Orlice</b></i> czeka na Ciebie atmosfera, usługi i troska, które sprawią, że chętnie będziesz wracać.",
-        "cta": "Rezerwuj"
+        "topper": "Poznaj Orlicę",
+        "heading": "Zafunduj sobie zasłużony wypoczynek",
+        "text": "Idealny pobyt to taki, który pozostawia wspomnienia. W <b><i>Chateau Orlice</i></b> czeka na Państwa atmosfera, usługi i troska, dzięki którym będą Państwo chętnie wracać.",
+        "cta": "Rezerwacja"
     }
 }

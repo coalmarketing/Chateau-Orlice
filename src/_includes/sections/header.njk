@@ -145,7 +145,6 @@ before:transition-transform before:duration-300 before:scale-y-0 before:origin-t
       <ul>
         {# Loop through all pages with a eleventyNavigation in the frontmatter #}
         {% for entry in collections.all | pageLang | eleventyNavigation %}
-
           {# Define a hasChild variable to make it easier to test what navigation items are have child dropdown pages #}
           {% set hasChild = entry.children.length %}
 

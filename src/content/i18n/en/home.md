@@ -6,113 +6,121 @@ description: 'A stylish hotel with wellness, a restaurant, and opportunities for
 permalink: 'en/'
 
 eleventyNavigation:
-  key: Homepage
+  key: Home
   order: 100
 
-hero:
-  heading: A Touch of History<br>and Luxury Experience<br>in the Heart of the Orlické Mountains
-  text: In the magical landscape of the Orlické Mountains, <b><i>Chateau Orlice</i></b> welcomes you—a place where centuries of history meet first-class comfort.
 
-  ctaPrimary: Special Offers
-  ctaSecondary: Book Your Stay
+hero:
+  heading: A touch of history and luxury in the heart of the Orlické Mountains
+  text: <b><i>Chateau Orlice</i></b> welcomes you to the enchanting foothills of the Orlické Mountains, a place where history meets first-class comfort.
+
+  ctaPrimary: Special offers
+  ctaSecondary: Reservation
 
   imageUrl: /assets/images/hero/hero-image.jpg
-  imageAlt: Chateau Orlice hotel by the pond
+  imageAlt: Hotel Chateau Orlice u rybníku
+
 
 specialOffers:
-  topper: Special Offers
+  topper: Special offers
   heading: Limited Seasonal Experiences
 
-  cta: Discover More
+  cta: Learn more
+
 
 services:
-  topper: Our Services
-  heading: Luxury in a Historic Setting
-  text: At Chateau Orlice, we blend the noble atmosphere of historic spaces with a modern vision of luxury and hospitality. Whether you dream of undisturbed relaxation in elegant rooms, a culinary experience in our restaurant, or indulgence in our premium wellness center.
+  topper: Our services
+  heading: Luxury services in a historic setting
+  text: At Chateau Orlice, we combine the elegant atmosphere of historic surroundings with a modern concept of luxury and hospitality. Whether you are looking for peaceful relaxation in elegant rooms, a gourmet experience in our restaurant or relaxation in our first-class wellness center
 
-  items:
-    - url: /accommodation
+  items: 
+    - url: /ubytovani
       title: Accommodation
-      text: Enjoy undisturbed rest in rooms where history meets the comfort of a modern hotel.
+      text: Treat yourself to undisturbed relaxation in rooms where history meets the comfort of a modern hotel.
 
       imageUrl: /assets/images/services/ubytovani.jpg
-      imageAlt: Room 317 at Chateau Orlice hotel
+      imageAlt: Room number 317 in hotel Chateau Orlice
 
-    - url: /restaurant
+    - url: /restaurace
       title: Restaurant
-      text: Treat yourself to culinary delights that perfectly complement your stay in the beautiful Orlické Mountains.
+      text: Treat yourself to a gourmet experience that will complement your stay in the surroundings of the Orlické Mountains.
 
       imageUrl: /assets/images/services/restaurace.jpg
-      imageAlt: Catering at Chateau Orlice
+      imageAlt: Catering in Chateau Orlice
 
     - url: /wellness-spa
       title: Wellness
-      text: Recharge with moments of peace in a spa that combines luxurious care with the unique atmosphere of our chateau.
+      text: Enjoy moments of peace in our wellness center, which combines luxurious care with the magical atmosphere of our hotel.
 
       imageUrl: /assets/images/services/wellness.jpg
-      imageAlt: Woman in the sauna at Chateau Orlice wellness center
+      imageAlt: Woman in a sauna at the wellness of Chateau Orlice
 
-  cta: Learn More
+  cta: Learn more
 
-  backgroundAlt: Chateau Orlice background graphic
+  backgroundAlt: Background with Chateau Orlice graphics
+
 
 about:
-  heading: Start Your Story at&nbsp;Chateau Orlice
-  text: On the edge of Letohrad, nestled in the picturesque nature of the Orlické Mountains, stands Chateau Orlice—a historic gem with a rich past. Once a medieval fortress, it has witnessed centuries of change to welcome you today with the perfect blend of heritage and modern luxury.
-
-  ctaPrimary: Choose Your Experience
-  ctaSecondary: Learn More
+  heading: Start your story at&nbsp;Chateau Orlice
+  text: On the edge of Letohrad, surrounded by the picturesque nature of the Orlické Mountains, stands Chateau Orlice – a historical gem with a rich history. The original fortress has undergone centuries of transformation to offer guests the perfect combination of historical heritage and modern luxury.
+  
+  ctaPrimary: Choose your experience
+  ctaSecondary: Learn more
 
   imageUrl: /assets/images/about/cheateau_orlice-about.jpg
-  imageAlt: View of Chateau Orlice hotel from the courtyard
+  imageAlt: Pohled na budovu hotelu Chateau Orlice z nádvoří
+
 
 rooms:
   topper: Rooms
-  heading: Find Your Perfect Room
+  heading: Choose your ideal room
 
   items:
     - title: Standard
-      text: The Standard Room offers everything you need for a comfortable stay. After a day exploring the Orlické Mountains, relax and unwind before dinner in our restaurant or a soothing wellness ritual.
+      text: The Standard room offers everything you need for a comfortable stay. After a day spent discovering the beauty of the Orlické Mountains, it will provide you with a refuge where you can recharge your batteries before an evening visit to our restaurant or a relaxing treatment in the wellness center.
 
       imageUrl: /assets/images/rooms/room-307.jpg
-      imageAlt: Standard Room 307 at Chateau Orlice
+      imageAlt: Photo of standard room 307 in hotel Chateau Orlice
 
     - title: Superior
-      text: The Superior Room is the ideal place to relax after a long bike trip, recharge after spa treatments, or prepare for a romantic candlelit dinner in our renowned restaurant.
+      text: The Superior Room is the ideal place to relax after a day of cycling, unwind after wellness treatments, or prepare for a romantic candlelit dinner in our renowned restaurant.
 
       imageUrl: /assets/images/rooms/room-318.jpg
-      imageAlt: Superior Room 318 at Chateau Orlice
+      imageAlt: Photo of superior room No. 318 in Chateau Orlice Hotel
 
-  ctaPrimary: Explore Accommodation
-  ctaSecondary: Learn More
+  ctaPrimary: More about accommodation
+  ctaSecondary: Learn more
+
 
 wellness:
   topper: Wellness & Spa
-  heading: Give Your Body the Rest It Deserves
-  text: Our wellness area is a sanctuary from everyday life, restoring your energy and balance.
+  heading: Treat your body to some well-deserved rest
+  text: Our wellness center offers a refuge from the hustle and bustle of everyday life and awakens new energy within you.
 
-  cta: Learn More
+  cta: Learn more
 
   imageUrl: /assets/images/wellness/wellness-1.jpg
-  imageAlt: Woman enjoying a spa treatment
+  imageAlt: A woman enjoying a spa treatment
 
-  backgroundAlt: Chateau Orlice background graphic
+  backgroundAlt: Background with graphics Chateau Orlice
+
 
 stayPackages:
-  topper: Stay Packages
-  heading: Discover Our Exclusive Packages
+  topper: Accommodation packages
+  heading: Discover our exclusive stay packages
 
-  cta: View Packages
+  cta: Stay packages
+
 
 restaurant:
   topper: Restaurant
-  heading: Traditional and Modern Cuisine Under Vaulted Ceilings
-  text: Exceptional food creates unforgettable memories. That’s why we combine the skill of our chefs with the charm of historic interiors and attentive service.
+  heading: Traditional and modern dishes under vaulted ceilings
+  text: Excellent food has the power to create memories. That is why we combine the artistry of our chefs with the charm of the historic surroundings and first-class service.
 
-  cta: Learn More
+  cta: Learn more
 
   imageUrl: /assets/images/restaurant/restaurant-1.jpg
-  imageAlt: Women enjoying a romantic dinner at Chateau Orlice
+  imageAlt: Women at a romantic dinner at Chateau Orlice
 
-  backgroundAlt: Chateau Orlice background graphic
+  backgroundAlt: Background with graphics Chateau Orlice
 ---

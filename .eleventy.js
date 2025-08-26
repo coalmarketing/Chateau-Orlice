@@ -131,8 +131,16 @@ module.exports = function (eleventyConfig) {
      * Usage: {{ collections.all | pageLang | eleventyNavigation }}
      */
     eleventyConfig.addFilter("pageLang", function (value) {
-        return value.filter(item => item.page.lang === this.page.lang)
+        // Figure out the current page’s language
+        const currentLang = this.data?.lang || this.page?.lang || this.ctx?.lang;
+
+        return value.filter(item => {
+            // Look up the item’s language from page.lang or data.lang
+            const itemLang = item.data?.lang || item.page?.lang;
+            return itemLang === currentLang;
+        });
     });
+
 
     // ═════════════════════════════════════════════════════════════════════════
     // SHORTCODES

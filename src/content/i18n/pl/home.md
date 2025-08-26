@@ -1,118 +1,126 @@
 ---
 layout: "pages/home.njk"
 
-title: 'Hotel, Wellness i wyjątkowe doświadczenia w Górach Orlickich'
-description: 'Stylowy hotel z wellness, restauracją i możliwością organizacji wesel oraz wydarzeń firmowych. Noclegi z historycznym charakterem w sercu Gór Orlickich. Odkryj Chateau Orlice.'
+title: 'Hotel, wellness i wrażenia w Górach Orlickich'
+description: 'Stylowy hotel z wellness, restauracją i możliwością organizacji wesel i imprez firmowych. Zakwaterowanie z urokiem historii w sercu Gór Orlickich. Odkryj Chateau Orlice.'
 permalink: 'pl/'
 
 eleventyNavigation:
   key: Strona główna
   order: 100
 
+
 hero:
-  heading: Dotyk historii<br>i luksusowe doświadczenia<br>w sercu Gór Orlickich
-  text: W magicznej scenerii Gór Orlickich wita Cię <b><i>Chateau Orlice</i></b> – miejsce, gdzie wieki historii spotykają się z najwyższym komfortem.
+  heading: Dotyk historii<br>i luksusowe wrażenia<br>w sercu Gór Orlickich
+  text: W uroczej okolicy podnóża Gór Orlickich wita Państwa Chateau Orlice, miejsce, gdzie długa historia łączy się z najwyższym komfortem.
 
   ctaPrimary: Oferty specjalne
-  ctaSecondary: Zarezerwuj pobyt
+  ctaSecondary: Rezerwacja
 
   imageUrl: /assets/images/hero/hero-image.jpg
   imageAlt: Hotel Chateau Orlice nad stawem
 
+
 specialOffers:
   topper: Oferty specjalne
-  heading: Limitowane, sezonowe doświadczenia
+  heading: Limitowane atrakcje sezonowe
 
-  cta: Odkryj więcej
+  cta: Dowiedz się więcej
+
 
 services:
   topper: Nasze usługi
-  heading: Luksus w historycznych wnętrzach
-  text: W Chateau Orlice łączymy szlachetną atmosferę zabytkowych przestrzeni z nowoczesną wizją komfortu i gościnności. Niezależnie od tego, czy marzysz o spokojnym wypoczynku w eleganckim pokoju, kulinarnej podróży w naszej restauracji, czy relaksie w ekskluzywnym centrum wellness.
+  heading: Luksusowe usługi w historycznym otoczeniu
+  text: W Chateau Orlice łączymy elegancką atmosferę historycznych wnętrz z nowoczesnym podejściem do luksusu i gościnności. Niezależnie od tego, czy marzysz o spokojnym wypoczynku w eleganckich pokojach, kulinarnych doznaniach w naszej restauracji, czy relaksie w najwyższej klasy wellness
 
-  items:
-    - url: /accommodation
-      title: Noclegi
-      text: Ciesz się spokojnym odpoczynkiem w pokojach, gdzie historia spotyka komfort nowoczesnego hotelu.
+  items: 
+    - url: /zakwaterowanie
+      title: Zakwaterowanie
+      text: Zapewnij sobie niczym nie zakłócony wypoczynek w pokojach, w których historia spotyka się z komfortem nowoczesnego hotelu.
 
       imageUrl: /assets/images/services/ubytovani.jpg
-      imageAlt: Pokój 317 w hotelu Chateau Orlice
+      imageAlt: Pokój nr 317 w hotelu Chateau Orlice
 
-    - url: /restaurant
+    - url: /restauracja
       title: Restauracja
-      text: Pozwól sobie na kulinarne uniesienia, które idealnie dopełnią Twój pobyt w pięknych Górach Orlickich.
+      text: Zapraszamy na kulinarne doznania, które doskonale dopełnią Państwa pobyt w pięknym otoczeniu Gór Orlickich.
 
       imageUrl: /assets/images/services/restaurace.jpg
       imageAlt: Catering w Chateau Orlice
 
     - url: /wellness-spa
       title: Wellness
-      text: Naładuj energię chwilami relaksu w strefie wellness, gdzie luksusowa pielęgnacja spotyka się z wyjątkową atmosferą zamku.
+      text: Ciesz się chwilami spokoju w centrum wellness, które łączy luksusową pielęgnację z magiczną atmosferą naszego hotelu.
 
       imageUrl: /assets/images/services/wellness.jpg
-      imageAlt: Kobieta w saunie w centrum wellness Chateau Orlice
+      imageAlt: Kobieta w saunie w strefie wellness Chateau Orlice
 
   cta: Dowiedz się więcej
 
-  backgroundAlt: Grafika tła Chateau Orlice
+  backgroundAlt: Tło z grafiką Chateau Orlice
+
 
 about:
-  heading: Rozpocznij swoją historię w&nbsp;Chateau Orlice
-  text: Na obrzeżach Letohradu, w malowniczej scenerii Gór Orlickich, wznosi się Chateau Orlice – zabytkowa perełka z bogatą przeszłością. Dawniej średniowieczna twierdza, dziś wita gości idealnym połączeniem dziedzictwa i nowoczesnego luksusu.
-
+  heading: Rozpocznij swoją historię w Chateau Orlice
+  text: Na skraju Letohradu, w otoczeniu malowniczej przyrody Gór Orlickich, wznosi się Chateau Orlice – historyczna perełka z bogatą historią. Pierwotna twierdza przeszła przez wieki przemian, aby dziś oferować gościom idealne połączenie historycznego dziedzictwa i nowoczesnego luksusu.
+  
   ctaPrimary: Wybierz swoje doświadczenie
   ctaSecondary: Dowiedz się więcej
 
   imageUrl: /assets/images/about/cheateau_orlice-about.jpg
-  imageAlt: Widok hotelu Chateau Orlice z dziedzińca
+  imageAlt: Widok na budynek hotelu Chateau Orlice z dziedzińca
+
 
 rooms:
   topper: Pokoje
-  heading: Znajdź swój idealny pokój
+  heading: Wybierz swój idealny pokój
 
   items:
     - title: Standard
-      text: Pokój Standard oferuje wszystko, czego potrzebujesz do komfortowego wypoczynku. Po dniu pełnym odkrywania Gór Orlickich zrelaksuj się przed kolacją w restauracji lub wieczornym rytuałem wellness.
+      text: Pokój Standard oferuje wszystko, co potrzebne do komfortowego pobytu. Po całym dniu spędzonym na odkrywaniu piękna Gór Orlickich zapewni Ci schronienie, gdzie nabierzesz sił przed wieczorną wizytą w naszej restauracji lub relaksującym zabiegiem w centrum wellness.
 
       imageUrl: /assets/images/rooms/room-307.jpg
-      imageAlt: Pokój Standard 307 w Chateau Orlice
+      imageAlt: Zdjęcie pokoju standardowego nr 307 w hotelu Chateau Orlice
 
     - title: Superior
-      text: Pokój Superior to idealne miejsce na regenerację po rowerowej wycieczce, relaks po zabiegach w spa lub przygotowanie się do romantycznej kolacji przy świecach.
+      text: Pokój typu superior to idealne miejsce na odpoczynek po całodziennej wycieczce rowerowej, relaks po zabiegach wellness lub przygotowanie się do romantycznej kolacji przy świecach w naszej renomowanej restauracji.
 
       imageUrl: /assets/images/rooms/room-318.jpg
-      imageAlt: Pokój Superior 318 w Chateau Orlice
+      imageAlt: Zdjęcie pokoju superior nr 318 w hotelu Chateau Orlice
 
-  ctaPrimary: Odkryj noclegi
+  ctaPrimary: Więcej informacji o zakwaterowaniu
   ctaSecondary: Dowiedz się więcej
+
 
 wellness:
   topper: Wellness & Spa
-  heading: Podaruj swojemu ciału zasłużony odpoczynek
-  text: Nasze wellness to oaza spokoju, w której odzyskasz energię i równowagę.
+  heading: Zafunduj swojemu ciału zasłużony odpoczynek
+  text: Nasze centrum wellness oferuje schronienie przed codziennym zgiełkiem i budzi w Tobie nową energię.
 
   cta: Dowiedz się więcej
 
   imageUrl: /assets/images/wellness/wellness-1.jpg
-  imageAlt: Kobieta podczas zabiegu spa
+  imageAlt: Kobieta korzystająca z zabiegu spa
 
-  backgroundAlt: Grafika tła Chateau Orlice
+  backgroundAlt: Tło z grafiką Chateau Orlice
+
 
 stayPackages:
   topper: Pakiety pobytowe
-  heading: Poznaj nasze wyjątkowe pakiety
+  heading: Odkryj nasze ekskluzywne pakiety pobytowe
 
-  cta: Zobacz pakiety
+  cta: Pakiety pobytowe
+
 
 restaurant:
   topper: Restauracja
-  heading: Tradycyjna i nowoczesna kuchnia pod sklepieniami
-  text: Wyjątkowe jedzenie tworzy niezapomniane wspomnienia. Dlatego łączymy kunszt naszych kucharzy z urokiem historycznych wnętrz i troskliwą obsługą.
+  heading: Tradycyjne i nowoczesne dania pod sklepieniem
+  text: Wyśmienite jedzenie ma moc tworzenia wspomnień. Dlatego łączymy kunszt naszych kucharzy z urokiem historycznego otoczenia i pierwszorzędną obsługą.
 
   cta: Dowiedz się więcej
 
   imageUrl: /assets/images/restaurant/restaurant-1.jpg
-  imageAlt: Kobiety podczas romantycznej kolacji w Chateau Orlice
+  imageAlt: Kobiety na romantycznej kolacji w Chateau Orlice
 
-  backgroundAlt: Grafika tła Chateau Orlice
+  backgroundAlt: Tło z grafiką Chateau Orlice
 ---

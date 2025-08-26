@@ -6,7 +6,41 @@
         "reservation": "Rezervace",
         "whereToFindUs": "Kde nás najdete",
         "copyrightReserved": "Všechna práva vyhrazena",
-        "handCodedBy": "Vytvořeno s 💜 od"
+        "handCodedBy": "Vytvořeno s 💜 od",
+        "navigation": [
+            {
+                "name": "Pokoje",
+                "url": "/pokoje"
+            },
+            {
+                "name": "Pobytové balíčky",
+                "url": "/pobytove-balicky"
+            },
+            {
+                "name": "Restaurace",
+                "url": "/restaurace"
+            },
+            {
+                "name": "Wellness",
+                "url": "/wellness-spa"
+            },
+            {
+                "name": "Výlety a aktivity",
+                "url": "/vylety-aktivity"
+            },
+            {
+                "name": "Svatby",
+                "url": "/svatby"
+            },
+            {
+                "name": "Firemní akce",
+                "url": "/konference"
+            },
+            {
+                "name": "Aktuality",
+                "url": "/aktuality"
+            }
+        ]
     },
     "en": {
         "address": "Address",
@@ -15,7 +49,41 @@
         "reservation": "Reservation",
         "whereToFindUs": "Where to find us",
         "copyrightReserved": "All rights reserved",
-        "handCodedBy": "Made with 💜 by"
+        "handCodedBy": "Created with 💜 by",
+        "navigation": [
+            {
+                "name": "Rooms",
+                "url": "/pokoje"
+            },
+            {
+                "name": "Accommodation packages",
+                "url": "/pobytove-balicky"
+            },
+            {
+                "name": "Restaurant",
+                "url": "/restaurace"
+            },
+            {
+                "name": "Wellness",
+                "url": "/wellness-spa"
+            },
+            {
+                "name": "Trips and activities",
+                "url": "/vylety-aktivity"
+            },
+            {
+                "name": "Weddings",
+                "url": "/svatby"
+            },
+            {
+                "name": "Corporate events",
+                "url": "/konference"
+            },
+            {
+                "name": "News",
+                "url": "/aktuality"
+            }
+        ]
     },
     "de": {
         "address": "Adresse",
@@ -24,7 +92,41 @@
         "reservation": "Reservierung",
         "whereToFindUs": "Wo Sie uns finden",
         "copyrightReserved": "Alle Rechte vorbehalten",
-        "handCodedBy": "Erstellt mit 💜 von"
+        "handCodedBy": "Erstellt mit 💜 von",
+        "navigation": [
+            {
+                "name": "Zimmer",
+                "url": "/pokoje"
+            },
+            {
+                "name": "Aufenthaltspakete",
+                "url": "/pobytove-balicky"
+            },
+            {
+                "name": "Restaurant",
+                "url": "/restaurace"
+            },
+            {
+                "name": "Wellness",
+                "url": "/wellness-spa"
+            },
+            {
+                "name": "Ausflüge und Aktivitäten",
+                "url": "/vylety-aktivity"
+            },
+            {
+                "name": "Hochzeiten",
+                "url": "/svatby"
+            },
+            {
+                "name": "Firmenveranstaltungen",
+                "url": "/konference"
+            },
+            {
+                "name": "Aktuelles",
+                "url": "/aktuality"
+            }
+        ]
     },
     "pl": {
         "address": "Adres",
@@ -33,6 +135,40 @@
         "reservation": "Rezerwacja",
         "whereToFindUs": "Gdzie nas znaleźć",
         "copyrightReserved": "Wszelkie prawa zastrzeżone",
-        "handCodedBy": "Stworzone z 💜 przez"
+        "handCodedBy": "Stworzone z 💜 przez",
+        "navigation": [
+            {
+                "name": "Pokoje",
+                "url": "/pokoje"
+            },
+            {
+                "name": "Pakiety pobytowe",
+                "url": "/pobytove-balicky"
+            },
+            {
+                "name": "Restauracja",
+                "url": "/restaurace"
+            },
+            {
+                "name": "Wellness",
+                "url": "/wellness-spa"
+            },
+            {
+                "name": "Wycieczki i atrakcje",
+                "url": "/vylety-aktivity"
+            },
+            {
+                "name": "Wesela",
+                "url": "/svatby"
+            },
+            {
+                "name": "Imprezy firmowe",
+                "url": "/konference"
+            },
+            {
+                "name": "Aktualności",
+                "url": "/aktuality"
+            }
+        ]
     }
 }

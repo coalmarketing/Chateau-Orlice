@@ -1,7 +1,7 @@
 {
     "cs": {
         "home": "Domů",
-        "specialOffer": "Akční nabídka",
+        "specialOffer": "Akční nabídky",
         "stayPackage": "Pobytový balíček",
         "tripRecommendation": "Tip na výlet",
         "news": "Aktuality",
@@ -13,8 +13,8 @@
     },
     "en": {
         "home": "Home",
-        "specialOffer": "Special Offer",
-        "stayPackage": "Stay Package",
+        "specialOffer": "Special offers",
+        "stayPackage": "Accommodation packages",
         "tripRecommendation": "Trip Recommendation",
         "news": "News",
         "jobPost": "Career",
@@ -25,20 +25,20 @@
     },
     "de": {
         "home": "Startseite",
-        "specialOffer": "Aktionsangebot",
-        "stayPackage": "Pauschalangebot",
+        "specialOffer": "Aktuelle Angebote",
+        "stayPackage": "Aufenthaltspakete",
         "tripRecommendation": "Ausflugstipp",
         "news": "Aktuelles",
         "jobPost": "Karriere",
         "noPostsYet": "Hier gibt es noch nichts.",
         "cta": "Mehr erfahren",
-        "clockIconAlt": "Uhr-Symbol",
+        "clockIconAlt": "Stundensymbol",
         "landingImageAlt": "Beitragsfoto"
     },
     "pl": {
         "home": "Strona główna",
-        "specialOffer": "Oferta specjalna",
-        "stayPackage": "Pakiet pobytowy",
+        "specialOffer": "Oferty specjalne",
+        "stayPackage": "Pakiety pobytowe",
         "tripRecommendation": "Polecana wycieczka",
         "news": "Aktualności",
         "jobPost": "Kariera",
