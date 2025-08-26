@@ -2322,12 +2322,6 @@ select {
   transition-duration: 150ms;
 }
 
-.transition-\[height\] {
-  transition-property: height;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .duration-300 {
   transition-duration: 300ms;
 }
@@ -2388,20 +2382,12 @@ select {
   height: clamp(0.875rem,0.786rem + 0.223vw,1rem)/* fluid from 0.875rem at 40rem to 1rem at 96rem */;
 }
 
-.\~h-8\/10 {
-  height: clamp(2rem,1.64rem + 0.89vw,2.5rem)/* fluid from 2rem at 40rem to 2.5rem at 96rem */;
+.\~h-5\/6 {
+  height: clamp(1.25rem,1.07rem + 0.45vw,1.5rem)/* fluid from 1.25rem at 40rem to 1.5rem at 96rem */;
 }
 
 .\~h-\[24rem\]\/\[28rem\] {
   height: clamp(24rem,21.14rem + 7.14vw,28rem)/* fluid from 24rem at 40rem to 28rem at 96rem */;
-}
-
-.\~h-6\/8 {
-  height: clamp(1.5rem,1.14rem + 0.89vw,2rem)/* fluid from 1.5rem at 40rem to 2rem at 96rem */;
-}
-
-.\~h-5\/6 {
-  height: clamp(1.25rem,1.07rem + 0.45vw,1.5rem)/* fluid from 1.25rem at 40rem to 1.5rem at 96rem */;
 }
 
 .\~w-3 /* error - Missing end value */ {
@@ -3230,14 +3216,6 @@ html {
 
 .group\/body.menu .group-\[\.menu\]\/body\:opacity-100 {
   opacity: 1;
-}
-
-.group\/body.scroll .group-\[\.scroll\]\/body\:\~h-6\/8 {
-  height: clamp(1.5rem,1.14rem + 0.89vw,2rem)/* fluid from 1.5rem at 40rem to 2rem at 96rem */;
-}
-
-.group\/body.scroll .group-\[\.scroll\]\/body\:\~h-5\/7 {
-  height: clamp(1.25rem,0.89rem + 0.89vw,1.75rem)/* fluid from 1.25rem at 40rem to 1.75rem at 96rem */;
 }
 
 .group\/body.scroll .group-\[\.scroll\]\/body\:\~h-4\/5 {
