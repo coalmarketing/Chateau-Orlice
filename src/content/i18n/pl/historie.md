@@ -19,7 +19,7 @@ landing:
   mouseIconAlt: Ikona myszki komputerowej
 
   imageUrl: /assets/images/history/tvrz-orlice.jpg
-  imageAtl: Dziedziniec Chateau Orlice z historycznym powozem
+  imageAlt: Dziedziniec Chateau Orlice z historycznym powozem
 
 
 history:

@@ -20,7 +20,7 @@ landing:
   mouseIconAlt: Computer mouse icon
 
   imageUrl: /assets/images/surroundings/surroundings-1.jpg
-  imageAtl: Hotel Chateau Orlice in winter
+  imageAlt: Hotel Chateau Orlice in winter
 
 
 serviceInfo:

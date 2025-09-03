@@ -19,7 +19,7 @@ landing:
   mouseIconAlt: Ikona myszki komputerowej
 
   imageUrl: /assets/images/restaurant/restaurant-1.jpg
-  imageAtl: Kobiety na romantycznej kolacji w Chateau Orlice
+  imageAlt: Kobiety na romantycznej kolacji w Chateau Orlice
 
 
 serviceInfo:

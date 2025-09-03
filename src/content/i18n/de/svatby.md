@@ -19,7 +19,7 @@ landing:
   mouseIconAlt: Computer-Maus-Symbol
 
   imageUrl: /assets/images/weddings/weddings-1.jpg
-  imageAtl: Hochzeitsbogen im Hof des Chateau Orlice
+  imageAlt: Hochzeitsbogen im Hof des Chateau Orlice
 
 
 weddings:

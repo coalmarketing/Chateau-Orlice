@@ -19,7 +19,7 @@ landing:
   mouseIconAlt: Computer mouse icon
 
   imageUrl: /assets/images/restaurant/restaurant-1.jpg
-  imageAtl: Women at a romantic dinner at Chateau Orlice
+  imageAlt: Women at a romantic dinner at Chateau Orlice
 
 
 serviceInfo:

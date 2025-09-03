@@ -19,7 +19,7 @@ landing:
   mouseIconAlt: Computer mouse icon
 
   imageUrl: /assets/images/weddings/weddings-1.jpg
-  imageAtl: Wedding arch in the courtyard of Chateau Orlice
+  imageAlt: Wedding arch in the courtyard of Chateau Orlice
 
 
 weddings:

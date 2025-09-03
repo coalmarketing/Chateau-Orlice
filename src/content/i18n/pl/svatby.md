@@ -19,7 +19,7 @@ landing:
   mouseIconAlt: Ikona myszki komputerowej
 
   imageUrl: /assets/images/weddings/weddings-1.jpg
-  imageAtl: Brama weselna na dziedzińcu Chateau Orlice
+  imageAlt: Brama weselna na dziedzińcu Chateau Orlice
 
 
 weddings:

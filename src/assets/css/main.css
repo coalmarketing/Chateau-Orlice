@@ -2445,6 +2445,10 @@ select {
   max-width: clamp(20rem,17.14rem + 7.14vw,24rem)/* fluid from 20rem at 40rem to 24rem at 96rem */;
 }
 
+.\~max-w-md\/xl {
+  max-width: clamp(28rem,22.29rem + 14.29vw,36rem)/* fluid from 28rem at 40rem to 36rem at 96rem */;
+}
+
 .\~gap-1 /* error - Missing end value */ {
 }
 

@@ -27,6 +27,10 @@
                         "url": "/wellness-spa"
                     },
                     {
+                        "name": "Privátní Spa",
+                        "url": "/privatni-spa"
+                    },
+                    {
                         "name": "Výlety a aktivity",
                         "url": "/vylety-aktivity"
                     },
@@ -88,12 +92,17 @@
                 ]
             },
             {
-                "name": "Weddings",
-                "url": "/svatby"
-            },
-            {
-                "name": "Corporate events",
-                "url": "/konference"
+                "name": "Events",
+                "subitems": [
+                    {
+                        "name": "Weddings",
+                        "url": "/svatby"
+                    },
+                    {
+                        "name": "Corporate events",
+                        "url": "/konference"
+                    }
+                ]
             }
         ],
         "backToHomepage": "Go to home page",
@@ -139,12 +148,17 @@
                 ]
             },
             {
-                "name": "Hochzeiten",
-                "url": "/svatby"
-            },
-            {
-                "name": "Konferenzen",
-                "url": "/konference"
+                "name": "Veranstaltungen",
+                "subitems": [
+                    {
+                        "name": "Hochzeiten",
+                        "url": "/svatby"
+                    },
+                    {
+                        "name": "Konferenzen",
+                        "url": "/konference"
+                    }
+                ]
             }
         ],
         "backToHomepage": "Zur Startseite",
@@ -190,12 +204,17 @@
                 ]
             },
             {
-                "name": "Wesela",
-                "url": "/svatby"
-            },
-            {
-                "name": "Konferencje",
-                "url": "/konference"
+                "name": "Wydarzenia",
+                "subitems": [
+                    {
+                        "name": "Wesela",
+                        "url": "/svatby"
+                    },
+                    {
+                        "name": "Konferencje",
+                        "url": "/konference"
+                    }
+                ]
             }
         ],
         "backToHomepage": "Powrót do strony głównej",

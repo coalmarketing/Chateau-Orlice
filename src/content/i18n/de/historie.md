@@ -19,7 +19,7 @@ landing:
   mouseIconAlt: Computer-Maus-Symbol
 
   imageUrl: /assets/images/history/tvrz-orlice.jpg
-  imageAtl: Hof des Chateau Orlice mit einer historischen Kutsche
+  imageAlt: Hof des Chateau Orlice mit einer historischen Kutsche
 
 
 history:

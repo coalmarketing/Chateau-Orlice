@@ -19,7 +19,7 @@ landing:
   mouseIconAlt: Ikona počítačové myši
 
   imageUrl: /assets/images/history/tvrz-orlice.jpg
-  imageAtl: Dvůr Chateau Orlice s historickým kočárem
+  imageAlt: Dvůr Chateau Orlice s historickým kočárem
 
 
 history:

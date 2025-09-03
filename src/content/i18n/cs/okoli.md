@@ -20,7 +20,7 @@ landing:
   mouseIconAlt: Ikona počítačové myši
 
   imageUrl: /assets/images/surroundings/surroundings-1.jpg
-  imageAtl: Hotel Chateau Orlice v zimě
+  imageAlt: Hotel Chateau Orlice v zimě
 
 
 serviceInfo:

@@ -19,7 +19,7 @@ landing:
   mouseIconAlt: Ikona myszki komputerowej
 
   imageUrl: /assets/images/conferences/conferences-1.jpg
-  imageAtl: Sala konferencyjna w Chateau Orlice
+  imageAlt: Sala konferencyjna w Chateau Orlice
 
 
 conferences:

@@ -19,7 +19,7 @@ landing:
   mouseIconAlt: Ikona počítačové myši
 
   imageUrl: /assets/images/weddings/weddings-1.jpg
-  imageAtl: Svatební brána na dvoře Chateau Orlice
+  imageAlt: Svatební brána na dvoře Chateau Orlice
 
 
 weddings:

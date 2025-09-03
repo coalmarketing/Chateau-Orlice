@@ -19,7 +19,7 @@ landing:
   mouseIconAlt: Computer mouse icon
 
   imageUrl: /assets/images/history/tvrz-orlice.jpg
-  imageAtl: Chateau Orlice courtyard with a historical carriage
+  imageAlt: Chateau Orlice courtyard with a historical carriage
 
 
 history:

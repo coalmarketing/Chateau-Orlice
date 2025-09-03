@@ -19,7 +19,7 @@ landing:
   mouseIconAlt: Ikona počítačové myši
 
   imageUrl: /assets/images/restaurant/restaurant-1.jpg
-  imageAtl: Ženy na romantické večeři v Chateau Orlice
+  imageAlt: Ženy na romantické večeři v Chateau Orlice
 
 
 serviceInfo:
