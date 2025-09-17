@@ -8,7 +8,7 @@ permalink: 'pl/vecere-ve-sklepeni/'
 eleventyNavigation:
   key: Kolacja w piwnicy
   parent: Usługi i atrakcje
-  order: 500
+  order: 200
 
 
 landing:

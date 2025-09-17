@@ -8,7 +8,7 @@ permalink: 'de/okoli-chateau-orlice/'
 eleventyNavigation:
   key: Umgebung des Chateau Orlice
   parent: Dienstleistungen und Erlebnisse
-  order: 300
+  order: 700
 
 
 landing:

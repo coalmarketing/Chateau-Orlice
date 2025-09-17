@@ -8,7 +8,7 @@ permalink: 'de/vecere-na-rybniku/'
 eleventyNavigation:
   key: Abendessen am Teich
   parent: Dienstleistungen und Erlebnisse
-  order: 400
+  order: 100
 
 
 landing:

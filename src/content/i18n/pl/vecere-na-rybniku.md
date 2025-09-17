@@ -8,7 +8,7 @@ permalink: 'pl/vecere-na-rybniku/'
 eleventyNavigation:
   key: Kolacja nad stawem
   parent: Usługi i atrakcje
-  order: 400
+  order: 100
 
 
 landing:

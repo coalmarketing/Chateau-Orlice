@@ -8,7 +8,7 @@ permalink: 'de/vecere-ve-sklepeni/'
 eleventyNavigation:
   key: Abendessen im Keller
   parent: Dienstleistungen und Erlebnisse
-  order: 500
+  order: 200
 
 
 landing:

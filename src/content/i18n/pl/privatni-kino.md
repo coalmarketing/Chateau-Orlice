@@ -8,7 +8,7 @@ permalink: 'pl/privatni-kino/'
 eleventyNavigation:
   key: Prywatne kino
   parent: Usługi i atrakcje
-  order: 200
+  order: 400
 
 
 landing:

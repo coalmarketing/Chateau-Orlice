@@ -8,7 +8,7 @@ permalink: 'en/okoli-chateau-orlice/'
 eleventyNavigation:
   key: Hotel surroundings
   parent: Services and experiences
-  order: 300
+  order: 700
 
 
 landing:

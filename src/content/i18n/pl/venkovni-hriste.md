@@ -8,7 +8,7 @@ permalink: 'pl/venkovni-hriste/'
 eleventyNavigation:
   key: Zewnętrzny plac zabaw
   parent: Usługi i atrakcje
-  order: 600
+  order: 800
 
 
 landing:

@@ -8,7 +8,7 @@ permalink: 'en/vecere-na-rybniku/'
 eleventyNavigation:
   key: Dinner by the pond
   parent: Services and experiences
-  order: 400
+  order: 200
 
 
 landing:

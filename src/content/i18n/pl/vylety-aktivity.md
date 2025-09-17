@@ -8,7 +8,7 @@ permalink: 'pl/vylety-aktivity/'
 eleventyNavigation:
   key: Wycieczki i atrakcje
   parent: Usługi i atrakcje
-  order: 200
+  order: 700
 
 
 landing:

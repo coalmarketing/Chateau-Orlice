@@ -8,7 +8,7 @@ permalink: 'en/privatni-kino/'
 eleventyNavigation:
   key: Private movie theater
   parent: Services and experiences
-  order: 200
+  order: 400
 
 
 landing:

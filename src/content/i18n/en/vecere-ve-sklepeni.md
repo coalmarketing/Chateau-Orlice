@@ -8,7 +8,7 @@ permalink: 'en/vecere-ve-sklepeni/'
 eleventyNavigation:
   key: Dinner in the cellar
   parent: Services and experiences
-  order: 500
+  order: 100
 
 
 landing:

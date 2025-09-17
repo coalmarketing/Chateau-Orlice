@@ -8,7 +8,7 @@ permalink: 'de/wellness-spa/'
 eleventyNavigation:
   key: Wellness & Spa
   parent: Dienstleistungen und Erlebnisse
-  order: 100
+  order: 800
 
 
 landing:

@@ -8,7 +8,7 @@ permalink: 'de/privatni-spa/'
 eleventyNavigation:
   key: Privates Spa
   parent: Dienstleistungen und Erlebnisse
-  order: 300
+  order: 500
 
 
 landing:

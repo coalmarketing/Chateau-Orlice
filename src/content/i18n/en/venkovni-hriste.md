@@ -8,7 +8,7 @@ permalink: 'en/venkovni-hriste/'
 eleventyNavigation:
   key: Outdoor playground
   parent: Services and experiences
-  order: 600
+  order: 300
 
 
 landing:

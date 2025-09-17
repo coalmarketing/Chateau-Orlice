@@ -8,7 +8,7 @@ permalink: 'en/vylety-aktivity/'
 eleventyNavigation:
   key: Trips and activities
   parent: Services and experiences
-  order: 200
+  order: 800
 
 
 landing:
