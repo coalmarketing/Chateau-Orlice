@@ -6,12 +6,12 @@
                 "name": "Ubytování",
                 "subitems": [
                     {
-                        "name": "Pokoje",
-                        "url": "/pokoje"
-                    },
-                    {
                         "name": "Pobytové balíčky",
                         "url": "/pobytove-balicky"
+                    },
+                    {
+                        "name": "Pokoje",
+                        "url": "/pokoje"
                     }
                 ]
             },
@@ -23,20 +23,36 @@
                 "name": "Služby a zážitky",
                 "subitems": [
                     {
-                        "name": "Wellness & Spa",
-                        "url": "/wellness-spa"
+                        "name": "Okolí Chateau Orlice",
+                        "url": "/okoli-chateau-orlice"
+                    },
+                    {
+                        "name": "Privátní kino",
+                        "url": "/privatni-kino"
                     },
                     {
                         "name": "Privátní Spa",
                         "url": "/privatni-spa"
                     },
                     {
+                        "name": "Večeře na rybníku",
+                        "url": "/vecere-na-rybniku"
+                    },
+                    {
+                        "name": "Večeře ve sklepení",
+                        "url": "/vecere-ve-sklepeni"
+                    },
+                    {
                         "name": "Výlety a aktivity",
                         "url": "/vylety-aktivity"
                     },
                     {
-                        "name": "Okolí Chateau Orlice",
-                        "url": "/okoli-chateau-orlice"
+                        "name": "Venkovní hřiště",
+                        "url": "/venkovni-hriste"
+                    },
+                    {
+                        "name": "Wellness & Spa",
+                        "url": "/wellness-spa"
                     }
                 ]
             },
@@ -78,16 +94,36 @@
                 "name": "Services and experiences",
                 "subitems": [
                     {
-                        "name": "Wellness & Spa",
-                        "url": "/wellness-spa"
+                        "name": "Surroundings of Chateau Orlice",
+                        "url": "/okoli-chateau-orlice"
+                    },
+                    {
+                        "name": "Private movie theater",
+                        "url": "/privatni-kino"
+                    },
+                    {
+                        "name": "Private Spa",
+                        "url": "/privatni-spa"
+                    },
+                    {
+                        "name": "Dinner on the pond",
+                        "url": "/vecere-na-rybniku"
+                    },
+                    {
+                        "name": "Dinner in the cellar",
+                        "url": "/vecere-ve-sklepeni"
                     },
                     {
                         "name": "Trips and activities",
                         "url": "/vylety-aktivity"
                     },
                     {
-                        "name": "Surroundings of Chateau Orlice",
-                        "url": "/okoli-chateau-orlice"
+                        "name": "Outdoor playground",
+                        "url": "/venkovni-hriste"
+                    },
+                    {
+                        "name": "Wellness & Spa",
+                        "url": "/wellness-spa"
                     }
                 ]
             },
@@ -134,16 +170,36 @@
                 "name": "Dienstleistungen und Erlebnisse",
                 "subitems": [
                     {
-                        "name": "Wellness & Spa",
-                        "url": "/wellness-spa"
+                        "name": "Umgebung des Chateau Orlice",
+                        "url": "/okoli-chateau-orlice"
+                    },
+                    {
+                        "name": "Privater Kino",
+                        "url": "/privatni-kino"
+                    },
+                    {
+                        "name": "Privates Spa",
+                        "url": "/privatni-spa"
+                    },
+                    {
+                        "name": "Abendessen am Teich",
+                        "url": "/vecere-na-rybniku"
+                    },
+                    {
+                        "name": "Abendessen im Keller",
+                        "url": "/vecere-ve-sklepeni"
                     },
                     {
                         "name": "Ausflüge und Aktivitäten",
                         "url": "/vylety-aktivity"
                     },
                     {
-                        "name": "Umgebung des Chateau Orlice",
-                        "url": "/okoli-chateau-orlice"
+                        "name": "Spielplatz im Freien",
+                        "url": "/venkovni-hriste"
+                    },
+                    {
+                        "name": "Wellness & Spa",
+                        "url": "/wellness-spa"
                     }
                 ]
             },
@@ -190,16 +246,36 @@
                 "name": "Usługi i atrakcje",
                 "subitems": [
                     {
-                        "name": "Wellness & Spa",
-                        "url": "/wellness-spa"
+                        "name": "Okolice Chateau Orlice",
+                        "url": "/okoli-chateau-orlice"
+                    },
+                    {
+                        "name": "Prywatne kino",
+                        "url": "/privatni-kino"
+                    },
+                    {
+                        "name": "Prywatne Spa",
+                        "url": "/privatni-spa"
+                    },
+                    {
+                        "name": "Kolacja nad stawem",
+                        "url": "/vecere-na-rybniku"
+                    },
+                    {
+                        "name": "Kolacja w piwnicy",
+                        "url": "/vecere-ve-sklepeni"
                     },
                     {
                         "name": "Wycieczki i atrakcje",
                         "url": "/vylety-aktivity"
                     },
                     {
-                        "name": "Okolice Chateau Orlice",
-                        "url": "/okoli-chateau-orlice"
+                        "name": "Zewnętrzny plac zabaw",
+                        "url": "/venkovni-hriste"
+                    },
+                    {
+                        "name": "Wellness & Spa",
+                        "url": "/wellness-spa"
                     }
                 ]
             },

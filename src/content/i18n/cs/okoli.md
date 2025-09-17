@@ -8,7 +8,7 @@ permalink: 'cs/okoli-chateau-orlice/'
 eleventyNavigation:
   key: Okolí hotelu
   parent: Služby a zážitky
-  order: 300
+  order: 100
 
 
 landing:

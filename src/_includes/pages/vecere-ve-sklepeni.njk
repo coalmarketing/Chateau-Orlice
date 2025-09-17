@@ -22,7 +22,7 @@
                 <source media="(min-width: 1024px)" srcset="{% getUrl contentOne.imageUrl | resize({ width: 1600, height: 896, position: 'attention' }) | jpeg %}" type="image/jpeg">
                 <img
                     class="object-cover h-[20rem] md:h-[28rem] w-full"
-                    src="{% getUrl contentOne.imageUrl | resize({ width: 1600, height: 896 }) | jpeg %}"
+                    src="{% getUrl contentOne.imageUrl | resize({ width: 1600, height: 896, position: 'attention' }) | jpeg %}"
                     alt="{{ contentOne.imageAlt }}"
                     width="448"
                     height="800"
@@ -45,7 +45,7 @@
                             {% include "components/topper-decoration.njk" %}
                         </span>
 
-                        <h2 class="~max-w-md/xl text-center ~text-2xl/3xl font-black uppercase">{{ contentOne.heading | safe }}</h2>
+                        <h2 class="~max-w-sm/lg text-center ~text-2xl/3xl font-black uppercase">{{ contentOne.heading | safe }}</h2>
                     </div>
 
                     <!-- TEXT -->
