@@ -132,6 +132,18 @@ document.addEventListener('scroll', () => {
     bodyElement.classList.toggle('scroll', scroll >= 100);
 });
 
+// Add scroll-end class to body element when scrolled to the end
+document.addEventListener('scroll', () => {
+    const bodyElement = document.body;
+    const scrollPosition = window.scrollY + window.innerHeight;
+    const pageHeight = document.documentElement.scrollHeight;
+
+    // Allow a 100px tolerance so it works reliably
+    const atEnd = scrollPosition >= pageHeight - 100;
+
+    bodyElement.classList.toggle('scroll-end', atEnd);
+});
+
 // Toggle language switcher
 const languageContainer = document.querySelector("header #languageContainer");
 const languageSwitch = document.querySelector("header #languageSwitch");

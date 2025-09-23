@@ -311,3 +311,8 @@ html {
 .group\/body.scroll .wis2-panel {
   translate: 0 0;
 }
+
+/* === ON SCROLL END TRANSITION === */
+.group\/body.scroll-end .wis2-panel {
+  translate: 0 100%;
+}

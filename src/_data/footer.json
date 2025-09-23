@@ -7,6 +7,16 @@
         "whereToFindUs": "Kde nás najdete",
         "copyrightReserved": "Všechna práva vyhrazena",
         "handCodedBy": "Vytvořeno s 💜 od",
+        "miscLinks": [
+            {
+                "name": "GDPR",
+                "url": "/assets/pdf/Chateau-Orlice_GPDR.pdf"
+            },
+            {
+                "name": "Všeobecné obchodní podmínky",
+                "url": "/assets/pdf/Chateau-Orlice_TOS.pdf"
+            }
+        ],
         "navigation": [
             {
                 "name": "Pokoje",
@@ -50,6 +60,16 @@
         "whereToFindUs": "Where to find us",
         "copyrightReserved": "All rights reserved",
         "handCodedBy": "Created with 💜 by",
+        "miscLinks": [
+            {
+                "name": "GDPR",
+                "url": "/assets/pdf/Chateau-Orlice_GPDR.pdf"
+            },
+            {
+                "name": "Terms and Conditions",
+                "url": "/assets/pdf/Chateau-Orlice_TOS.pdf"
+            }
+        ],
         "navigation": [
             {
                 "name": "Rooms",
@@ -93,6 +113,16 @@
         "whereToFindUs": "Wo Sie uns finden",
         "copyrightReserved": "Alle Rechte vorbehalten",
         "handCodedBy": "Erstellt mit 💜 von",
+        "miscLinks": [
+            {
+                "name": "GDPR",
+                "url": "/assets/pdf/Chateau-Orlice_GPDR.pdf"
+            },
+            {
+                "name": "AGB",
+                "url": "/assets/pdf/Chateau-Orlice_TOS.pdf"
+            }
+        ],
         "navigation": [
             {
                 "name": "Zimmer",
@@ -136,6 +166,16 @@
         "whereToFindUs": "Gdzie nas znaleźć",
         "copyrightReserved": "Wszelkie prawa zastrzeżone",
         "handCodedBy": "Stworzone z 💜 przez",
+        "miscLinks": [
+            {
+                "name": "GDPR",
+                "url": "/assets/pdf/Chateau-Orlice_GPDR.pdf"
+            },
+            {
+                "name": "Warunki i postanowienia",
+                "url": "/assets/pdf/Chateau-Orlice_TOS.pdf"
+            }
+        ],
         "navigation": [
             {
                 "name": "Pokoje",

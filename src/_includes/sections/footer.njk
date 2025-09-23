@@ -1,5 +1,5 @@
 <!-- FOOTER -->
-<footer class="pt-16 pb-24 ~px-4/8 bg-white">
+<footer class="py-16 ~px-4/8 bg-white">
     <div class="container m-auto flex flex-col items-center gap-24">
         <!-- CONTENT -->
         <div class="flex flex-col gap-8 w-full">
@@ -88,11 +88,23 @@
             <div class="h-px bg-ochre/30"></div>
         </div>
 
-        <!-- COPYRIGHT -->
-        <p class="font-jakarta-sans text-center text-xs text-ochre">
-            © {% year %}
-            {{ footer[page.lang].copyrightReserved }} - {{ footer[page.lang].handCodedBy }}
-            <a href="https://coalmarketing.cz/" target="_blank" class="underline hover:text-black">coalmarketing.cz</a>
-        </p>
+        <!-- COPYRIGHT + GDPR + TOS -->
+        <div class="flex max-md:flex-col-reverse md:justify-between items-center gap-4 md:w-full">
+            <!-- COPYRIGHT -->
+            <p class="font-jakarta-sans text-center text-xs text-ochre">
+                © {% year %}
+                {{ footer[page.lang].copyrightReserved }} - {{ footer[page.lang].handCodedBy }}
+                <a href="https://coalmarketing.cz/" target="_blank" class="underline hover:text-black">coalmarketing.cz</a>
+            </p>
+
+            <!-- GDPR + TOS -->
+            <div class="flex gap-4">
+                {% for item in footer[page.lang].miscLinks %}
+                    <a href="{{ item.url }}" target="_blank" class="font-jakarta-sans text-center text-xs text-ochre underline hover:text-black">
+                        {{ item.name }}
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </footer>
