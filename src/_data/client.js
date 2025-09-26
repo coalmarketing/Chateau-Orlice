@@ -1,6 +1,6 @@
 module.exports = {
   name: "Chateau Orlice",
-  email: "recepce@eywan.cz",
+  email: "recepce@chateau-orlice.cz",
   ico: "19538685",
   phoneForTel: "+420774000309",
   phoneFormatted: "+420 774 000 309",
