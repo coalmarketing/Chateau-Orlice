@@ -16,7 +16,7 @@ module.exports = {
     youtube: "https://www.youtube.com/user/tvrzOrlice"
   },
   //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-  domain: "https://www.chateauorlice.cz",
+  domain: "https://www.chateau-orlice.cz",
   // Passing the isProduction variable for use in HTML templates
   isProduction: process.env.ELEVENTY_ENV === "PROD",
 };
