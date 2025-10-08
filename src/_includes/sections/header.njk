@@ -18,7 +18,7 @@ before:transition-transform before:duration-300 before:scale-y-0 before:origin-t
       <!-- NAVIGATION ITEMS -->
       <ul class="hidden 2xl:flex h-full">
         {% for item in header[page.lang].mainNavigation %}
-          <li class="group relative transition-colors duration-300 hover:bg-cream/25">
+          <li class="group/li relative transition-colors duration-300 hover:bg-cream/25">
             {% if item.subitems %}
               <div class="flex justify-center items-center gap-1.5 h-full px-3 font-jakarta-sans text-sm text-white hover:cursor-pointer">
                 <span class="mb-1">{{ item.name }}</span>
@@ -35,10 +35,31 @@ before:transition-transform before:duration-300 before:scale-y-0 before:origin-t
             {% endif %}
 
             {% if item.subitems %}
-              <ul class="absolute top-full left-0 flex flex-col gap-2 p-2 bg-cream transition-transform duration-300 scale-y-0 origin-top group-hover:scale-y-100">
+              <ul class="absolute top-full left-0 flex flex-col gap-2 p-2 bg-cream shadow transition-transform duration-300 scale-y-0 origin-top group-hover/li:scale-y-100">
                 {% for subitem in item.subitems %}
-                  <li class="flex">
-                    <a href="{{ subitem.url | locale_url }}" class="w-full p-2 font-jakarta-sans text-sm text-ochre whitespace-nowrap">{{ subitem.name }}</a>
+                  <li class="group/subli relative flex">
+                    <a href="{{ subitem.url | locale_url }}" class="flex items-center gap-1.5 w-full p-2 font-jakarta-sans text-sm text-ochre whitespace-nowrap">
+                      <span>{{ subitem.name }}</span>
+
+                      {% if subitem.children %}
+                        <!-- CHEVRON ICON -->
+                        <svg class="mt-px" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                        </svg>
+                      {% endif %}
+                    </a>
+
+                    {% if subitem.children %}
+                      <ul class="absolute -top-2 left-[calc(100%+0.5rem)] flex flex-col gap-2 p-2 bg-cream shadow-[3px_1px_4px_rgba(0,0,0,0.1)] transition-transform duration-300 scale-x-0 origin-left group-hover/subli:scale-x-100">
+                        {% for child in subitem.children %}
+                          <li class="flex">
+                            <a href="{{ child.url | locale_url }}" class="flex items-center gap-1.5 w-full p-2 font-jakarta-sans text-sm text-ochre whitespace-nowrap">
+                              {{ child.name }}
+                            </a>
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
                   </li>
                 {% endfor %}
               </ul>

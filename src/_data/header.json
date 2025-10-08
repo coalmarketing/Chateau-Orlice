@@ -27,32 +27,86 @@
                         "url": "/okoli-chateau-orlice"
                     },
                     {
-                        "name": "Privátní kino",
-                        "url": "/privatni-kino"
-                    },
-                    {
-                        "name": "Privátní Spa",
-                        "url": "/privatni-spa"
-                    },
-                    {
-                        "name": "Večeře na rybníku",
-                        "url": "/vecere-na-rybniku"
-                    },
-                    {
-                        "name": "Večeře ve sklepení",
-                        "url": "/vecere-ve-sklepeni"
-                    },
-                    {
                         "name": "Výlety a aktivity",
                         "url": "/vylety-aktivity"
                     },
                     {
-                        "name": "Venkovní hřiště",
-                        "url": "/venkovni-hriste"
-                    },
-                    {
                         "name": "Wellness & Spa",
                         "url": "/wellness-spa"
+                    },
+                    {
+                        "name": "Gastronomie a romantika",
+                        "url": "/gastronomie-romantika",
+                        "children": [
+                            {
+                                "name": "Večeře na hladině rybníka",
+                                "url": "/cs/gastronomie-romantika#vecere-rybnik"
+                            },
+                            {
+                                "name": "Večeře ve sklepení z 13. století",
+                                "url": "/cs/gastronomie-romantika#vecere-sklepeni"
+                            },
+                            {
+                                "name": "Piknik u zámeckého rybníka",
+                                "url": "/cs/gastronomie-romantika#piknik-rybnik"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Venkovní aktivity",
+                        "url": "/venkovni-aktivity",
+                        "children": [
+                            {
+                                "name": "Kola a elektrokola",
+                                "url": "/cs/venkovni-aktivity#kola-elektrokola"
+                            },
+                            {
+                                "name": "Kurz přežití",
+                                "url": "/cs/venkovni-aktivity#kurz-preziti"
+                            },
+                            {
+                                "name": "Rybaření",
+                                "url": "/cs/venkovni-aktivity#rybareni"
+                            },
+                            {
+                                "name": "Venkovní bazén",
+                                "url": "/cs/venkovni-aktivity#venkovni-bazen"
+                            },
+                            {
+                                "name": "Venkovní dětské hřiště",
+                                "url": "/cs/venkovni-aktivity#venkovni-detske-hriste"
+                            },
+                            {
+                                "name": "Venkovní ping pong",
+                                "url": "/cs/venkovni-aktivity#venkovni-ping-pong"
+                            },
+                            {
+                                "name": "Zámecké alpaky",
+                                "url": "/cs/venkovni-aktivity#zamecke-alpaky"
+                            },
+                            {
+                                "name": "Zapůjčení pramice",
+                                "url": "/cs/venkovni-aktivity#zapujceni-pramice"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Vnitřní aktivity",
+                        "url": "/vnitrni-aktivity",
+                        "children": [
+                            {
+                                "name": "Hotelové kino",
+                                "url": "/cs/vnitrni-aktivity#hotelove-kino"
+                            },
+                            {
+                                "name": "Privátní Spa",
+                                "url": "/cs/vnitrni-aktivity#privatni-spa"
+                            },
+                            {
+                                "name": "Zámecké lázně",
+                                "url": "/cs/vnitrni-aktivity#zamecke-lazne"
+                            }
+                        ]
                     }
                 ]
             },
@@ -94,26 +148,6 @@
                 "name": "Services and experiences",
                 "subitems": [
                     {
-                        "name": "Dinner in the cellar",
-                        "url": "/vecere-ve-sklepeni"
-                    },
-                    {
-                        "name": "Dinner on the pond",
-                        "url": "/vecere-na-rybniku"
-                    },
-                    {
-                        "name": "Outdoor playground",
-                        "url": "/venkovni-hriste"
-                    },
-                    {
-                        "name": "Private movie theater",
-                        "url": "/privatni-kino"
-                    },
-                    {
-                        "name": "Private Spa",
-                        "url": "/privatni-spa"
-                    },
-                    {
                         "name": "Surroundings of Chateau Orlice",
                         "url": "/okoli-chateau-orlice"
                     },
@@ -124,6 +158,80 @@
                     {
                         "name": "Wellness & Spa",
                         "url": "/wellness-spa"
+                    },
+                    {
+                        "name": "Gastronomy and romance",
+                        "url": "/gastronomie-romantika",
+                        "children": [
+                            {
+                                "name": "Dinner on the surface of the pond",
+                                "url": "/en/gastronomie-romantika#vecere-rybnik"
+                            },
+                            {
+                                "name": "Dinner in a 13th century cellar",
+                                "url": "/en/gastronomie-romantika#vecere-sklepeni"
+                            },
+                            {
+                                "name": "Picnic at the castle pond",
+                                "url": "/en/gastronomie-romantika#piknik-rybnik"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Outdoor activities",
+                        "url": "/venkovni-aktivity",
+                        "children": [
+                            {
+                                "name": "Bicycles and electric bicycles",
+                                "url": "/en/venkovni-aktivity#kola-elektrokola"
+                            },
+                            {
+                                "name": "Survival course",
+                                "url": "/en/venkovni-aktivity#kurz-preziti"
+                            },
+                            {
+                                "name": "Fishing",
+                                "url": "/en/venkovni-aktivity#rybareni"
+                            },
+                            {
+                                "name": "Outdoor swimming pool",
+                                "url": "/en/venkovni-aktivity#venkovni-bazen"
+                            },
+                            {
+                                "name": "Outdoor playground",
+                                "url": "/en/venkovni-aktivity#venkovni-detske-hriste"
+                            },
+                            {
+                                "name": "Outdoor ping pong",
+                                "url": "/en/venkovni-aktivity#venkovni-ping-pong"
+                            },
+                            {
+                                "name": "Castle alpacas",
+                                "url": "/en/venkovni-aktivity#zamecke-alpaky"
+                            },
+                            {
+                                "name": "Rent a ferry",
+                                "url": "/en/venkovni-aktivity#zapujceni-pramice"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Indoor activities",
+                        "url": "/vnitrni-aktivity",
+                        "children": [
+                            {
+                                "name": "Hotel cinema",
+                                "url": "/en/vnitrni-aktivity#hotelove-kino"
+                            },
+                            {
+                                "name": "Private Spa",
+                                "url": "/en/vnitrni-aktivity#privatni-spa"
+                            },
+                            {
+                                "name": "Castle Spa",
+                                "url": "/en/vnitrni-aktivity#zamecke-lazne"
+                            }
+                        ]
                     }
                 ]
             },
@@ -170,28 +278,8 @@
                 "name": "Dienstleistungen und Erlebnisse",
                 "subitems": [
                     {
-                        "name": "Abendessen am Teich",
-                        "url": "/vecere-na-rybniku"
-                    },
-                    {
-                        "name": "Abendessen im Keller",
-                        "url": "/vecere-ve-sklepeni"
-                    },
-                    {
                         "name": "Ausflüge und Aktivitäten",
                         "url": "/vylety-aktivity"
-                    },
-                    {
-                        "name": "Privater Kino",
-                        "url": "/privatni-kino"
-                    },
-                    {
-                        "name": "Privates Spa",
-                        "url": "/privatni-spa"
-                    },
-                    {
-                        "name": "Spielplatz im Freien",
-                        "url": "/venkovni-hriste"
                     },
                     {
                         "name": "Umgebung des Chateau Orlice",
@@ -200,6 +288,80 @@
                     {
                         "name": "Wellness & Spa",
                         "url": "/wellness-spa"
+                    },
+                    {
+                        "name": "Gastronomie und Romantik",
+                        "url": "/gastronomie-romantika",
+                        "children": [
+                            {
+                                "name": "Abendessen auf der Oberfläche des Teiches",
+                                "url": "/de/gastronomie-romantika#vecere-rybnik"
+                            },
+                            {
+                                "name": "Abendessen in einem Keller aus dem 13.",
+                                "url": "/de/gastronomie-romantika#vecere-sklepeni"
+                            },
+                            {
+                                "name": "Picknick am Schlossteich",
+                                "url": "/de/gastronomie-romantika#piknik-rybnik"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Aktivitäten im Freien",
+                        "url": "/venkovni-aktivity",
+                        "children": [
+                            {
+                                "name": "Fahrräder und Elektrofahrräder",
+                                "url": "/de/venkovni-aktivity#kola-elektrokola"
+                            },
+                            {
+                                "name": "Überlebenskurs",
+                                "url": "/de/venkovni-aktivity#kurz-preziti"
+                            },
+                            {
+                                "name": "Angeln",
+                                "url": "/de/venkovni-aktivity#rybareni"
+                            },
+                            {
+                                "name": "Außenschwimmbad",
+                                "url": "/de/venkovni-aktivity#venkovni-bazen"
+                            },
+                            {
+                                "name": "Spielplatz im Freien",
+                                "url": "/de/venkovni-aktivity#venkovni-detske-hriste"
+                            },
+                            {
+                                "name": "Tischtennis im Freien",
+                                "url": "/de/venkovni-aktivity#venkovni-ping-pong"
+                            },
+                            {
+                                "name": "Schloss Alpakas",
+                                "url": "/de/venkovni-aktivity#zamecke-alpaky"
+                            },
+                            {
+                                "name": "Eine Fähre mieten",
+                                "url": "/de/venkovni-aktivity#zapujceni-pramice"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Aktivitäten in Innenräumen",
+                        "url": "/vnitrni-aktivity",
+                        "children": [
+                            {
+                                "name": "Hotel Kino",
+                                "url": "/de/vnitrni-aktivity#hotelove-kino"
+                            },
+                            {
+                                "name": "Privates Heilbad",
+                                "url": "/de/vnitrni-aktivity#privatni-spa"
+                            },
+                            {
+                                "name": "Schloss Spa",
+                                "url": "/de/vnitrni-aktivity#zamecke-lazne"
+                            }
+                        ]
                     }
                 ]
             },
@@ -246,24 +408,8 @@
                 "name": "Usługi i atrakcje",
                 "subitems": [
                     {
-                        "name": "Kolacja nad stawem",
-                        "url": "/vecere-na-rybniku"
-                    },
-                    {
-                        "name": "Kolacja w piwnicy",
-                        "url": "/vecere-ve-sklepeni"
-                    },
-                    {
                         "name": "Okolice Chateau Orlice",
                         "url": "/okoli-chateau-orlice"
-                    },
-                    {
-                        "name": "Prywatne kino",
-                        "url": "/privatni-kino"
-                    },
-                    {
-                        "name": "Prywatne Spa",
-                        "url": "/privatni-spa"
                     },
                     {
                         "name": "Wellness & Spa",
@@ -274,8 +420,78 @@
                         "url": "/vylety-aktivity"
                     },
                     {
-                        "name": "Zewnętrzny plac zabaw",
-                        "url": "/venkovni-hriste"
+                        "name": "Gastronomia i romans",
+                        "url": "/gastronomie-romantika",
+                        "children": [
+                            {
+                                "name": "Kolacja na powierzchni stawu",
+                                "url": "/pl/gastronomie-romantika#vecere-rybnik"
+                            },
+                            {
+                                "name": "Kolacja w XIII-wiecznej piwnicy",
+                                "url": "/pl/gastronomie-romantika#vecere-sklepeni"
+                            },
+                            {
+                                "name": "Piknik nad stawem zamkowym",
+                                "url": "/pl/gastronomie-romantika#piknik-rybnik"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Zajęcia na świeżym powietrzu",
+                        "url": "/venkovni-aktivity",
+                        "children": [
+                            {
+                                "name": "Rowery i rowery elektryczne",
+                                "url": "/pl/venkovni-aktivity#kola-elektrokola"
+                            },
+                            {
+                                "name": "Kurs przetrwania",
+                                "url": "/pl/venkovni-aktivity#kurz-preziti"
+                            },
+                            {
+                                "name": "Wędkarstwo",
+                                "url": "/pl/venkovni-aktivity#rybareni"
+                            },
+                            {
+                                "name": "Odkryty basen",
+                                "url": "/pl/venkovni-aktivity#venkovni-bazen"
+                            },
+                            {
+                                "name": "Zewnętrzny plac zabaw",
+                                "url": "/pl/venkovni-aktivity#venkovni-detske-hriste"
+                            },
+                            {
+                                "name": "Ping pong na świeżym powietrzu",
+                                "url": "/pl/venkovni-aktivity#venkovni-ping-pong"
+                            },
+                            {
+                                "name": "Zamkowe alpaki",
+                                "url": "/pl/venkovni-aktivity#zamecke-alpaky"
+                            },
+                            {
+                                "name": "Wynajem promu",
+                                "url": "/de/venkovni-aktivity#zapujceni-pramice"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Zajęcia w pomieszczeniach",
+                        "url": "/vnitrni-aktivity",
+                        "children": [
+                            {
+                                "name": "Kino hotelowe",
+                                "url": "/pl/vnitrni-aktivity#hotelove-kino"
+                            },
+                            {
+                                "name": "Prywatne spa",
+                                "url": "/pl/vnitrni-aktivity#privatni-spa"
+                            },
+                            {
+                                "name": "Castle Spa",
+                                "url": "/pl/vnitrni-aktivity#zamecke-lazne"
+                            }
+                        ]
                     }
                 ]
             },

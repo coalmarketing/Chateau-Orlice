@@ -8,7 +8,7 @@ permalink: 'cs/vylety-aktivity/'
 eleventyNavigation:
   key: Výlety a aktivity
   parent: Služby a zážitky
-  order: 700
+  order: 200
 
 
 landing:
