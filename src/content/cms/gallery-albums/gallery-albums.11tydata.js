@@ -1,7 +1,7 @@
 const slugify = require("slugify");
 
 module.exports = {
-	tags: "galleryAlbum",
+	tags: ["galleryAlbum"],
 	eleventyComputed: {
 		lang: data => {
 			const parts = data.page.inputPath.split("/");

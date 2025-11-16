@@ -2,7 +2,7 @@ const slugify = require("slugify");
 
 module.exports = {
 	layout: "layouts/post.njk",
-	tags: "jobPost",
+	tags: ["jobPost"],
 	eleventyComputed: {
 		preloadImg: data => data.image,
 		permalink: data => {

@@ -2,7 +2,7 @@ const slugify = require("slugify");
 
 module.exports = {
 	layout: "layouts/post.njk",
-	tags: "tripRecommendation",
+	tags: ["tripRecommendation"],
 	eleventyComputed: {
 		preloadImg: data => data.image,
 		lang: data => {

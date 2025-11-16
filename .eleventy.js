@@ -141,6 +141,64 @@ module.exports = function (eleventyConfig) {
         });
     });
 
+    /**
+     * 🔍 Multi-Property Equality Filter
+     * Filters a collection based on multiple property-value pairs.
+     * Supports nested properties like "eleventyNavigation.parent".
+     * Usage:
+     *   {{ collections.all | whereAll({ category: "skola", "eleventyNavigation.parent": "Škola" }) }}
+     */
+    eleventyConfig.addFilter("whereAll", function (collection, conditions = {}) {
+        if (!Array.isArray(collection)) return [];
+
+        // Helper for nested props like "eleventyNavigation.parent"
+        function getDeep(obj, path) {
+            return path.split(".").reduce((acc, key) => acc && acc[key], obj);
+        }
+
+        return collection.filter((item) => {
+            return Object.entries(conditions).every(([prop, expected]) => {
+                const actual = getDeep(item.data, prop);
+                return actual === expected;
+            });
+        });
+    });
+
+    /**
+     * 🎯 Find a Single Item in a Collection
+     * Finds the first item in a collection that matches multiple property-value pairs.
+     * Supports nested properties like "eleventyNavigation.key".
+     * Returns the first matching item object, or undefined if no match is found.
+     *
+     * Usage:
+     *   {% set pageNav = collections.all | findWhere({ "eleventyNavigation.key": page.fileSlug }) %}
+     *   {% if pageNav %}
+     *     <h2>{{ pageNav.data.title }}</h2>
+     *   {% endif %}
+     */
+    eleventyConfig.addFilter("findWhere", function (collection, conditions = {}) {
+        // Return undefined if the collection is not a valid array
+        if (!Array.isArray(collection)) {
+            return undefined;
+        }
+
+        // Helper to safely access nested properties (e.g., "eleventyNavigation.key")
+        function getDeep(obj, path) {
+            return path.split(".").reduce((acc, key) => acc && acc[key] !== undefined ? acc[key] : undefined, obj);
+        }
+
+        // Use Array.prototype.find() to return the FIRST item that matches the criteria
+        return collection.find((item) => {
+            // Use Object.entries().every() to ensure ALL conditions are met for the item
+            return Object.entries(conditions).every(([prop, expectedValue]) => {
+                // Get the actual value from the item's data, supporting nested paths
+                const actualValue = getDeep(item.data, prop);
+
+                // Return true if the actual value matches the expected value
+                return actualValue === expectedValue;
+            });
+        });
+    });
 
     // ═════════════════════════════════════════════════════════════════════════
     // SHORTCODES

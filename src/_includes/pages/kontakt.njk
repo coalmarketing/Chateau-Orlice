@@ -1,6 +1,7 @@
 {% extends "layouts/base.njk" %}
 
 {% block body %}
+    {% set image = collections.image | findWhere({key: "contact.landing"}) %}
     {% include "sections/landing.njk" %}
 
     <!-- CONTACT -->

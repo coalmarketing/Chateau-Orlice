@@ -5,6 +5,7 @@
 {% endblock %}
 
 {% block body %}
+    {% set image = collections.image | findWhere({key: "gallery.landing"}) %}
     {% include "sections/landing.njk" %}
 
     <div class="py-8">

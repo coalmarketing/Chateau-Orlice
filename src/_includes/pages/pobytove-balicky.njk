@@ -5,6 +5,7 @@
 {% endblock %}
 
 {% block body %}
+    {% set image = collections.image | findWhere({key: "stayPackages.landing"}) %}
     {% include "sections/landing.njk" %}
 
     <!-- POSTS -->
@@ -26,7 +27,7 @@
                 <p class="font-jakarta-sans ~text-sm/base text-ochre">{{ posts[page.lang].noPostsYet }}</p>
             {% else %}
                 <ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-                    {% for post in collections.stayPackage | pageLang(page.lang) %}
+                    {% for post in collections.stayPackage | reverse | pageLang(page.lang) %}
                         {% include "components/post-item.njk" %}
                     {% endfor %}
                 </ul>

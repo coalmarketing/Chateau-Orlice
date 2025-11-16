@@ -1,5 +1,5 @@
 module.exports = {
-	tags: "galleryPhoto",
+	tags: ["galleryPhoto"],
 	eleventyComputed: {
 		permalink: false
 	}

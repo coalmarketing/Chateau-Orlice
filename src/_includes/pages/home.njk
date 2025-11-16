@@ -29,23 +29,24 @@
             </div>
         </div>
 
+        {% set image = collections.image | findWhere({key: "homepage.hero"}) %}
         <picture>
             <!-- MOBILE IMAGE -->
-            <source media="(max-width: 600px)" srcset="{% getUrl hero.imageUrl | resize({ width: 800, height: 1920 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl hero.imageUrl | resize({ width: 800, height: 1920 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl hero.imageUrl | resize({ width: 800, height: 1920 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 600px)" srcset="{% getUrl image.data.url | resize({ width: 800, height: 1920 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl image.data.url | resize({ width: 800, height: 1920 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl image.data.url | resize({ width: 800, height: 1920 }) | jpeg %}" type="image/jpeg">
             <!-- TABLET IMAGE -->
-            <source media="(max-width: 1024px)" srcset="{% getUrl hero.imageUrl | resize({ width: 1600, height: 2560 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl hero.imageUrl | resize({ width: 1600, height: 2560 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl hero.imageUrl | resize({ width: 1600, height: 2560 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 1600, height: 2560 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 1600, height: 2560 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 1600, height: 2560 }) | jpeg %}" type="image/jpeg">
             <!-- DESKTOP IMAGE -->
-            <source media="(min-width: 1024px)" srcset="{% getUrl hero.imageUrl | resize({ width: 3840, height: 2160 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl hero.imageUrl | resize({ width: 3840, height: 2160 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl hero.imageUrl | resize({ width: 3840, height: 2160 }) | jpeg %}" type="image/jpeg">
+            <source media="(min-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 3840, height: 2160 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 3840, height: 2160 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 3840, height: 2160 }) | jpeg %}" type="image/jpeg">
             <img
                 class="object-cover absolute top-0 left-0 h-full w-full -z-20"
-                src="{% getUrl hero.imageUrl | resize({ width: 3840, height: 2160 }) | jpeg %}"
-                alt="{{ hero.imageAlt }}"
+                src="{% getUrl image.data.url | resize({ width: 3840, height: 2160 }) | jpeg %}"
+                alt="{{ image.data.alt }}"
                 width="1920"
                 height="1080"
                 loading="eager"
@@ -139,6 +140,8 @@
 
             <!-- SERVICES -->
             <ul class="grid grid-cols-1 xl:grid-cols-3 ~gap-4/8">
+                {% set keys = ["homepage.services.accommodation", "homepage.services.restaurant", "homepage.services.wellness"] %}
+
                 {% for item in services.items %}
                     <li class="relative z-10">
                         <a href="{{ item.url | locale_url }}" class="group relative flex h-[24rem] xl:h-[36rem] ~p-4/6 z-10 before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-black/50 before:-z-10">
@@ -160,23 +163,27 @@
                         </a>
 
                         <!-- BACKGROUND IMAGE -->
+                        {% set image = collections.image | findWhere({
+                            key: keys[loop.index0]
+                        }) %}
+
                         <picture>
                             <!-- MOBILE IMAGE -->
-                            <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | resize({ width: 736, height: 768 }) | avif %}" type="image/avif">
-                            <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | resize({ width: 736, height: 768 }) | webp %}" type="image/webp">
-                            <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | resize({ width: 736, height: 768 }) | jpeg %}" type="image/jpeg">
+                            <source media="(max-width: 600px)" srcset="{% getUrl image.data.url | resize({ width: 736, height: 768 }) | avif %}" type="image/avif">
+                            <source media="(max-width: 600px)" srcset="{% getUrl image.data.url | resize({ width: 736, height: 768 }) | webp %}" type="image/webp">
+                            <source media="(max-width: 600px)" srcset="{% getUrl image.data.url | resize({ width: 736, height: 768 }) | jpeg %}" type="image/jpeg">
                             <!-- TABLET IMAGE -->
-                            <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1524, height: 768 }) | avif %}" type="image/avif">
-                            <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1524, height: 768 }) | webp %}" type="image/webp">
-                            <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1524, height: 768 }) | jpeg %}" type="image/jpeg">
+                            <source media="(max-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 1524, height: 768 }) | avif %}" type="image/avif">
+                            <source media="(max-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 1524, height: 768 }) | webp %}" type="image/webp">
+                            <source media="(max-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 1524, height: 768 }) | jpeg %}" type="image/jpeg">
                             <!-- DESKTOP IMAGE -->
-                            <source media="(min-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 918, height: 1152 }) | avif %}" type="image/avif">
-                            <source media="(min-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 918, height: 1152 }) | webp %}" type="image/webp">
-                            <source media="(min-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 918, height: 1152 }) | jpeg %}" type="image/jpeg">
+                            <source media="(min-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 918, height: 1152 }) | avif %}" type="image/avif">
+                            <source media="(min-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 918, height: 1152 }) | webp %}" type="image/webp">
+                            <source media="(min-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 918, height: 1152 }) | jpeg %}" type="image/jpeg">
                             <img
                                 class="object-cover absolute top-0 left-0 h-full w-full -z-10"
-                                src="{% getUrl item.imageUrl | resize({ width: 918, height: 1152 }) | jpeg %}"
-                                alt="{{ item.imageAlt }}"
+                                src="{% getUrl image.data.url | resize({ width: 918, height: 1152 }) | jpeg %}"
+                                alt="{{ image.data.alt }}"
                                 width="459"
                                 height="576"
                                 loading="lazy"
@@ -217,23 +224,24 @@
 
             <!-- IMAGE + CTA -->
             <div class="flex flex-col items-center gap-8">
+                {% set image = collections.image | findWhere({key: "homepage.about"}) %}
                 <picture class="w-full">
                     <!-- MOBILE IMAGE -->
-                    <source media="(max-width: 600px)" srcset="{% getUrl about.imageUrl | resize({ width: 736, height: 800 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl about.imageUrl | resize({ width: 736, height: 800 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl about.imageUrl | resize({ width: 736, height: 800 }) | jpeg %}" type="image/jpeg">
+                    <source media="(max-width: 600px)" srcset="{% getUrl image.data.url | resize({ width: 736, height: 800 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl image.data.url | resize({ width: 736, height: 800 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl image.data.url | resize({ width: 736, height: 800 }) | jpeg %}" type="image/jpeg">
                     <!-- TABLET IMAGE -->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl about.imageUrl | resize({ width: 1524, height: 800 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl about.imageUrl | resize({ width: 1524, height: 800 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl about.imageUrl | resize({ width: 1524, height: 800 }) | jpeg %}" type="image/jpeg">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 1524, height: 800 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 1524, height: 800 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 1524, height: 800 }) | jpeg %}" type="image/jpeg">
                     <!-- DESKTOP IMAGE -->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl about.imageUrl | resize({ width: 2880, height: 910 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl about.imageUrl | resize({ width: 2880, height: 910 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl about.imageUrl | resize({ width: 2880, height: 910 }) | jpeg %}" type="image/jpeg">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 2880, height: 910 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 2880, height: 910 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 2880, height: 910 }) | jpeg %}" type="image/jpeg">
                     <img
                     class="object-cover h-[25rem] w-full"
-                    src="{% getUrl about.imageUrl | resize({ width: 2880, height: 910 }) | jpeg %}"
-                    alt="{{ about.imageAlt }}"
+                    src="{% getUrl image.data.url | resize({ width: 2880, height: 910 }) | jpeg %}"
+                    alt="{{ image.data.alt }}"
                     width="1440"
                     height="405"
                     loading="lazy"
@@ -273,25 +281,30 @@
 
             <!-- ITEMS -->
             <ul class="flex flex-col gap-16 lg:gap-8">
+                {% set keys = ["homepage.rooms.standard", "homepage.rooms.superior"] %}
+
                 {% for item in rooms.items %}
                     <li class="group flex max-lg:flex-col lg:even:flex-row-reverse lg:items-center max-lg:gap-4">
+                        {% set image = collections.image | findWhere({
+                            key: keys[loop.index0]
+                        }) %}
                         <picture class="relative z-0">
                             <!-- MOBILE IMAGE -->
-                            <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | resize({ width: 736, height: 736, position: 'attention' }) | avif %}" type="image/avif">
-                            <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | resize({ width: 736, height: 736, position: 'attention' }) | webp %}" type="image/webp">
-                            <source media="(max-width: 600px)" srcset="{% getUrl item.imageUrl | resize({ width: 736, height: 736, position: 'attention' }) | jpeg %}" type="image/jpeg">
+                            <source media="(max-width: 600px)" srcset="{% getUrl image.data.url | resize({ width: 736, height: 736, position: 'attention' }) | avif %}" type="image/avif">
+                            <source media="(max-width: 600px)" srcset="{% getUrl image.data.url | resize({ width: 736, height: 736, position: 'attention' }) | webp %}" type="image/webp">
+                            <source media="(max-width: 600px)" srcset="{% getUrl image.data.url | resize({ width: 736, height: 736, position: 'attention' }) | jpeg %}" type="image/jpeg">
                             <!-- TABLET IMAGE -->
-                            <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1524, height: 1024, position: 'attention' }) | avif %}" type="image/avif">
-                            <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1524, height: 1024, position: 'attention' }) | webp %}" type="image/webp">
-                            <source media="(max-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1524, height: 1024, position: 'attention' }) | jpeg %}" type="image/jpeg">
+                            <source media="(max-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 1524, height: 1024, position: 'attention' }) | avif %}" type="image/avif">
+                            <source media="(max-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 1524, height: 1024, position: 'attention' }) | webp %}" type="image/webp">
+                            <source media="(max-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 1524, height: 1024, position: 'attention' }) | jpeg %}" type="image/jpeg">
                             <!-- DESKTOP IMAGE -->
-                            <source media="(min-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1792, height: 1024, position: 'attention' }) | avif %}" type="image/avif">
-                            <source media="(min-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1792, height: 1024, position: 'attention' }) | webp %}" type="image/webp">
-                            <source media="(min-width: 1024px)" srcset="{% getUrl item.imageUrl | resize({ width: 1792, height: 1024, position: 'attention' }) | jpeg %}" type="image/jpeg">
+                            <source media="(min-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 1792, height: 1024, position: 'attention' }) | avif %}" type="image/avif">
+                            <source media="(min-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 1792, height: 1024, position: 'attention' }) | webp %}" type="image/webp">
+                            <source media="(min-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 1792, height: 1024, position: 'attention' }) | jpeg %}" type="image/jpeg">
                             <img
                                 class="object-cover h-[23rem] sm:h-[32rem] w-full lg:max-w-4xl"
-                                src="{% getUrl item.imageUrl | resize({ width: 1792, height: 1024, position: 'attention' }) | jpeg %}"
-                                alt="{{ item.imageAlt }}"
+                                src="{% getUrl image.data.url | resize({ width: 1792, height: 1024, position: 'attention' }) | jpeg %}"
+                                alt="{{ image.data.alt }}"
                                 width="896"
                                 height="512"
                                 loading="lazy"
@@ -323,23 +336,24 @@
     <!-- WELLNESS -->
     <section>
         <div class="flex max-lg:flex-col">
+            {% set image = collections.image | findWhere({key: "homepage.wellness"}) %}
             <picture>
                 <!-- MOBILE IMAGE -->
-                <source media="(max-width: 600px)" srcset="{% getUrl wellness.imageUrl | resize({ width: 800, height: 504 }) | avif %}" type="image/avif">
-                <source media="(max-width: 600px)" srcset="{% getUrl wellness.imageUrl | resize({ width: 800, height: 504 }) | webp %}" type="image/webp">
-                <source media="(max-width: 600px)" srcset="{% getUrl wellness.imageUrl | resize({ width: 800, height: 504 }) | jpeg %}" type="image/jpeg">
+                <source media="(max-width: 600px)" srcset="{% getUrl image.data.url | resize({ width: 800, height: 504 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl image.data.url | resize({ width: 800, height: 504 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl image.data.url | resize({ width: 800, height: 504 }) | jpeg %}" type="image/jpeg">
                 <!-- TABLET IMAGE -->
-                <source media="(max-width: 1024px)" srcset="{% getUrl wellness.imageUrl | resize({ width: 1600, height: 1008 }) | avif %}" type="image/avif">
-                <source media="(max-width: 1024px)" srcset="{% getUrl wellness.imageUrl | resize({ width: 1600, height: 1008 }) | webp %}" type="image/webp">
-                <source media="(max-width: 1024px)" srcset="{% getUrl wellness.imageUrl | resize({ width: 1600, height: 1008 }) | jpeg %}" type="image/jpeg">
+                <source media="(max-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 1600, height: 1008 }) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 1600, height: 1008 }) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 1600, height: 1008 }) | jpeg %}" type="image/jpeg">
                 <!-- DESKTOP IMAGE -->
-                <source media="(min-width: 1024px)" srcset="{% getUrl wellness.imageUrl | resize({ width: 2688, height: 1694 }) | avif %}" type="image/avif">
-                <source media="(min-width: 1024px)" srcset="{% getUrl wellness.imageUrl | resize({ width: 2688, height: 1694 }) | webp %}" type="image/webp">
-                <source media="(min-width: 1024px)" srcset="{% getUrl wellness.imageUrl | resize({ width: 2688, height: 1694 }) | jpeg %}" type="image/jpeg">
+                <source media="(min-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 2688, height: 1694 }) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 2688, height: 1694 }) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 2688, height: 1694 }) | jpeg %}" type="image/jpeg">
                 <img
                     class="object-cover h-full w-full"
-                    src="{% getUrl wellness.imageUrl | resize({ width: 2688, height: 1694 }) | jpeg %}"
-                    alt="{{ wellness.imageAlt }}"
+                    src="{% getUrl image.data.url | resize({ width: 2688, height: 1694 }) | jpeg %}"
+                    alt="{{ image.data.Alt }}"
                     width="1344"
                     height="847"
                     loading="lazy"
@@ -406,23 +420,24 @@
     <!-- RESTAURANT -->
     <section>
         <div class="flex max-lg:flex-col flex-row-reverse">
+            {% set image = collections.image | findWhere({key: "homepage.restaurant"}) %}
             <picture>
                 <!-- MOBILE IMAGE -->
-                <source media="(max-width: 600px)" srcset="{% getUrl restaurant.imageUrl | resize({ width: 800, height: 504 }) | avif %}" type="image/avif">
-                <source media="(max-width: 600px)" srcset="{% getUrl restaurant.imageUrl | resize({ width: 800, height: 504 }) | webp %}" type="image/webp">
-                <source media="(max-width: 600px)" srcset="{% getUrl restaurant.imageUrl | resize({ width: 800, height: 504 }) | jpeg %}" type="image/jpeg">
+                <source media="(max-width: 600px)" srcset="{% getUrl image.data.url | resize({ width: 800, height: 504 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl image.data.url | resize({ width: 800, height: 504 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl image.data.url | resize({ width: 800, height: 504 }) | jpeg %}" type="image/jpeg">
                 <!-- TABLET IMAGE -->
-                <source media="(max-width: 1024px)" srcset="{% getUrl restaurant.imageUrl | resize({ width: 1600, height: 1008 }) | avif %}" type="image/avif">
-                <source media="(max-width: 1024px)" srcset="{% getUrl restaurant.imageUrl | resize({ width: 1600, height: 1008 }) | webp %}" type="image/webp">
-                <source media="(max-width: 1024px)" srcset="{% getUrl restaurant.imageUrl | resize({ width: 1600, height: 1008 }) | jpeg %}" type="image/jpeg">
+                <source media="(max-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 1600, height: 1008 }) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 1600, height: 1008 }) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 1600, height: 1008 }) | jpeg %}" type="image/jpeg">
                 <!-- DESKTOP IMAGE -->
-                <source media="(min-width: 1024px)" srcset="{% getUrl restaurant.imageUrl | resize({ width: 2688, height: 1694 }) | avif %}" type="image/avif">
-                <source media="(min-width: 1024px)" srcset="{% getUrl restaurant.imageUrl | resize({ width: 2688, height: 1694 }) | webp %}" type="image/webp">
-                <source media="(min-width: 1024px)" srcset="{% getUrl restaurant.imageUrl | resize({ width: 2688, height: 1694 }) | jpeg %}" type="image/jpeg">
+                <source media="(min-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 2688, height: 1694 }) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 2688, height: 1694 }) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 2688, height: 1694 }) | jpeg %}" type="image/jpeg">
                 <img
                     class="object-cover h-full w-full"
-                    src="{% getUrl restaurant.imageUrl | resize({ width: 2688, height: 1694 }) | jpeg %}"
-                    alt="{{ restaurant.imageAlt }}"
+                    src="{% getUrl image.data.url | resize({ width: 2688, height: 1694 }) | jpeg %}"
+                    alt="{{ image.data.alt }}"
                     width="1344"
                     height="847"
                     loading="lazy"

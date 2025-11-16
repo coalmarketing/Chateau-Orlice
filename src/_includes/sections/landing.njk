@@ -56,23 +56,32 @@
     draggable="false">
 
   <!-- BACKGROUND IMAGE -->
+  {% if not image %}
+    {% set image = {
+      data: {
+        url: landing.imageUrl,
+        alt: landing.imageAlt
+      }
+    } %}
+  {% endif %}
+
   <picture>
     <!-- MOBILE IMAGE -->
-    <source media="(max-width: 600px)" srcset="{% getUrl landing.imageUrl | resize({ width: 800, height: 1920, position: 'attention' }) | avif %}" type="image/avif">
-    <source media="(max-width: 600px)" srcset="{% getUrl landing.imageUrl | resize({ width: 800, height: 1920, position: 'attention' }) | webp %}" type="image/webp">
-    <source media="(max-width: 600px)" srcset="{% getUrl landing.imageUrl | resize({ width: 800, height: 1920, position: 'attention' }) | jpeg %}" type="image/jpeg">
+    <source media="(max-width: 600px)" srcset="{% getUrl image.data.url | resize({ width: 800, height: 1920, position: 'attention' }) | avif %}" type="image/avif">
+    <source media="(max-width: 600px)" srcset="{% getUrl image.data.url | resize({ width: 800, height: 1920, position: 'attention' }) | webp %}" type="image/webp">
+    <source media="(max-width: 600px)" srcset="{% getUrl image.data.url | resize({ width: 800, height: 1920, position: 'attention' }) | jpeg %}" type="image/jpeg">
     <!-- TABLET IMAGE -->
-    <source media="(max-width: 1024px)" srcset="{% getUrl landing.imageUrl | resize({ width: 1600, height: 2560, position: 'attention' }) | avif %}" type="image/avif">
-    <source media="(max-width: 1024px)" srcset="{% getUrl landing.imageUrl | resize({ width: 1600, height: 2560, position: 'attention' }) | webp %}" type="image/webp">
-    <source media="(max-width: 1024px)" srcset="{% getUrl landing.imageUrl | resize({ width: 1600, height: 2560, position: 'attention' }) | jpeg %}" type="image/jpeg">
+    <source media="(max-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 1600, height: 2560, position: 'attention' }) | avif %}" type="image/avif">
+    <source media="(max-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 1600, height: 2560, position: 'attention' }) | webp %}" type="image/webp">
+    <source media="(max-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 1600, height: 2560, position: 'attention' }) | jpeg %}" type="image/jpeg">
     <!-- DESKTOP IMAGE -->
-    <source media="(min-width: 1024px)" srcset="{% getUrl landing.imageUrl | resize({ width: 3840, height: 2160, position: 'attention' }) | avif %}" type="image/avif">
-    <source media="(min-width: 1024px)" srcset="{% getUrl landing.imageUrl | resize({ width: 3840, height: 2160, position: 'attention' }) | webp %}" type="image/webp">
-    <source media="(min-width: 1024px)" srcset="{% getUrl landing.imageUrl | resize({ width: 3840, height: 2160, position: 'attention' }) | jpeg %}" type="image/jpeg">
+    <source media="(min-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 3840, height: 2160, position: 'attention' }) | avif %}" type="image/avif">
+    <source media="(min-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 3840, height: 2160, position: 'attention' }) | webp %}" type="image/webp">
+    <source media="(min-width: 1024px)" srcset="{% getUrl image.data.url | resize({ width: 3840, height: 2160, position: 'attention' }) | jpeg %}" type="image/jpeg">
     <img
       class="object-cover absolute top-0 left-0 h-full w-full -z-20"
-      src="{% getUrl landing.imageUrl | resize({ width: 3840, height: 2160, position: 'attention' }) | jpeg %}"
-      alt="{{ landing.imageAlt }}"
+      src="{% getUrl image.data.url | resize({ width: 3840, height: 2160, position: 'attention' }) | jpeg %}"
+      alt="{{ image.data.alt }}"
       width="1920"
       height="1080"
       loading="eager"

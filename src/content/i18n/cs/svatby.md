@@ -23,7 +23,7 @@ landing:
 
 
 weddings:
-  topper: Restaurace
+  topper: Svatby
   heading: Řekněte si své „ano“ v Chateau Orlice
 
   imageUrl: /assets/images/weddings/weddings-2.jpg

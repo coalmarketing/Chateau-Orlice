@@ -2,7 +2,7 @@ const slugify = require("slugify");
 
 module.exports = {
 	layout: "layouts/post.njk",
-	tags: "stayPackage",
+	tags: ["stayPackage"],
 	eleventyComputed: {
 		preloadImg: data => data.image,
 		lang: data => {

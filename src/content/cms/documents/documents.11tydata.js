@@ -1,5 +1,5 @@
 module.exports = {
-	tags: "document",
+	tags: ["document"],
 	eleventyComputed: {
 		permalink: false
 	}

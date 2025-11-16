@@ -104,7 +104,7 @@ superior:
   heading: Pokoj Superior
 
   imageUrl: /assets/images/rooms/room-318.jpg
-  imageAlt: Standard pokoj číslo 318 v Chateau Orlice
+  imageAlt: Superior pokoj číslo 318 v Chateau Orlice
 
   paragraphs:
     - text: Stylové pokoje Superior vás okouzlí atmosférou původních prostor. Interiér kombinuje historický šarm s moderním komfortem.

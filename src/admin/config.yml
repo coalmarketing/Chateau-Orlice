@@ -340,12 +340,13 @@ collections:
         }
       - { label: "Obsah", name: "body", widget: "markdown" }
 
-  # RESTAURANT MENU
+  # DOCUMENTS
   - name: "documents"
     label: "Dokumenty"
     label_singular: "Dokument"
     folder: "src/content/cms/documents"
-    create: false # Prevents adding new entries
+    create: false
+    delete: false
     slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
     editor:
       preview: false
@@ -358,4 +359,49 @@ collections:
           widget: "file",
           choose_url: false,
           hint: "Je zapotřebí zachovat stejný název jako původní soubor!",
+        }
+
+  # WEBSITE IMAGES
+  - name: "images"
+    label: "Obrázky webu"
+    label_singular: "Obrázek webu"
+    folder: "src/content/cms/images"
+    create: true
+    delete: false
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+    editor:
+      preview: false
+
+    view_groups:
+      - label: "Název podstránky"
+        field: "description"
+
+    fields:
+      - {
+          label: "Popis",
+          name: "title",
+          widget: "string",
+          hint: "Popis, o který obrázek se jedná.",
+        }
+      - {
+          label: "Název podstránky",
+          name: "description",
+          widget: "string",
+          hint: "Podstránka, na které se obrázek nachází.",
+        }
+      - { label: "Identifikátor", name: "key", widget: "string" }
+      - { label: "Obrázek", name: "url", widget: "image", choose_url: false }
+      - {
+          label: "Popis obrázku",
+          name: "alt",
+          widget: "string",
+          hint: "Popište, co je na obrázku. Slouží k validnímu SEO příspěvku.",
+        }
+
+      - {
+          label: "Štítky",
+          name: "tags",
+          widget: "hidden",
+          default: ["image"],
+          i18n: "duplicate",
         }
