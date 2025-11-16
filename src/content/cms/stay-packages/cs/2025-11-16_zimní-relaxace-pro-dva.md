@@ -29,4 +29,6 @@ imageAlt: ítejte v Chateau Letohrad — místě, kde se zimní atmosféra měn�
 
 •            K dispozici župany a pantofle přímo na pokoji
 
-Možné rezervovat od 1.12.2025 do 28.2.2026.
+**Možné rezervovat od 1.12.2025 do 28.2.2026.**
+
+**Pro rezervaci kontaktujte hotelovou recepci.**
