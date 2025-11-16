@@ -11,6 +11,10 @@ imageAlt: ítejte v Chateau Letohrad — místě, kde se zimní atmosféra měn�
   tělo napětí a mysl starostí. Dopřejte si chvíle, kdy se čas zastaví a Vy si
   můžete užít zasloužený odpočinek.
 ---
+*Vítejte v Chateau Letohrad — místě, kde se zimní atmosféra mění v nezapomenutý zážitek plný pohody a relaxace. Zatímco venku vládne mrazivá příroda, uvnitř Vás zahřeje klidné wellness, horká sauna a masáže, které zbaví tělo napětí a mysl starostí. Dopřejte si chvíle, kdy se čas zastaví a Vy si můžete užít zasloužený odpočinek.*
+
+## Co balíček zahrnuje?
+
 •            Ubytování ve dvoulůžkovém pokoji kategorie STANDARD 
 
 •            Snídaně formou bufetu (při nízké obsazenosti servírované)
@@ -28,6 +32,22 @@ imageAlt: ítejte v Chateau Letohrad — místě, kde se zimní atmosféra měn�
 •            Parkování zdarma
 
 •            K dispozici župany a pantofle přímo na pokoji
+
+
+
+## Poznámka:
+
+* ​Cena je uvedena na osobu v plně obsazeném pokoji.
+* Cena nezahrnuje místní poplatek z pobytu 20 Kč / osoba / noc - hradí se na místě.
+* Plná penze za příplatek 1000 Kč / osoba / den.
+* Děti do 3 let bez nároku na lůžko a stravu zdarma.
+* Dítě na přistýlce do 12 let za příplatek 600 Kč / noc včetně stravy, 500 Kč / noc pouze snídaně.
+* Osoba nad 12 let na přistýlce za příplatek 1250 Kč / noc včetně stravy.
+* Parkoviště v areálu zdarma, vyhrazené parkoviště před hotelem za 200 Kč / noc.
+
+
+
+
 
 **Možné rezervovat od 1.12.2025 do 28.2.2026.**
 
