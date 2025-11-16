@@ -12,6 +12,7 @@ imageAlt: ítejte v Chateau Letohrad — místě, kde se zimní atmosféra měn�
   můžete užít zasloužený odpočinek.
 ---
 •            Ubytování ve dvoulůžkovém pokoji kategorie STANDARD 
+
 •            Snídaně formou bufetu (při nízké obsazenosti servírované)
 
 •            Lahev prosecca na pokoji
@@ -27,7 +28,5 @@ imageAlt: ítejte v Chateau Letohrad — místě, kde se zimní atmosféra měn�
 •            Parkování zdarma
 
 •            K dispozici župany a pantofle přímo na pokoji
-
-
 
 Možné rezervovat od 1.12.2025 do 28.2.2026.
