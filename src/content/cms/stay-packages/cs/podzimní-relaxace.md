@@ -29,3 +29,6 @@ imageAlt: Relaxující pár
 Dopřejte si chvíle, kdy nic nemusíte – jen odpočívat a vnímat barevné proměny přírody.
 
 **[Rezervujte svůj podzimní pobyt včas](https://chateau-orlice.cz/cs/) – počet balíčků je omezen.**
+
+
+**Možné rezervovat od 1.9.2025 do 30.11.2025.**
