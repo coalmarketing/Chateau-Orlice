@@ -8,7 +8,7 @@ permalink: 'cs/gastronomie-romantika/'
 eleventyNavigation:
   key: Gastronomie a romantika
   parent: Služby a zážitky
-  order: 600
+  order: 400
 
 
 landing:

@@ -8,7 +8,7 @@ permalink: 'cs/venkovni-aktivity/'
 eleventyNavigation:
   key: Venkovní aktivity
   parent: Služby a zážitky
-  order: 400
+  order: 500
 
 
 landing:

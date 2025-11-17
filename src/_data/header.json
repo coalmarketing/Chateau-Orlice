@@ -95,12 +95,20 @@
                         "url": "/vnitrni-aktivity",
                         "children": [
                             {
-                                "name": "Hotelové kino",
-                                "url": "/cs/vnitrni-aktivity#hotelove-kino"
+                                "name": "Dětská herna",
+                                "url": "/cs/vnitrni-aktivity#detska-herna"
                             },
                             {
-                                "name": "Privátní Spa",
-                                "url": "/cs/vnitrni-aktivity#privatni-spa"
+                                "name": "Kulečníkový salónek",
+                                "url": "/cs/vnitrni-aktivity#kulecnikovy-salonek"
+                            },
+                            {
+                                "name": "Herní zóna pro větší děti",
+                                "url": "/cs/vnitrni-aktivity#herni-zona"
+                            },
+                            {
+                                "name": "Hotelové kino",
+                                "url": "/cs/vnitrni-aktivity#hotelove-kino"
                             },
                             {
                                 "name": "Zámecké lázně",
@@ -222,10 +230,6 @@
                             {
                                 "name": "Hotel cinema",
                                 "url": "/en/vnitrni-aktivity#hotelove-kino"
-                            },
-                            {
-                                "name": "Private Spa",
-                                "url": "/en/vnitrni-aktivity#privatni-spa"
                             },
                             {
                                 "name": "Castle Spa",
@@ -354,10 +358,6 @@
                                 "url": "/de/vnitrni-aktivity#hotelove-kino"
                             },
                             {
-                                "name": "Privates Heilbad",
-                                "url": "/de/vnitrni-aktivity#privatni-spa"
-                            },
-                            {
                                 "name": "Schloss Spa",
                                 "url": "/de/vnitrni-aktivity#zamecke-lazne"
                             }
@@ -482,10 +482,6 @@
                             {
                                 "name": "Kino hotelowe",
                                 "url": "/pl/vnitrni-aktivity#hotelove-kino"
-                            },
-                            {
-                                "name": "Prywatne spa",
-                                "url": "/pl/vnitrni-aktivity#privatni-spa"
                             },
                             {
                                 "name": "Castle Spa",

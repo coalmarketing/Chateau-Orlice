@@ -4,10 +4,10 @@
     {% set image = collections.image | findWhere({key: "indoorActivities.landing"}) %}
     {% include "sections/landing.njk" %}
 
-    {% set keys = ["indoorActivities.services.cinema", "indoorActivities.services.spa", "indoorActivities.services.castleSpa"] %}
+    {% set keys = ["indoorActivities.services.playroom", "indoorActivities.services.8ball", "indoorActivities.services.gamingZone", "indoorActivities.services.cinema", "indoorActivities.services.castleSpa"] %}
     {% include "sections/page-services.njk" %}
 
-    {% set keys = ["indoorActivities.services.cinema", "indoorActivities.services.spa", "indoorActivities.services.castleSpa"] %}
+    {% set keys = ["indoorActivities.services.playroom", "indoorActivities.services.8ball", "indoorActivities.services.gamingZone", "indoorActivities.services.cinema", "indoorActivities.services.castleSpa"] %}
     {% include "sections/page-content.njk" %}
 
     {% include "sections/cta.njk" %}

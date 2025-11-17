@@ -183,19 +183,19 @@ pricing:
           - text: Cena
 
         - cells:
-          - text: Relax záda, šíje
-          - text: 30 min.
-          - text: 650 Kč
+          - text: Signature masáž - dotek Orlice
+          - text: 50 min. + 20 min. zábal
+          - text: 1350 Kč
 
         - cells:
-          - text: Záda, šíje, nohy
-          - text: 60 min.
-          - text: 950 Kč
+          - text: Relax záda, šíje
+          - text: 30 min.
+          - text: 750 Kč
 
         - cells:
           - text: Celé tělo
           - text: 90 min.
-          - text: 1250 Kč
+          - text: 1350 Kč
 
     - title: Havajské masáže
 
@@ -226,15 +226,16 @@ pricing:
         - cells:
           - text: Záda, šíje, nohy
           - text: 60 min.
-          - text: 1200 Kč
+          - text: 1300 Kč
 
         - cells:
           - text: Záda, šíje, chodidla
           - text: 90 min.
-          - text: 1800 Kč
+          - text: 1900 Kč
 
   specialWraps:
     - title: Levandulový zábal
+      text: Parafínový zábal s obsahem levandule. Pomáhá při depresích a přispívá k zmírnění napětí a stresu.
 
       rows:
         - cells:
@@ -244,15 +245,16 @@ pricing:
 
         - cells:
           - text: Záda, šíje
-          - text: 25 min.
+          - text: 30 min.
           - text: 690 Kč
 
         - cells:
           - text: Nohy, runce
-          - text: 20 min.
-          - text: 490 Kč
+          - text: 30 min.
+          - text: 690 Kč
 
     - title: Rašelinový zábal
+      text: Základním atributem zábalu je tepelná setrvačnost rašeliny a její obsah huminových kyselin zabezpečujících kyselé pH. Pomáhá při chronických problémech způsobených revmatem nebo potížích traumatického původu a dále při bolestivých stavech v oblasti zad, páteře a kloubů.
 
       rows:
         - cells:
@@ -262,15 +264,16 @@ pricing:
 
         - cells:
           - text: Záda, šíje
-          - text: 25 min.
+          - text: 30 min.
           - text: 690 Kč
 
         - cells:
           - text: Nohy, runce
-          - text: 20 min.
-          - text: 590 Kč
+          - text: 30 min.
+          - text: 690 Kč
 
     - title: Zábal z konopí
+      description: Zábal s obsahem přírodního bio konopného oleje bohatého na vitamíny A, B, D, E, C, K, minerály(K, Ca, Mg) působí blahodárně na pokožku. Harmonizuje stav kožních buněk.
 
       rows:
         - cells:
@@ -280,15 +283,16 @@ pricing:
 
         - cells:
           - text: Záda, šíje
-          - text: 25 min.
+          - text: 30 min.
           - text: 690 Kč
 
         - cells:
           - text: Nohy, runce
-          - text: 20 min.
-          - text: 490 Kč
+          - text: 30 min.
+          - text: 690 Kč
 
     - title: Kokosový zábal
+      text: Zábal s obsahem čistého panenského kokosového oleje. Je vhodný pro péči o suchou a citlivou pokožku.
 
       rows:
         - cells:
@@ -298,11 +302,11 @@ pricing:
 
         - cells:
           - text: Záda, šíje
-          - text: 25 min.
-          - text: 790 Kč
+          - text: 30 min.
+          - text: 690 Kč
 
         - cells:
           - text: Nohy, runce
-          - text: 20 min.
-          - text: 590 Kč
+          - text: 30 min.
+          - text: 690 Kč
 ---
