@@ -228,6 +228,18 @@
                         "url": "/vnitrni-aktivity",
                         "children": [
                             {
+                                "name": "Playroom for children",
+                                "url": "/en/vnitrni-aktivity#detska-herna"
+                            },
+                            {
+                                "name": "Billiards lounge",
+                                "url": "/en/vnitrni-aktivity#kulecnikovy-salonek"
+                            },
+                            {
+                                "name": "Play area for older children",
+                                "url": "/en/vnitrni-aktivity#herni-zona"
+                            },
+                            {
                                 "name": "Hotel cinema",
                                 "url": "/en/vnitrni-aktivity#hotelove-kino"
                             },
@@ -354,6 +366,18 @@
                         "url": "/vnitrni-aktivity",
                         "children": [
                             {
+                                "name": "Spielzimmer für Kinder",
+                                "url": "/de/vnitrni-aktivity#detska-herna"
+                            },
+                            {
+                                "name": "Billard-Lounge",
+                                "url": "/de/vnitrni-aktivity#kulecnikovy-salonek"
+                            },
+                            {
+                                "name": "Spielbereich für größere Kinder",
+                                "url": "/de/vnitrni-aktivity#herni-zona"
+                            },
+                            {
                                 "name": "Hotel Kino",
                                 "url": "/de/vnitrni-aktivity#hotelove-kino"
                             },
@@ -471,7 +495,7 @@
                             },
                             {
                                 "name": "Wynajem promu",
-                                "url": "/de/venkovni-aktivity#zapujceni-pramice"
+                                "url": "/pl/venkovni-aktivity#zapujceni-pramice"
                             }
                         ]
                     },
@@ -479,6 +503,18 @@
                         "name": "Zajęcia w pomieszczeniach",
                         "url": "/vnitrni-aktivity",
                         "children": [
+                            {
+                                "name": "Pokój zabaw dla dzieci",
+                                "url": "/pl/vnitrni-aktivity#detska-herna"
+                            },
+                            {
+                                "name": "Salon bilardowy",
+                                "url": "/pl/vnitrni-aktivity#kulecnikovy-salonek"
+                            },
+                            {
+                                "name": "Plac zabaw dla starszych dzieci",
+                                "url": "/pl/vnitrni-aktivity#herni-zona"
+                            },
                             {
                                 "name": "Kino hotelowe",
                                 "url": "/pl/vnitrni-aktivity#hotelove-kino"
