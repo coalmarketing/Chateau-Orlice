@@ -142,11 +142,11 @@ pageContent:
 
         - cells:
           - text: 50 minut 
-          - text: 1000 Kč/osoba
+          - text: 700 Kč/osoba
 
         - cells:
           - text: 150 minut
-          - text: 700 Kč/osoba
+          - text: 1000 Kč/osoba
 
     cta: Rezervace
 

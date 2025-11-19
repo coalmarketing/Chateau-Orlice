@@ -142,11 +142,11 @@ pageContent:
 
         - cells:
           - text: 50 min
-          - text: 1000 CZK/Person
+          - text: 700 CZK/Person
 
         - cells:
           - text: 150 Minute
-          - text: 700 CZK/Person
+          - text: 1000 CZK/Person
 
     cta: Reservierungen
 
