@@ -37,6 +37,7 @@ imageAlt: ítejte v Chateau Letohrad — místě, kde se zimní atmosféra měn�
 
 * ​Cena je uvedena na osobu v plně obsazeném pokoji.
 * Cena nezahrnuje místní poplatek z pobytu 20 Kč / osoba / noc - hradí se na místě.
+* Domácí mazlíček do 10 Kg za cenu 300 Kč / den, nad 10 Kg za cenu 500 Kč / den.
 * Cena za pobyt dítěte na vyžádání.
 
 **Možné rezervovat od 1.12.2025 do 28.2.2026.**
