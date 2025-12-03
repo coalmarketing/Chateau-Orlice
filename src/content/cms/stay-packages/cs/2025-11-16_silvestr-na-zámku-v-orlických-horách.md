@@ -24,7 +24,7 @@ imageAlt: "Silvestr na zámku v Orlických horách "
 
 •            Horký nápoj a dezert dle denní nabídky – v odpoledních hodinách naší restaurace 
 
-•            1x Privátní wellness pro dva na 60min 
+•            **1x Privátní wellness pro dva na 60min** 
 
 •            Možnost zapůjčení saní, bob a lopat 
 
@@ -32,17 +32,12 @@ imageAlt: "Silvestr na zámku v Orlických horách "
 
 •            K dispozici župany a pantofle přímo na pokoji
 
-
-
 Poznámka:
 
 * ​Cena je uvedena na osobu v plně obsazeném pokoji.
 * Cena nezahrnuje místní poplatek z pobytu 20 Kč / osoba / noc - hradí se na místě.
-* Plná penze za příplatek 1000 Kč / osoba / den.
-* Děti do 3 let bez nároku na lůžko a stravu zdarma.
-* Dítě na přistýlce do 12 let za příplatek 600 Kč / noc včetně stravy, 500 Kč / noc pouze snídaně.
-* Osoba nad 12 let na přistýlce za příplatek 1250 Kč / noc včetně stravy.
-* Parkoviště v areálu zdarma, vyhrazené parkoviště před hotelem za 200 Kč / noc.
+* Domácí mazlíček do 10 Kg za cenu 300 Kč / den, nad 10 Kg za cenu 500 Kč / den.
+* Cena za pobyt dítěte na vyžádání.
 
 **Možné rezervovat od 28.12.2025 do 2.1.2026.**
 
