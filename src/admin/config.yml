@@ -362,46 +362,46 @@ collections:
         }
 
   # WEBSITE IMAGES
-  - name: "images"
-    label: "Obrázky webu"
-    label_singular: "Obrázek webu"
-    folder: "src/content/cms/images"
-    create: true
-    delete: false
-    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
-    editor:
-      preview: false
-
-    view_groups:
-      - label: "Název podstránky"
-        field: "description"
-
-    fields:
-      - {
-          label: "Popis",
-          name: "title",
-          widget: "string",
-          hint: "Popis, o který obrázek se jedná.",
-        }
-      - {
-          label: "Název podstránky",
-          name: "description",
-          widget: "string",
-          hint: "Podstránka, na které se obrázek nachází.",
-        }
-      - { label: "Identifikátor", name: "key", widget: "string" }
-      - { label: "Obrázek", name: "url", widget: "image", choose_url: false }
-      - {
-          label: "Popis obrázku",
-          name: "alt",
-          widget: "string",
-          hint: "Popište, co je na obrázku. Slouží k validnímu SEO příspěvku.",
-        }
-
-      - {
-          label: "Štítky",
-          name: "tags",
-          widget: "hidden",
-          default: ["image"],
-          i18n: "duplicate",
-        }
+  #- name: "images"
+  #  label: "Obrázky webu"
+  #  label_singular: "Obrázek webu"
+  #  folder: "src/content/cms/images"
+  #  create: true
+  #  delete: false
+  #  slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+  #  editor:
+  #    preview: false
+#
+#  view_groups:
+#    - label: "Název podstránky"
+#      field: "description"
+#
+#  fields:
+#    - {
+#        label: "Popis",
+#        name: "title",
+#        widget: "string",
+#        hint: "Popis, o který obrázek se jedná.",
+#      }
+#    - {
+#        label: "Název podstránky",
+#        name: "description",
+#        widget: "string",
+#        hint: "Podstránka, na které se obrázek nachází.",
+#      }
+#    - { label: "Identifikátor", name: "key", widget: "string" }
+#    - { label: "Obrázek", name: "url", widget: "image", choose_url: false }
+#    - {
+#        label: "Popis obrázku",
+#        name: "alt",
+#        widget: "string",
+#        hint: "Popište, co je na obrázku. Slouží k validnímu SEO příspěvku.",
+#      }
+#
+#    - {
+#        label: "Štítky",
+#        name: "tags",
+#        widget: "hidden",
+#        default: ["image"],
+#        i18n: "duplicate",
+#      }
