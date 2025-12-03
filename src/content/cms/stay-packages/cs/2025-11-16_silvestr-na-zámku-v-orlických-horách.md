@@ -13,16 +13,16 @@ imageAlt: "Silvestr na zámku v Orlických horách "
 
 ## Co balíček zahrnuje?
 
-*   Ubytování ve dvoulůžkovém pokoji kategorie STANDARD 
-*   Snídaně formou bufetu (při nízké obsazenosti servírované)
-*    Silvestrovský raut s lahví prosecca
-*    Silvestrovský galavečer s hudbou od DJ
-*    3-chodová večeře dle výběru v ostatní dny
-*    Horký nápoj a dezert dle denní nabídky – v odpoledních hodinách naší restaurace 
-*  **  1x Privátní wellness pro dva na 60min** 
-*    Možnost zapůjčení saní, bob a lopat 
-*    Parkování zdarma
-*    K dispozici župany a pantofle přímo na pokoji
+* Ubytování ve dvoulůžkovém pokoji kategorie STANDARD 
+* Snídaně formou bufetu (při nízké obsazenosti servírované)
+* Silvestrovský raut s lahví prosecca
+* Silvestrovský galavečer s hudbou od DJ
+* 3-chodová večeře dle výběru v ostatní dny
+* Horký nápoj a dezert dle denní nabídky – v odpoledních hodinách naší restaurace 
+* **1x Privátní wellness pro dva na 60min** 
+* Možnost zapůjčení saní, bob a lopat - dle příznivého počasí
+* Parkování zdarma
+* K dispozici župany a pantofle přímo na pokoji
 
 Poznámka:
 
