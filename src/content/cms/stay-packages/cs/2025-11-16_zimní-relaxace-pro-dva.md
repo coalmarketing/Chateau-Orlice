@@ -23,9 +23,9 @@ imageAlt: ítejte v Chateau Letohrad — místě, kde se zimní atmosféra měn�
 
 •            Každodenní 3-chodová večeře dle výběru
 
-•            1x Privátní wellness pro dva na 60min 
+•            **1x Privátní wellness pro dva na 60min** 
 
-•            2x Relaxační masáž zad a šíje – každá v délce 30min (1x na osobu)
+•            **2x Relaxační masáž zad a šíje** – každá v délce 30min (1x na osobu)
 
 •            Lukostřelba přímo v areálu - kdykoli během pobytu při příznivém počasí
 
@@ -33,21 +33,11 @@ imageAlt: ítejte v Chateau Letohrad — místě, kde se zimní atmosféra měn�
 
 •            K dispozici župany a pantofle přímo na pokoji
 
-
-
 ## Poznámka:
 
 * ​Cena je uvedena na osobu v plně obsazeném pokoji.
 * Cena nezahrnuje místní poplatek z pobytu 20 Kč / osoba / noc - hradí se na místě.
-* Plná penze za příplatek 1000 Kč / osoba / den.
-* Děti do 3 let bez nároku na lůžko a stravu zdarma.
-* Dítě na přistýlce do 12 let za příplatek 600 Kč / noc včetně stravy, 500 Kč / noc pouze snídaně.
-* Osoba nad 12 let na přistýlce za příplatek 1250 Kč / noc včetně stravy.
-* Parkoviště v areálu zdarma, vyhrazené parkoviště před hotelem za 200 Kč / noc.
-
-
-
-
+* Cena za pobyt dítěte na vyžádání.
 
 **Možné rezervovat od 1.12.2025 do 28.2.2026.**
 
