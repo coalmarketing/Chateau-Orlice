@@ -28,12 +28,8 @@ imageAlt: Ženy relaxující na sportovní podložce u jógy
 
 * ​Cena je uvedena na osobu v plně obsazeném pokoji.
 * Cena nezahrnuje místní poplatek z pobytu 20 Kč / osoba / noc - hradí se na místě.
-* Plná penze za příplatek 1000 Kč / osoba / den.
-* Děti do 3 let bez nároku na lůžko a stravu zdarma.
-* Dítě na přistýlce do 12 let za příplatek 600 Kč / noc včetně stravy, 500 Kč / noc pouze snídaně.
-* Osoba nad 12 let na přistýlce za příplatek 1250 Kč / noc včetně stravy.
-* Parkoviště v areálu zdarma, vyhrazené parkoviště před hotelem za 200 Kč / noc.
-
+* Domácí mazlíček do 10 Kg za cenu 300 Kč / den, nad 10 Kg / za cenu 500 Kč / den.
+* Cena za pobyt dítěte na vyžádání.
 
 **Možné rezervovat od 1.7.2025 do 14.12.2025.**
 
