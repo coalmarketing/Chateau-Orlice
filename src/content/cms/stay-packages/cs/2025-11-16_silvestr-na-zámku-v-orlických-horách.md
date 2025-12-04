@@ -25,8 +25,8 @@ imageAlt: "Silvestr na zámku v Orlických horách "
 
 Cenová nabídka:
 
-* Pobyt na **2 noci** za cenu 4580 Kč
-* Pobyt na **4 noci** za cenu 9160 Kč
+* Pobyt na **2 noci** za cenu 12348 Kč
+* Pobyt na **4 noci** za cenu 18168 Kč
 
 Poznámka:
 
