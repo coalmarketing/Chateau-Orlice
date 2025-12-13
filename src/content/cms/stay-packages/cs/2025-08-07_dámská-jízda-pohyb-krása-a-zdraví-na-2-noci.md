@@ -11,9 +11,9 @@ imageAlt: Ženy relaxující na sportovní podložce u jógy
 
 ## **Co obsahuje pobytový balíček?**
 
-*  ubytování
-* bohatá snídaně formou bufetových stolu
-*  večeře formou servírovaného menu o 3 chodech
+* ubytování
+* bohaté snídaně formou bufetu
+* večeře formou servírovaného menu o 3 chodech
 * lahev Prosecca (Platí 1x na pobyt)
 * 1x vstup do privátního wellness (75 min.), k dispozici vířivka, sauna, odpočívárna, ochlazovna
 * 1x masáž Relax - záda a šíje (30 min.) pro 2 osoby
