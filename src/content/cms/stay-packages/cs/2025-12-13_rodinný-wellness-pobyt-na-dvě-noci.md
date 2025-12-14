@@ -15,8 +15,6 @@ imageAlt: Rodinný wellness pobyt na dvě noci
 
 ***Chateau Orlice je místem, kde si odpočinete, děti se zabaví a společně strávíte čas, na který budete rádi vzpomínat.***
 
-
-
 ## **Co balíček zahrnuje?**
 
 * Ubytování v pokoji **STANDARD** na dvě noci
