@@ -1,6 +1,6 @@
 ---
 url: Rodinný wellness pobyt na dvě noci
-date: "{{ now }}"
+date: 2025-12-13T12:00:00.000+01:00
 tags:
   - stayPackage
 image: /assets/cms/pexels-elly-fairytale-5859798.jpg
