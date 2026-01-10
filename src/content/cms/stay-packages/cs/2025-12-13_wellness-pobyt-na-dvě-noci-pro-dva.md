@@ -11,8 +11,6 @@ imageAlt: Wellness pobyt na dvě noci pro dva
 
 ***Odpočiňte si naplno!***
 
-
-
 ## **Co balíček zahrnuje?**
 
 * Ubytování ve dvoulůžkovém pokoji typu **STANDARD** - na dvě noci
@@ -21,11 +19,9 @@ imageAlt: Wellness pobyt na dvě noci pro dva
 * Župan a pantofle k dispozici na pokoji
 * Parkování zdarma
 
-
-
 Poznámka:
 
 * Cena nezahrnuje místní poplatek z pobytu 20 Kč / osoba / noc - hradí se na místě.
 * Domácí mazlíček do 10 Kg za cenu 300 Kč / den, nad 10 Kg za cenu 500 Kč / den.
 
-**Možné rezervovat od 1.12.2025 do 2.1.2026.**
+**Možné rezervovat od 1.12.2025 do 30.6.2026.**
