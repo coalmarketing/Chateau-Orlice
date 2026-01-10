@@ -7,12 +7,9 @@ tags:
 image: /assets/cms/pexels-olly-3756455.jpg
 imageAlt: Zámecký wellness pobyt pro dva
 ---
-
-Dopřejte si dokonalý odpočinek v kouzelném zámeckém prostředí plném klidu a soukromí. Wellness pobyt Chateau Orlice nabízí ticho přírody, vlastní rybník, privátní wellness se saunou a vířivkou, relaxační masáž i výbornou kuchyni. 
+Dopřejte si dokonalý odpočinek v kouzelném zámeckém prostředí plném klidu a soukromí. Wellness pobyt v Chateau Orlice nabízí ticho přírody, vlastní rybník, privátní wellness se saunou a vířivkou, relaxační masáž i výbornou kuchyni. 
 
 **Ideální místo, kde zpomalit, načerpat energii a užít si harmonii v srdci přírody.**
-
-
 
 ## **Co balíček zahrnuje?**
 
