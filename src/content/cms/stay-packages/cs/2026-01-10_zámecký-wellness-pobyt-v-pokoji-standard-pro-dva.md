@@ -1,11 +1,11 @@
 ---
-title: Zámecký wellness pobyt v pokoji STANDARD pro dva
-url: Zámecký wellness pobyt v pokoji STANDARD pro dva
+title: Zámecký wellness pobyt pro dva
+url: Zámecký wellness pobyt pro dva
 date: 2026-01-10T18:24:00.000+01:00
 tags:
   - stayPackage
 image: /assets/cms/pexels-olly-3756455.jpg
-imageAlt: Zámecký wellness pobyt v pokoji STANDARD pro dva
+imageAlt: Zámecký wellness pobyt pro dva
 ---
 
 Dopřejte si dokonalý odpočinek v kouzelném zámeckém prostředí plném klidu a soukromí. Wellness pobyt Chateau Orlice nabízí ticho přírody, vlastní rybník, privátní wellness se saunou a vířivkou, relaxační masáž i výbornou kuchyni. 
