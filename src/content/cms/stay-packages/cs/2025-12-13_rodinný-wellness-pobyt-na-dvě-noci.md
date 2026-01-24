@@ -4,7 +4,7 @@ url: Rodinný wellness pobyt na dvě noci
 date: 2025-12-13T12:00:00.000+01:00
 tags:
   - stayPackage
-image: /assets/cms/pexels-elly-fairytale-5859798.jpg
+image: /assets/cms/pexels-vlada-karpovich-4609098.jpg
 imageAlt: Rodinný wellness pobyt na dvě noci
 ---
 *Užijte si rodinný wellness pobyt v poklidném zámeckém prostředí Chateau Orlice, kde se snoubí příroda, klid a prostor pro společný odpočinek. Hotel se nachází na okraji města, obklopen zelení a vlastním rybníkem, což z něj činí ideální místo pro rodiny s dětmi.*
