@@ -249,7 +249,7 @@ pricing:
           - text: 690 Kč
 
         - cells:
-          - text: Nohy, runce
+          - text: Nohy, ruce
           - text: 30 min.
           - text: 690 Kč
 
@@ -268,7 +268,7 @@ pricing:
           - text: 690 Kč
 
         - cells:
-          - text: Nohy, runce
+          - text: Nohy, ruce
           - text: 30 min.
           - text: 690 Kč
 
@@ -287,7 +287,7 @@ pricing:
           - text: 690 Kč
 
         - cells:
-          - text: Nohy, runce
+          - text: Nohy, ruce
           - text: 30 min.
           - text: 690 Kč
 
@@ -306,7 +306,7 @@ pricing:
           - text: 690 Kč
 
         - cells:
-          - text: Nohy, runce
+          - text: Nohy, ruce
           - text: 30 min.
           - text: 690 Kč
 ---
