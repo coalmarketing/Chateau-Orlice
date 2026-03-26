@@ -149,7 +149,7 @@
     </section>
 
     <!-- CONTACT FORM -->
-    <section id="form" class="py-24 ~px-4/8 bg-white">
+    <section id="kontaktni-formular" class="py-24 ~px-4/8 bg-white">
         <div class="container m-auto flex flex-col items-center gap-8">
             <!-- TOPPER + HEADING -->
             <div class="flex flex-col items-center gap-4">
@@ -163,7 +163,7 @@
                 <h2 class="text-center ~text-3xl/5xl font-black uppercase">{{ contactForm.heading }}</h2>
             </div>
 
-            <form class="flex flex-col gap-4 w-full max-w-4xl" method="POST" name="Kontaktní formulář" netlify-honeypot="bot-field" netlify>
+            <form class="flex flex-col gap-4 w-full max-w-4xl" method="POST" action="{{ '/dekujeme' | locale_url }}" name="Kontaktní formulář" netlify-honeypot="bot-field" netlify>
                 <fieldset class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <!-- HONEYPOT -->
                     <input class="sr-only" type="search" name="bot-field" tabindex="-1" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off" placeholder="Leave this empty">

@@ -22,7 +22,7 @@ landing:
   imageAlt: Konferenční sál v Chateau Orlice
 
   cta:
-    url: "#form"
+    url: "#kontaktni-formular"
     text: Nezávazná poptávka
 
 

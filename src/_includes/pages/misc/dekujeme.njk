@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="cs" class="scroll-smooth">
+    <head>
+        <!-- Standard meta tags -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="{{ description }}">
+        <meta name="generator" content="{{ eleventy.generator }}">
+        <link rel="canonical" href="{{ client.domain }}{{ page.url }}">
+
+        <!-- Social Media Display -->
+        <meta property="og:title" content="{{ title }}"/>
+        <meta property="og:description" content="{{ description }}"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="{{ client.domain }}{{ page.url }}"/>
+        <meta property="og:image" content="{{ image or "/assets/images/og-logo.png" }}"/>
+        <meta property="og:image:secure_url" content="{{ image or "/assets/images/og-logo.png" }}"/>
+        <meta property="og:locale" content="cs_CZ">
+
+        <!-- Favicons -->
+        <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96"/>
+        <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg"/>
+        <link rel="shortcut icon" href="/assets/favicons/favicon.ico"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png"/>
+        <meta name="apple-mobile-web-app-title" content="{{ client.name }}"/>
+        <link rel="manifest" href="/assets/favicons/site.webmanifest"/>
+
+        <!-- Preloads -->
+        <link rel="preload" as="image" href="/assets/svgs/chateau_orlice-logo-building.svg">
+
+        <!-- Disable indexing for this page -->
+        <meta name="robots" content="noindex, nofollow">
+
+        <!-- Main stylesheet -->
+        <link rel="stylesheet" href="/assets/css/main.css">
+
+        <title>{{ title }} • {{ client.name }}</title>
+    </head>
+
+    <body>
+        <!-- FORM SUCCESS MESSAGE -->
+        <section class="relative ~p-4/8 bg-white h-screen w-screen z-10">
+            <div class="container m-auto flex flex-col justify-between items-center h-full">
+                <!-- LAYOUT PLACEHOLDER -->
+                <div></div>
+
+                <!-- CONTENT -->
+                <div class="relative p-4 bg-cream">
+                    <!-- INNER CONTAINER -->
+                    <div class="flex flex-col justify-center items-center gap-10 h-full p-8 border-2 border-gold">
+                        <!-- HEADING + TEXT -->
+                        <div class="flex flex-col items-center gap-2">
+                            <h1 class="text-xl text-neutral-950 font-semibold">{{ contentOne.heading }}</h1>
+                            <p class="font-jakarta-sans text-center text-sm text-ochre">{{ contentOne.text }}</p>
+                        </div>
+
+                        <!-- BACK LINK -->
+                        <a id="back-link" href="" class="btn-secondary text-sm">{{ contentOne.cta }}</a>
+                    </div>
+                </div>
+
+                <!-- LOGO -->
+                <img
+                    class="~h-20/28 w-auto"
+                    src="/assets/svgs/chateau_orlice-logo-building.svg"
+                    alt="Cheteau Orlice - logo"
+                    width="220"
+                    height="112"
+                    loading="eager"
+                    decoding="async"
+                    aria-hidden="true"
+                    draggable="false">
+            </div>
+
+            <!-- BACKGROUND IMAGE -->
+            <img
+                class="object-cover absolute inset-0 size-full opacity-15 -z-10"
+                src="/assets/svgs/tilling-background_black-gold.svg"
+                alt="{{ backgroundAlt }}"
+                width="1920"
+                height="1080"
+                loading="lazy"
+                decoding="async"
+                aria-hidden="true"
+                draggable="false">
+        </section>
+    </body>
+</html>
+
+<script>
+    (function () {
+        if (document.referrer && document.location.host && document.referrer.match(new RegExp("^https?://" + document.location.host))) {
+            document
+                .getElementById("back-link")
+                .setAttribute("href", document.referrer);
+        }
+    })();
+</script>

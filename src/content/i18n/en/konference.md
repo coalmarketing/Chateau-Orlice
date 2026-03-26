@@ -22,7 +22,7 @@ landing:
   imageAlt: Conference hall at Chateau Orlice
 
   cta:
-    url: "#form"
+    url: "#kontaktni-formular"
     text: Non-binding inquiry
 
 

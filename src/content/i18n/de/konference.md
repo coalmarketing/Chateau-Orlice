@@ -22,7 +22,7 @@ landing:
   imageAlt: Konferenzsaal im Chateau Orlice
 
   cta:
-    url: "#form"
+    url: "#kontaktni-formular"
     text: Unverbindliche Anfrage
 
 

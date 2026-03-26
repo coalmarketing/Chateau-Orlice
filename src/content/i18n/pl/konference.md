@@ -22,7 +22,7 @@ landing:
   imageAlt: Sala konferencyjna w Chateau Orlice
 
   cta:
-    url: "#form"
+    url: "#kontaktni-formular"
     text: Niezobowiązująca oferta
 
 

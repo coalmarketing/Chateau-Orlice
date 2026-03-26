@@ -151,7 +151,7 @@
                 <h2 class="text-center ~text-3xl/5xl font-black uppercase">{{ contactForm.heading }}</h2>
             </div>
 
-            <form class="flex flex-col gap-4 w-full max-w-4xl" method="POST" name="Kontaktní formulář" netlify-honeypot="bot-field" netlify>
+            <form class="flex flex-col gap-4 w-full max-w-4xl" method="POST" action="{{ '/dekujeme' | locale_url }}" name="Kontaktní formulář" netlify-honeypot="bot-field" netlify>
                 <fieldset class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <!-- HONEYPOT -->
                     <input class="sr-only" type="search" name="bot-field" tabindex="-1" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off" placeholder="Leave this empty">

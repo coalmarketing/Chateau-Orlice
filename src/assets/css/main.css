@@ -1464,6 +1464,10 @@ select {
   position: relative;
 }
 
+.inset-0 {
+  inset: 0px;
+}
+
 .-top-2 {
   top: -0.5rem;
 }
@@ -1632,6 +1636,11 @@ select {
   aspect-ratio: 16 / 9;
 }
 
+.size-full {
+  width: 100%;
+  height: 100%;
+}
+
 .h-0 {
   height: 0px;
 }
@@ -1682,6 +1691,22 @@ select {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.h-28 {
+  height: 7rem;
+}
+
+.h-14 {
+  height: 3.5rem;
+}
+
+.h-8 {
+  height: 2rem;
 }
 
 .max-h-\[30lh\] {
@@ -2077,6 +2102,10 @@ select {
   padding: 2rem;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -2146,6 +2175,10 @@ select {
 
 .pt-64 {
   padding-top: 16rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .text-left {
@@ -2272,6 +2305,18 @@ select {
 
 .opacity-75 {
   opacity: 0.75;
+}
+
+.opacity-25 {
+  opacity: 0.25;
+}
+
+.opacity-10 {
+  opacity: 0.1;
+}
+
+.opacity-15 {
+  opacity: 0.15;
 }
 
 .shadow {
@@ -2420,6 +2465,10 @@ select {
 
 .\~h-\[24rem\]\/\[28rem\] {
   height: clamp(24rem,21.14rem + 7.14vw,28rem)/* fluid from 24rem at 40rem to 28rem at 96rem */;
+}
+
+.\~h-20\/28 {
+  height: clamp(5rem,3.57rem + 3.57vw,7rem)/* fluid from 5rem at 40rem to 7rem at 96rem */;
 }
 
 .\~w-3 /* error - Missing end value */ {
