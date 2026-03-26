@@ -21,6 +21,10 @@ landing:
   imageUrl: /assets/images/conferences/conferences-1.jpg
   imageAlt: Konferenční sál v Chateau Orlice
 
+  cta:
+    url: "#form"
+    text: Nezávazná poptávka
+
 
 conferences:
   topper: Konference a firemní akce

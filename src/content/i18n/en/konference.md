@@ -21,6 +21,10 @@ landing:
   imageUrl: /assets/images/conferences/conferences-1.jpg
   imageAlt: Conference hall at Chateau Orlice
 
+  cta:
+    url: "#form"
+    text: Non-binding inquiry
+
 
 conferences:
   topper: Conferences and corporate events

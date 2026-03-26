@@ -21,6 +21,10 @@ landing:
   imageUrl: /assets/images/conferences/conferences-1.jpg
   imageAlt: Konferenzsaal im Chateau Orlice
 
+  cta:
+    url: "#form"
+    text: Unverbindliche Anfrage
+
 
 conferences:
   topper: Konferenzen und Firmenveranstaltungen
