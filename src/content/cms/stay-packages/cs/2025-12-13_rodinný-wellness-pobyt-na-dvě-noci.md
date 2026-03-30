@@ -21,7 +21,7 @@ imageAlt: Rodinný wellness pobyt na dvě noci
   – pro dvě dospělé osoby a jedno dítě do 12 let,
   nebo pro jednoho dospělého a dvě děti (z toho jedno do 12 let)
 * Bohaté **bufetové snídaně** z regionálních surovin
-* **1× privátní vstup do wellness na 75 minut** – vířivka, finská sauna, ochlazovna, relaxační zóna
+* **1× privátní vstup do wellness na 60 minut** – vířivka, finská sauna, ochlazovna, relaxační zóna
 * Župan a pantofle k dispozici na pokoji
 * Parkování v areálu zdarma
 
