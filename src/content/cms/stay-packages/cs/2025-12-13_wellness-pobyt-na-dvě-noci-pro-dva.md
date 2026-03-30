@@ -15,7 +15,7 @@ imageAlt: Wellness pobyt na dvě noci pro dva
 
 * Ubytování ve dvoulůžkovém pokoji typu **STANDARD** - na dvě noci
 * Bohaté **bufetové snídaně** z regionálních surovin v ceně za pobyt
-* **1x vstup do wellness na 75 minut** - finská sauna, vířivka, ochlazovna, relaxační zóna
+* **1x vstup do wellness na 60 minut** - finská sauna, vířivka, ochlazovna, relaxační zóna
 * Župan a pantofle k dispozici na pokoji
 * Parkování zdarma
 
