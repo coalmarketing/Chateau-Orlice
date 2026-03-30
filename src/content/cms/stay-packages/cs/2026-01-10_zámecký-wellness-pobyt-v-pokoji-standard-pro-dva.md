@@ -16,7 +16,7 @@ Dopřejte si dokonalý odpočinek v kouzelném zámeckém prostředí plném kli
 * Ubytování ve dvoulůžkovém pokoji typu **STANDARD** - na dvě noci
 * Bohaté **bufetové snídaně** z regionálních surovin v ceně za pobyt
 * **3-chodová večeře** v historické restauraci 
-* **1x vstup do wellness na 75 minut** - finská sauna, vířivka, ochlazovna, relaxační zóna
+* **1x vstup do wellness na 60 minut** - finská sauna, vířivka, ochlazovna, relaxační zóna
 * **Relaxační masáž na 30 minut** (záda, šíje) - 1x na osobu za pobyt
 * Župan a pantofle k dispozici na pokoji
 * Parkování zdarma
