@@ -1480,10 +1480,6 @@ select {
   bottom: 3rem;
 }
 
-.bottom-4 {
-  bottom: 1rem;
-}
-
 .left-0 {
   left: 0px;
 }
@@ -1557,10 +1553,6 @@ select {
   margin-right: auto;
 }
 
-.-mb-px {
-  margin-bottom: -1px;
-}
-
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -1587,10 +1579,6 @@ select {
 
 .mt-0 {
   margin-top: 0px;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
 }
 
 .mt-px {
@@ -1661,10 +1649,6 @@ select {
   height: 4rem;
 }
 
-.h-4 {
-  height: 1rem;
-}
-
 .h-\[20rem\] {
   height: 20rem;
 }
@@ -1691,22 +1675,6 @@ select {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-24 {
-  height: 6rem;
-}
-
-.h-28 {
-  height: 7rem;
-}
-
-.h-14 {
-  height: 3.5rem;
-}
-
-.h-8 {
-  height: 2rem;
 }
 
 .max-h-\[30lh\] {
@@ -2000,10 +1968,6 @@ select {
   border-radius: 9999px;
 }
 
-.rounded-xl {
-  border-radius: 0.75rem;
-}
-
 .border {
   border-width: 1px;
 }
@@ -2048,11 +2012,6 @@ select {
 .bg-gold {
   --tw-bg-opacity: 1;
   background-color: rgb(185 150 99 / var(--tw-bg-opacity, 1));
-}
-
-.bg-neutral-950 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(10 10 10 / var(--tw-bg-opacity, 1));
 }
 
 .bg-ochre {
@@ -2100,10 +2059,6 @@ select {
 
 .p-8 {
   padding: 2rem;
-}
-
-.p-6 {
-  padding: 1.5rem;
 }
 
 .px-2 {
@@ -2175,10 +2130,6 @@ select {
 
 .pt-64 {
   padding-top: 16rem;
-}
-
-.pt-16 {
-  padding-top: 4rem;
 }
 
 .text-left {
@@ -2265,16 +2216,6 @@ select {
   color: rgb(31 41 55 / var(--tw-text-opacity, 1));
 }
 
-.text-neutral-300 {
-  --tw-text-opacity: 1;
-  color: rgb(212 212 212 / var(--tw-text-opacity, 1));
-}
-
-.text-neutral-800 {
-  --tw-text-opacity: 1;
-  color: rgb(38 38 38 / var(--tw-text-opacity, 1));
-}
-
 .text-neutral-950 {
   --tw-text-opacity: 1;
   color: rgb(10 10 10 / var(--tw-text-opacity, 1));
@@ -2283,11 +2224,6 @@ select {
 .text-ochre {
   --tw-text-opacity: 1;
   color: rgb(30 30 28 / var(--tw-text-opacity, 1));
-}
-
-.text-rose-600 {
-  --tw-text-opacity: 1;
-  color: rgb(225 29 72 / var(--tw-text-opacity, 1));
 }
 
 .text-white {
@@ -2303,20 +2239,12 @@ select {
   opacity: 0;
 }
 
-.opacity-75 {
-  opacity: 0.75;
-}
-
-.opacity-25 {
-  opacity: 0.25;
-}
-
-.opacity-10 {
-  opacity: 0.1;
-}
-
 .opacity-15 {
   opacity: 0.15;
+}
+
+.opacity-75 {
+  opacity: 0.75;
 }
 
 .shadow {
@@ -2359,12 +2287,6 @@ select {
 
 .transition-\[height\2c _margin-top\2c _opacity\] {
   transition-property: height, margin-top, opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition-\[opacity\2c transform\] {
-  transition-property: opacity,transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -2452,6 +2374,10 @@ select {
   line-height: clamp(1rem,0.82rem + 0.45vw,1.25rem)/* fluid from 1rem at 40rem to 1.25rem at 96rem */;
 }
 
+.\~h-20\/28 {
+  height: clamp(5rem,3.57rem + 3.57vw,7rem)/* fluid from 5rem at 40rem to 7rem at 96rem */;
+}
+
 .\~h-3 /* error - Missing end value */ {
 }
 
@@ -2465,10 +2391,6 @@ select {
 
 .\~h-\[24rem\]\/\[28rem\] {
   height: clamp(24rem,21.14rem + 7.14vw,28rem)/* fluid from 24rem at 40rem to 28rem at 96rem */;
-}
-
-.\~h-20\/28 {
-  height: clamp(5rem,3.57rem + 3.57vw,7rem)/* fluid from 5rem at 40rem to 7rem at 96rem */;
 }
 
 .\~w-3 /* error - Missing end value */ {
@@ -3207,11 +3129,6 @@ html {
   height: 3lh;
 }
 
-.group:hover .group-hover\:-translate-x-1 {
-  --tw-translate-x: -0.25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .group\/li:hover .group-hover\/li\:scale-y-100 {
   --tw-scale-y: 1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3230,14 +3147,6 @@ html {
 .group:hover .group-hover\:text-cream {
   --tw-text-opacity: 1;
   color: rgb(240 236 225 / var(--tw-text-opacity, 1));
-}
-
-.group:hover .group-hover\:underline {
-  text-decoration-line: underline;
-}
-
-.group:hover .group-hover\:opacity-0 {
-  opacity: 0;
 }
 
 .group:hover .group-hover\:opacity-100 {
