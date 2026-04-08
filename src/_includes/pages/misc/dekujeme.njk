@@ -5,6 +5,11 @@
 
         {% if lang === "cs" %}
             <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+
                 gtag('event', 'conversion', {
                     'send_to': 'AW-17340299814/BkhpCMHcqpIcEKb0v8xA',
                     'value': 1.0,
